@@ -16,7 +16,7 @@ is from an unknown publisher (it is not code-signed): choose "More info", then "
 Needs Windows 10 or 11 and an NVIDIA graphics card with a current driver (export uses it).
 
 **Updates:** an installed copy checks GitHub when it starts. When a newer release exists, a line
-at the top says so; "update and restart" saves your project, installs the new version and
+at the bottom of the window says so; "update and restart" saves your project, installs the new version and
 reopens the app.
 
 A build made from the source also runs without installing: `dist-app\Roughcut\Roughcut.exe`
