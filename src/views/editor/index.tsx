@@ -18,6 +18,7 @@ import {
   selectHintScreen,
   selectModelDownload,
   selectNothingKept,
+  selectPendingSuggestions,
   selectSelectedRanges,
   selectSequenceDuration,
   selectTranscribing,
@@ -28,7 +29,7 @@ import {
   type RoughcutState,
 } from "../../state";
 import type { ActionId, PlaybackRate } from "../../types";
-import { AppFrame, Button, Readout, ShortcutBar, Timecode, ViewSwitch } from "../../ui";
+import { AppFrame, Button, Key, Readout, ShortcutBar, Timecode, ViewSwitch } from "../../ui";
 import { TimelineView } from "../timeline";
 import { TranscriptView } from "../transcript";
 import { carriesFiles, droppedPaths } from "./drop";
@@ -163,6 +164,13 @@ function Notes({ view }: { view: EditorView }) {
   });
   const nothingKept = useRoughcut(selectNothingKept);
   const buffering = useRoughcut((s) => s.buffering);
+  const pending = useRoughcut(selectPendingSuggestions).length;
+  // The key cap as the shortcut bar writes it ("shift a"), following a rebound key.
+  const acceptAllKey = useRoughcut((s) => {
+    const chord = (s.keymap.chords.get("transcript.acceptAllSuggestions") ?? [])[0];
+    return chord === undefined ? "" : formatChord(chord, "cap");
+  });
+  const dispatch = useDispatch();
 
   const lines: { key: string; text: ReactNode }[] = [];
   // First run: the speech model is fetched before the first transcript can be made.
@@ -185,6 +193,31 @@ function Notes({ view }: { view: EditorView }) {
     } else if (!transcribing && caret && caretName) {
       lines.push({ key: "caret", text: `${caretName} at ${formatTimecode(caret.at)}` });
     }
+  }
+  // Suggestions still waiting for an answer, with the way to accept them all in one go (one
+  // undo step brings them all back). The button never takes focus, so Space keeps meaning play.
+  if (view === "transcript" && pending > 0) {
+    lines.push({
+      key: "suggestions",
+      text: (
+        <>
+          {pending === 1 ? "1 suggestion" : `${pending} suggestions`}
+          {" · "}
+          <button
+            type="button"
+            tabIndex={-1}
+            className="rc-note__act"
+            data-accept-all
+            title="Cut everything that is suggested. Undo brings it all back."
+            onMouseDown={(e) => e.preventDefault()}
+            onClick={() => void dispatch("transcript.acceptAllSuggestions")}
+          >
+            {acceptAllKey ? <Key>{acceptAllKey}</Key> : null}
+            accept all
+          </button>
+        </>
+      ),
+    });
   }
   if (buffering) lines.push({ key: "buffering", text: "waiting for video…" });
 

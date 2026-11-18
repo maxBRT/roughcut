@@ -342,3 +342,38 @@ describe("hint bar with a current suggestion", () => {
     expect(hints).not.toContain("keep");
   });
 });
+
+describe("accept all suggestions", () => {
+  const pendingCount = () => state().layout!.suggestions.filter((v) => v.state === "pending").length;
+  const line = () => document.querySelector('[data-note="suggestions"]');
+
+  it("the note under the player counts the suggestions and its button accepts them all; one undo brings them back", async () => {
+    await openDemo();
+    const before = pendingCount();
+    expect(before).toBeGreaterThan(1);
+    expect(line()?.textContent).toContain(`${before} suggestions`);
+    const button = line()!.querySelector("button[data-accept-all]") as HTMLButtonElement;
+    expect(button.textContent).toMatch(/shift a\s*accept all/i);
+    const clips = state().edit!.current.clips.length;
+
+    await act(async () => {
+      fireEvent.click(button);
+    });
+    await settle();
+    expect(pendingCount()).toBe(0);
+    expect(state().edit!.current.clips.length).toBeGreaterThan(clips);
+    expect(line()).toBeNull(); // nothing left to accept: the line goes away
+
+    await press("Ctrl+Z");
+    expect(pendingCount()).toBe(before);
+    expect(state().edit!.current.clips.length).toBe(clips);
+    expect(line()?.textContent).toContain(`${before} suggestions`);
+  });
+
+  it("is not shown in the Timeline view, where suggestions are not drawn", async () => {
+    await openDemo();
+    expect(line()).not.toBeNull();
+    await press("Tab");
+    expect(line()).toBeNull();
+  });
+});

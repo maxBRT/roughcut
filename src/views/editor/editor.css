@@ -237,3 +237,21 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+/* A note line with its own action ("12 suggestions · shift a accept all"): text that can be clicked. */
+.rc-note__act {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+.rc-note__act:hover {
+  color: var(--accent);
+}
