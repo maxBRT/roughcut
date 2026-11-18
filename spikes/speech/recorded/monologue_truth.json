@@ -1,0 +1,1278 @@
+{
+ "description": "Ground truth for monologue_clean.wav / monologue_noisy.wav (seconds). Line start/end are measured from the audio (-50 dBFS threshold). Word starts are the synthesizer's own SpeakProgress positions and are approximate (tens of ms).",
+ "duration": 139.76,
+ "noisy_variant_clicks_at": [
+  50.76,
+  51.76,
+  52.76,
+  53.76,
+  58.74,
+  60.24,
+  61.74,
+  63.24,
+  128.83,
+  130.08,
+  131.33,
+  132.58
+ ],
+ "lines": [
+  {
+   "index": 0,
+   "text": "Hi everyone, and welcome back to the channel.",
+   "kind": "normal",
+   "start": 2.0,
+   "end": 4.74,
+   "pause_after": 1.0,
+   "words_start_approx": [
+    {
+     "text": "Hi",
+     "start": 2.0
+    },
+    {
+     "text": "everyone",
+     "start": 2.21
+    },
+    {
+     "text": "and",
+     "start": 3.215
+    },
+    {
+     "text": "welcome",
+     "start": 3.385
+    },
+    {
+     "text": "back",
+     "start": 3.79
+    },
+    {
+     "text": "to",
+     "start": 4.06
+    },
+    {
+     "text": "the",
+     "start": 4.185
+    },
+    {
+     "text": "channel",
+     "start": 4.29
+    }
+   ]
+  },
+  {
+   "index": 1,
+   "text": "Today we are going to look at how I edit a long recording in about twenty minutes.",
+   "kind": "retake_first",
+   "start": 5.74,
+   "end": 9.85,
+   "pause_after": 2.0,
+   "words_start_approx": [
+    {
+     "text": "Today",
+     "start": 5.74
+    },
+    {
+     "text": "we",
+     "start": 6.065
+    },
+    {
+     "text": "are",
+     "start": 6.215
+    },
+    {
+     "text": "going",
+     "start": 6.35
+    },
+    {
+     "text": "to",
+     "start": 6.66
+    },
+    {
+     "text": "look",
+     "start": 6.78
+    },
+    {
+     "text": "at",
+     "start": 7.005
+    },
+    {
+     "text": "how",
+     "start": 7.09
+    },
+    {
+     "text": "I",
+     "start": 7.3
+    },
+    {
+     "text": "edit",
+     "start": 7.435
+    },
+    {
+     "text": "a",
+     "start": 7.7
+    },
+    {
+     "text": "long",
+     "start": 7.76
+    },
+    {
+     "text": "recording",
+     "start": 8.04
+    },
+    {
+     "text": "in",
+     "start": 8.535
+    },
+    {
+     "text": "about",
+     "start": 8.66
+    },
+    {
+     "text": "twenty",
+     "start": 8.965
+    },
+    {
+     "text": "minutes",
+     "start": 9.365
+    }
+   ]
+  },
+  {
+   "index": 2,
+   "text": "Today we are going to look at how I edit a long recording in about twenty minutes.",
+   "kind": "retake_repeat",
+   "start": 11.85,
+   "end": 15.96,
+   "pause_after": 1.2,
+   "words_start_approx": [
+    {
+     "text": "Today",
+     "start": 11.85
+    },
+    {
+     "text": "we",
+     "start": 12.175
+    },
+    {
+     "text": "are",
+     "start": 12.325
+    },
+    {
+     "text": "going",
+     "start": 12.46
+    },
+    {
+     "text": "to",
+     "start": 12.77
+    },
+    {
+     "text": "look",
+     "start": 12.89
+    },
+    {
+     "text": "at",
+     "start": 13.115
+    },
+    {
+     "text": "how",
+     "start": 13.2
+    },
+    {
+     "text": "I",
+     "start": 13.41
+    },
+    {
+     "text": "edit",
+     "start": 13.545
+    },
+    {
+     "text": "a",
+     "start": 13.81
+    },
+    {
+     "text": "long",
+     "start": 13.87
+    },
+    {
+     "text": "recording",
+     "start": 14.15
+    },
+    {
+     "text": "in",
+     "start": 14.645
+    },
+    {
+     "text": "about",
+     "start": 14.77
+    },
+    {
+     "text": "twenty",
+     "start": 15.075
+    },
+    {
+     "text": "minutes",
+     "start": 15.475
+    }
+   ]
+  },
+  {
+   "index": 3,
+   "text": "So the first thing you want to do is, uh, open the project folder.",
+   "kind": "filler",
+   "start": 17.16,
+   "end": 21.35,
+   "pause_after": 1.5,
+   "words_start_approx": [
+    {
+     "text": "So",
+     "start": 17.16
+    },
+    {
+     "text": "the",
+     "start": 17.37
+    },
+    {
+     "text": "first",
+     "start": 17.475
+    },
+    {
+     "text": "thing",
+     "start": 17.83
+    },
+    {
+     "text": "you",
+     "start": 18.045
+    },
+    {
+     "text": "want",
+     "start": 18.185
+    },
+    {
+     "text": "to",
+     "start": 18.435
+    },
+    {
+     "text": "do",
+     "start": 18.535
+    },
+    {
+     "text": "is",
+     "start": 18.72
+    },
+    {
+     "text": "uh",
+     "start": 19.44
+    },
+    {
+     "text": "open",
+     "start": 20.04
+    },
+    {
+     "text": "the",
+     "start": 20.325
+    },
+    {
+     "text": "project",
+     "start": 20.41
+    },
+    {
+     "text": "folder",
+     "start": 20.92
+    }
+   ]
+  },
+  {
+   "index": 4,
+   "text": "And then we",
+   "kind": "abandoned",
+   "start": 22.85,
+   "end": 23.47,
+   "pause_after": 3.0,
+   "words_start_approx": [
+    {
+     "text": "And",
+     "start": 22.85
+    },
+    {
+     "text": "then",
+     "start": 23.005
+    },
+    {
+     "text": "we",
+     "start": 23.205
+    }
+   ]
+  },
+  {
+   "index": 5,
+   "text": "Sorry, let me start that again.",
+   "kind": "aside",
+   "start": 26.47,
+   "end": 28.61,
+   "pause_after": 1.0,
+   "words_start_approx": [
+    {
+     "text": "Sorry",
+     "start": 26.47
+    },
+    {
+     "text": "let",
+     "start": 27.335
+    },
+    {
+     "text": "me",
+     "start": 27.555
+    },
+    {
+     "text": "start",
+     "start": 27.695
+    },
+    {
+     "text": "that",
+     "start": 28.055
+    },
+    {
+     "text": "again",
+     "start": 28.23
+    }
+   ]
+  },
+  {
+   "index": 6,
+   "text": "And then we drag the recording onto the window.",
+   "kind": "normal",
+   "start": 29.61,
+   "end": 31.87,
+   "pause_after": 4.0,
+   "words_start_approx": [
+    {
+     "text": "And",
+     "start": 29.61
+    },
+    {
+     "text": "then",
+     "start": 29.765
+    },
+    {
+     "text": "we",
+     "start": 29.965
+    },
+    {
+     "text": "drag",
+     "start": 30.11
+    },
+    {
+     "text": "the",
+     "start": 30.425
+    },
+    {
+     "text": "recording",
+     "start": 30.55
+    },
+    {
+     "text": "onto",
+     "start": 31.045
+    },
+    {
+     "text": "the",
+     "start": 31.35
+    },
+    {
+     "text": "window",
+     "start": 31.45
+    }
+   ]
+  },
+  {
+   "index": 7,
+   "text": "Um, the transcript shows up while the video is still loading.",
+   "kind": "filler",
+   "start": 35.87,
+   "end": 39.39,
+   "pause_after": 1.0,
+   "words_start_approx": [
+    {
+     "text": "Um",
+     "start": 35.87
+    },
+    {
+     "text": "the",
+     "start": 36.595
+    },
+    {
+     "text": "transcript",
+     "start": 36.695
+    },
+    {
+     "text": "shows",
+     "start": 37.38
+    },
+    {
+     "text": "up",
+     "start": 37.695
+    },
+    {
+     "text": "while",
+     "start": 37.88
+    },
+    {
+     "text": "the",
+     "start": 38.11
+    },
+    {
+     "text": "video",
+     "start": 38.215
+    },
+    {
+     "text": "is",
+     "start": 38.595
+    },
+    {
+     "text": "still",
+     "start": 38.745
+    },
+    {
+     "text": "loading",
+     "start": 39.015
+    }
+   ]
+  },
+  {
+   "index": 8,
+   "text": "You can, you know, read it like a document.",
+   "kind": "filler",
+   "start": 40.39,
+   "end": 43.41,
+   "pause_after": 2.5,
+   "words_start_approx": [
+    {
+     "text": "You",
+     "start": 40.39
+    },
+    {
+     "text": "can",
+     "start": 40.525
+    },
+    {
+     "text": "you",
+     "start": 41.335
+    },
+    {
+     "text": "know",
+     "start": 41.48
+    },
+    {
+     "text": "read",
+     "start": 42.155
+    },
+    {
+     "text": "it",
+     "start": 42.37
+    },
+    {
+     "text": "like",
+     "start": 42.5
+    },
+    {
+     "text": "a",
+     "start": 42.72
+    },
+    {
+     "text": "document",
+     "start": 42.79
+    }
+   ]
+  },
+  {
+   "index": 9,
+   "text": "Every word has a time, so cutting a sentence cuts the video too.",
+   "kind": "normal",
+   "start": 45.91,
+   "end": 49.76,
+   "pause_after": 6.0,
+   "words_start_approx": [
+    {
+     "text": "Every",
+     "start": 45.91
+    },
+    {
+     "text": "word",
+     "start": 46.205
+    },
+    {
+     "text": "has",
+     "start": 46.465
+    },
+    {
+     "text": "a",
+     "start": 46.68
+    },
+    {
+     "text": "time",
+     "start": 46.745
+    },
+    {
+     "text": "so",
+     "start": 47.59
+    },
+    {
+     "text": "cutting",
+     "start": 47.84
+    },
+    {
+     "text": "a",
+     "start": 48.19
+    },
+    {
+     "text": "sentence",
+     "start": 48.245
+    },
+    {
+     "text": "cuts",
+     "start": 48.695
+    },
+    {
+     "text": "the",
+     "start": 49.005
+    },
+    {
+     "text": "video",
+     "start": 49.105
+    },
+    {
+     "text": "too",
+     "start": 49.48
+    }
+   ]
+  },
+  {
+   "index": 10,
+   "text": "Hang on, my phone is ringing.",
+   "kind": "aside",
+   "start": 55.76,
+   "end": 57.74,
+   "pause_after": 8.0,
+   "words_start_approx": [
+    {
+     "text": "Hang",
+     "start": 55.76
+    },
+    {
+     "text": "on",
+     "start": 55.96
+    },
+    {
+     "text": "my",
+     "start": 56.7
+    },
+    {
+     "text": "phone",
+     "start": 56.86
+    },
+    {
+     "text": "is",
+     "start": 57.16
+    },
+    {
+     "text": "ringing",
+     "start": 57.32
+    }
+   ]
+  },
+  {
+   "index": 11,
+   "text": "Okay, where was I.",
+   "kind": "aside",
+   "start": 65.74,
+   "end": 67.18,
+   "pause_after": 1.0,
+   "words_start_approx": [
+    {
+     "text": "Okay",
+     "start": 65.74
+    },
+    {
+     "text": "where",
+     "start": 66.565
+    },
+    {
+     "text": "was",
+     "start": 66.78
+    },
+    {
+     "text": "I",
+     "start": 66.995
+    }
+   ]
+  },
+  {
+   "index": 12,
+   "text": "The second step is to look at the suggestions on the right.",
+   "kind": "retake_first",
+   "start": 68.18,
+   "end": 70.98,
+   "pause_after": 1.5,
+   "words_start_approx": [
+    {
+     "text": "The",
+     "start": 68.18
+    },
+    {
+     "text": "second",
+     "start": 68.27
+    },
+    {
+     "text": "step",
+     "start": 68.685
+    },
+    {
+     "text": "is",
+     "start": 69.02
+    },
+    {
+     "text": "to",
+     "start": 69.2
+    },
+    {
+     "text": "look",
+     "start": 69.32
+    },
+    {
+     "text": "at",
+     "start": 69.54
+    },
+    {
+     "text": "the",
+     "start": 69.64
+    },
+    {
+     "text": "suggestions",
+     "start": 69.72
+    },
+    {
+     "text": "on",
+     "start": 70.42
+    },
+    {
+     "text": "the",
+     "start": 70.575
+    },
+    {
+     "text": "right",
+     "start": 70.68
+    }
+   ]
+  },
+  {
+   "index": 13,
+   "text": "The second step is to look at the suggestions in the margin.",
+   "kind": "retake_repeat",
+   "start": 72.48,
+   "end": 75.42,
+   "pause_after": 1.2,
+   "words_start_approx": [
+    {
+     "text": "The",
+     "start": 72.48
+    },
+    {
+     "text": "second",
+     "start": 72.57
+    },
+    {
+     "text": "step",
+     "start": 72.985
+    },
+    {
+     "text": "is",
+     "start": 73.32
+    },
+    {
+     "text": "to",
+     "start": 73.5
+    },
+    {
+     "text": "look",
+     "start": 73.62
+    },
+    {
+     "text": "at",
+     "start": 73.84
+    },
+    {
+     "text": "the",
+     "start": 73.94
+    },
+    {
+     "text": "suggestions",
+     "start": 74.02
+    },
+    {
+     "text": "in",
+     "start": 74.72
+    },
+    {
+     "text": "the",
+     "start": 74.865
+    },
+    {
+     "text": "margin",
+     "start": 74.94
+    }
+   ]
+  },
+  {
+   "index": 14,
+   "text": "Each one is, uh, um, a retake or a false start.",
+   "kind": "filler",
+   "start": 76.62,
+   "end": 80.64,
+   "pause_after": 2.0,
+   "words_start_approx": [
+    {
+     "text": "Each",
+     "start": 76.62
+    },
+    {
+     "text": "one",
+     "start": 76.805
+    },
+    {
+     "text": "is",
+     "start": 77.02
+    },
+    {
+     "text": "uh",
+     "start": 77.76
+    },
+    {
+     "text": "um",
+     "start": 78.36
+    },
+    {
+     "text": "a",
+     "start": 79.095
+    },
+    {
+     "text": "retake",
+     "start": 79.19
+    },
+    {
+     "text": "or",
+     "start": 79.615
+    },
+    {
+     "text": "a",
+     "start": 79.805
+    },
+    {
+     "text": "false",
+     "start": 79.855
+    },
+    {
+     "text": "start",
+     "start": 80.22
+    }
+   ]
+  },
+  {
+   "index": 15,
+   "text": "If you agree with it you press enter.",
+   "kind": "normal",
+   "start": 82.64,
+   "end": 84.36,
+   "pause_after": 1.0,
+   "words_start_approx": [
+    {
+     "text": "If",
+     "start": 82.64
+    },
+    {
+     "text": "you",
+     "start": 82.79
+    },
+    {
+     "text": "agree",
+     "start": 82.93
+    },
+    {
+     "text": "with",
+     "start": 83.23
+    },
+    {
+     "text": "it",
+     "start": 83.425
+    },
+    {
+     "text": "you",
+     "start": 83.54
+    },
+    {
+     "text": "press",
+     "start": 83.68
+    },
+    {
+     "text": "enter",
+     "start": 84.01
+    }
+   ]
+  },
+  {
+   "index": 16,
+   "text": "If you don't, you press",
+   "kind": "abandoned",
+   "start": 85.36,
+   "end": 87.09,
+   "pause_after": 2.0,
+   "words_start_approx": [
+    {
+     "text": "If",
+     "start": 85.36
+    },
+    {
+     "text": "you",
+     "start": 85.51
+    },
+    {
+     "text": "don't",
+     "start": 85.64
+    },
+    {
+     "text": "you",
+     "start": 86.455
+    },
+    {
+     "text": "press",
+     "start": 86.61
+    }
+   ]
+  },
+  {
+   "index": 17,
+   "text": "If you don't agree, you just press escape and it goes away.",
+   "kind": "normal",
+   "start": 89.09,
+   "end": 92.56,
+   "pause_after": 5.0,
+   "words_start_approx": [
+    {
+     "text": "If",
+     "start": 89.09
+    },
+    {
+     "text": "you",
+     "start": 89.235
+    },
+    {
+     "text": "don't",
+     "start": 89.37
+    },
+    {
+     "text": "agree",
+     "start": 89.625
+    },
+    {
+     "text": "you",
+     "start": 90.475
+    },
+    {
+     "text": "just",
+     "start": 90.635
+    },
+    {
+     "text": "press",
+     "start": 90.915
+    },
+    {
+     "text": "escape",
+     "start": 91.23
+    },
+    {
+     "text": "and",
+     "start": 91.625
+    },
+    {
+     "text": "it",
+     "start": 91.78
+    },
+    {
+     "text": "goes",
+     "start": 91.915
+    },
+    {
+     "text": "away",
+     "start": 92.21
+    }
+   ]
+  },
+  {
+   "index": 18,
+   "text": "Uh, so, the third step is export.",
+   "kind": "filler",
+   "start": 97.56,
+   "end": 100.26,
+   "pause_after": 1.0,
+   "words_start_approx": [
+    {
+     "text": "Uh",
+     "start": 97.56
+    },
+    {
+     "text": "so",
+     "start": 98.15
+    },
+    {
+     "text": "the",
+     "start": 98.88
+    },
+    {
+     "text": "third",
+     "start": 98.985
+    },
+    {
+     "text": "step",
+     "start": 99.21
+    },
+    {
+     "text": "is",
+     "start": 99.545
+    },
+    {
+     "text": "export",
+     "start": 99.715
+    }
+   ]
+  },
+  {
+   "index": 19,
+   "text": "Export uses the graphics card, so a forty minute video takes a few minutes.",
+   "kind": "retake_first",
+   "start": 101.26,
+   "end": 106.01,
+   "pause_after": 2.0,
+   "words_start_approx": [
+    {
+     "text": "Export",
+     "start": 101.26
+    },
+    {
+     "text": "uses",
+     "start": 101.72
+    },
+    {
+     "text": "the",
+     "start": 102.095
+    },
+    {
+     "text": "graphics",
+     "start": 102.195
+    },
+    {
+     "text": "card",
+     "start": 102.7
+    },
+    {
+     "text": "so",
+     "start": 103.515
+    },
+    {
+     "text": "a",
+     "start": 103.745
+    },
+    {
+     "text": "forty",
+     "start": 103.82
+    },
+    {
+     "text": "minute",
+     "start": 104.225
+    },
+    {
+     "text": "video",
+     "start": 104.525
+    },
+    {
+     "text": "takes",
+     "start": 104.9
+    },
+    {
+     "text": "a",
+     "start": 105.23
+    },
+    {
+     "text": "few",
+     "start": 105.3
+    },
+    {
+     "text": "minutes",
+     "start": 105.525
+    }
+   ]
+  },
+  {
+   "index": 20,
+   "text": "Export uses the graphics card, so a forty minute video takes a few minutes.",
+   "kind": "retake_repeat",
+   "start": 108.01,
+   "end": 112.76,
+   "pause_after": 2.0,
+   "words_start_approx": [
+    {
+     "text": "Export",
+     "start": 108.01
+    },
+    {
+     "text": "uses",
+     "start": 108.47
+    },
+    {
+     "text": "the",
+     "start": 108.845
+    },
+    {
+     "text": "graphics",
+     "start": 108.945
+    },
+    {
+     "text": "card",
+     "start": 109.45
+    },
+    {
+     "text": "so",
+     "start": 110.265
+    },
+    {
+     "text": "a",
+     "start": 110.495
+    },
+    {
+     "text": "forty",
+     "start": 110.57
+    },
+    {
+     "text": "minute",
+     "start": 110.975
+    },
+    {
+     "text": "video",
+     "start": 111.275
+    },
+    {
+     "text": "takes",
+     "start": 111.65
+    },
+    {
+     "text": "a",
+     "start": 111.98
+    },
+    {
+     "text": "few",
+     "start": 112.05
+    },
+    {
+     "text": "minutes",
+     "start": 112.275
+    }
+   ]
+  },
+  {
+   "index": 21,
+   "text": "Export uses the graphics card, so a forty minute video takes a few minutes.",
+   "kind": "retake_repeat",
+   "start": 114.76,
+   "end": 119.51,
+   "pause_after": 3.0,
+   "words_start_approx": [
+    {
+     "text": "Export",
+     "start": 114.76
+    },
+    {
+     "text": "uses",
+     "start": 115.22
+    },
+    {
+     "text": "the",
+     "start": 115.595
+    },
+    {
+     "text": "graphics",
+     "start": 115.695
+    },
+    {
+     "text": "card",
+     "start": 116.2
+    },
+    {
+     "text": "so",
+     "start": 117.015
+    },
+    {
+     "text": "a",
+     "start": 117.245
+    },
+    {
+     "text": "forty",
+     "start": 117.32
+    },
+    {
+     "text": "minute",
+     "start": 117.725
+    },
+    {
+     "text": "video",
+     "start": 118.025
+    },
+    {
+     "text": "takes",
+     "start": 118.4
+    },
+    {
+     "text": "a",
+     "start": 118.73
+    },
+    {
+     "text": "few",
+     "start": 118.8
+    },
+    {
+     "text": "minutes",
+     "start": 119.025
+    }
+   ]
+  },
+  {
+   "index": 22,
+   "text": "I think that's, you know, pretty much it.",
+   "kind": "filler",
+   "start": 122.51,
+   "end": 125.18,
+   "pause_after": 1.0,
+   "words_start_approx": [
+    {
+     "text": "I",
+     "start": 122.51
+    },
+    {
+     "text": "think",
+     "start": 122.625
+    },
+    {
+     "text": "that's",
+     "start": 122.895
+    },
+    {
+     "text": "you",
+     "start": 123.715
+    },
+    {
+     "text": "know",
+     "start": 123.86
+    },
+    {
+     "text": "pretty",
+     "start": 124.535
+    },
+    {
+     "text": "much",
+     "start": 124.815
+    },
+    {
+     "text": "it",
+     "start": 125.055
+    }
+   ]
+  },
+  {
+   "index": 23,
+   "text": "Let me check the chat real quick.",
+   "kind": "aside",
+   "start": 126.18,
+   "end": 127.83,
+   "pause_after": 7.0,
+   "words_start_approx": [
+    {
+     "text": "Let",
+     "start": 126.18
+    },
+    {
+     "text": "me",
+     "start": 126.39
+    },
+    {
+     "text": "check",
+     "start": 126.535
+    },
+    {
+     "text": "the",
+     "start": 126.81
+    },
+    {
+     "text": "chat",
+     "start": 126.925
+    },
+    {
+     "text": "real",
+     "start": 127.23
+    },
+    {
+     "text": "quick",
+     "start": 127.475
+    }
+   ]
+  },
+  {
+   "index": 24,
+   "text": "Thanks for watching, and I'll see you in the next one.",
+   "kind": "normal",
+   "start": 134.83,
+   "end": 137.76,
+   "pause_after": 2.0,
+   "words_start_approx": [
+    {
+     "text": "Thanks",
+     "start": 134.83
+    },
+    {
+     "text": "for",
+     "start": 135.11
+    },
+    {
+     "text": "watching",
+     "start": 135.315
+    },
+    {
+     "text": "and",
+     "start": 136.235
+    },
+    {
+     "text": "I'll",
+     "start": 136.395
+    },
+    {
+     "text": "see",
+     "start": 136.58
+    },
+    {
+     "text": "you",
+     "start": 136.785
+    },
+    {
+     "text": "in",
+     "start": 136.955
+    },
+    {
+     "text": "the",
+     "start": 137.08
+    },
+    {
+     "text": "next",
+     "start": 137.165
+    },
+    {
+     "text": "one",
+     "start": 137.47
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Player spike</title>
+<style>
+  :root { color-scheme: dark; --bg: #111; --fg: #ddd; --mute: #888; --line: #333; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 14px/1.4 system-ui, sans-serif; }
+  main { max-width: 1000px; margin: 16px auto; padding: 0 16px; }
+  #stage { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #000; }
+  .bar { display: flex; gap: 8px; align-items: center; margin: 10px 0; flex-wrap: wrap; }
+  button { background: #222; color: var(--fg); border: 1px solid var(--line); padding: 4px 10px; border-radius: 4px; cursor: pointer; }
+  button.on { border-color: #6af; }
+  #time { font-variant-numeric: tabular-nums; margin-left: auto; color: var(--mute); }
+  #log { white-space: pre-wrap; font: 12px/1.4 Consolas, monospace; color: var(--mute); max-height: 30vh; overflow: auto; }
+</style>
+</head>
+<body>
+<main>
+  <div id="stage"></div>
+  <div class="bar">
+    <button id="play">Play / pause (K, Space)</button>
+    <button id="back">J backwards</button>
+    <button id="prev">&larr; frame</button>
+    <button id="next">frame &rarr;</button>
+    <span>Rate</span>
+    <button data-rate="1" class="on">1x</button><button data-rate="1.5">1.5x</button><button data-rate="2">2x</button>
+    <span id="time"></span>
+  </div>
+  <div id="log"></div>
+</main>
+<script type="module">
+import { SequencePlayer } from './player.js';
+import { TEST_CLIPS, FPS, AudioTap, post, sleep, runSequence, runSteps, runShuttle, runSeekFile } from './harness.js';
+
+const q = new URLSearchParams(location.search);
+const src = '/media/' + (q.get('src') || 'proxy_h264_8bit.mp4');
+const stage = document.getElementById('stage');
+const timeEl = document.getElementById('time');
+const logEl = document.getElementById('log');
+const log = (s) => { logEl.textContent += s + '\n'; console.log(s); };
+
+const player = new SequencePlayer(stage, {
+  fps: FPS,
+  watchdogRetry: q.get('retry') === '1',
+  onFrame: ({ seqFrame, clipIndex, srcFrame }) => {
+    timeEl.textContent = `seq ${seqFrame} / ${player.duration}   clip ${clipIndex + 1}   source frame ${srcFrame}`;
+  },
+});
+await player.load(TEST_CLIPS.map(([start, end]) => ({ src, start, end })));
+
+// ---- Manual controls
+const toggle = () => player.playing ? player.pause() : player.play();
+document.getElementById('play').onclick = toggle;
+document.getElementById('back').onclick = () => player.shuttling ? player.stopShuttle() : player.shuttleBack(player.rate);
+document.getElementById('prev').onclick = () => player.step(-1);
+document.getElementById('next').onclick = () => player.step(1);
+for (const b of document.querySelectorAll('[data-rate]')) b.onclick = () => {
+  player.setRate(+b.dataset.rate);
+  document.querySelectorAll('[data-rate]').forEach(x => x.classList.toggle('on', x === b));
+};
+addEventListener('keydown', (e) => {
+  if (e.key === ' ') { e.preventDefault(); player.stopShuttle(); toggle(); }
+  if (e.key === 'k') { player.stopShuttle(); player.pause(); }
+  if (e.key === 'l') player.play();
+  if (e.key === 'j') player.shuttleBack(player.rate);
+  if (e.key === 'ArrowLeft') player.step(e.shiftKey ? -FPS : -1);
+  if (e.key === 'ArrowRight') player.step(e.shiftKey ? FPS : 1);
+});
+
+// ---- Automated suites (used by run_tests.py): ?suite=seq|seek&tag=<label>
+const suite = q.get('suite'), tag = q.get('tag') || 'manual';
+if (suite) {
+  document.title = 'running';
+  try {
+    if (player.ctx.state !== 'running') await player.ctx.resume();
+    log('audio context: ' + player.ctx.state);
+    if (suite === 'seq') {
+      const tap = await AudioTap.create(player);
+      const leads = (q.get('leads') || '2').split(',').map(Number);
+      for (const lead of leads) {
+        for (const rate of (q.get('rates') || '1,1.5,2').split(',').map(Number)) {
+          log(`sequence rate ${rate} lead ${lead} ...`);
+          const r = await runSequence(player, tap, src, rate, { swapLead: lead });
+          await post(`${tag}_seq_${q.get('src') ? q.get('src').replace('.mp4', '') : 'proxy'}_r${rate}_lead${lead}`, r);
+          log(`  ${r.samples.length} samples, ${r.events.filter(e => e.name === 'swap').length} swaps`);
+        }
+      }
+      player.setRate(1);
+      log('steps ...');
+      await post(`${tag}_steps`, await runSteps(player, src));
+      for (const rate of [1, 2]) {
+        log(`shuttle back ${rate}x ...`);
+        await post(`${tag}_shuttle_r${rate}`, await runShuttle(player, src, rate));
+      }
+    }
+    if (suite === 'seek') {
+      const files = (q.get('files') || 'proxy_h264_8bit.mp4,orig_h264_8bit.mp4,orig_hevc_8bit.mp4,orig_hevc_10bit.mp4,orig_h264_10bit.mp4').split(',');
+      for (const f of files) {
+        log(`seek test ${f} ...`);
+        const r = await runSeekFile(stage, f);
+        await post(`${tag}_seek_${f.replace('.mp4', '')}`, r);
+        log('  ' + JSON.stringify({ canPlay: r.canPlayType, error: r.error, play: r.play }));
+      }
+    }
+    await post(`${tag}_${suite}_done`, { ok: true });
+  } catch (e) {
+    log('FAILED ' + (e.stack || e));
+    await post(`${tag}_${suite}_done`, { ok: false, error: String(e.stack || e) });
+  }
+  document.title = 'done';
+}
+</script>
+</body>
+</html>

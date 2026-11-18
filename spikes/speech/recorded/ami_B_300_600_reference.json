@@ -1,0 +1,2963 @@
+{
+"description": "AMI Meeting Corpus ES2002a, speaker B (headset channel 1), 300-600 s, manual word annotations shifted so 0 = 300 s. Licence CC BY 4.0, AMI Consortium. Audio: ES2002a.Headset-1.wav from the AMI mirror, cut with ffmpeg -ss 300 -t 300.",
+"words": [
+{
+"text": "then",
+"start": 0.2,
+"end": 0.43,
+"punc": false
+},
+{
+"text": ".",
+"start": 0.43,
+"end": 0.43,
+"punc": true
+},
+{
+"text": "I",
+"start": 1.14,
+"end": 1.36,
+"punc": false
+},
+{
+"text": "don't",
+"start": 1.36,
+"end": 1.53,
+"punc": false
+},
+{
+"text": "know",
+"start": 1.53,
+"end": 1.63,
+"punc": false
+},
+{
+"text": "what",
+"start": 1.63,
+"end": 1.74,
+"punc": false
+},
+{
+"text": "mine",
+"start": 1.74,
+"end": 1.94,
+"punc": false
+},
+{
+"text": "is",
+"start": 1.94,
+"end": 2.11,
+"punc": false
+},
+{
+"text": ".",
+"start": 2.11,
+"end": 2.11,
+"punc": true
+},
+{
+"text": "I'm",
+"start": 2.11,
+"end": 2.2,
+"punc": false
+},
+{
+"text": "gonna",
+"start": 2.2,
+"end": 2.33,
+"punc": false
+},
+{
+"text": "have",
+"start": 2.33,
+"end": 2.43,
+"punc": false
+},
+{
+"text": "to",
+"start": 2.43,
+"end": 2.49,
+"punc": false
+},
+{
+"text": "think",
+"start": 2.49,
+"end": 2.72,
+"punc": false
+},
+{
+"text": "on",
+"start": 2.72,
+"end": 2.82,
+"punc": false
+},
+{
+"text": "the",
+"start": 2.82,
+"end": 2.9,
+"punc": false
+},
+{
+"text": "spot",
+"start": 2.9,
+"end": 3.25,
+"punc": false
+},
+{
+"text": "now",
+"start": 3.25,
+"end": 3.58,
+"punc": false
+},
+{
+"text": ".",
+"start": 3.58,
+"end": 3.58,
+"punc": true
+},
+{
+"text": "Is",
+"start": 12.05,
+"end": 12.14,
+"punc": false
+},
+{
+"text": "that",
+"start": 12.14,
+"end": 12.26,
+"punc": false
+},
+{
+"text": "a",
+"start": 12.26,
+"end": 12.33,
+"punc": false
+},
+{
+"text": "whale",
+"start": 12.33,
+"end": 15.13,
+"punc": false
+},
+{
+"text": "?",
+"start": 15.13,
+"end": 15.13,
+"punc": true
+},
+{
+"text": "Ah",
+"start": 27.91,
+"end": 28.53,
+"punc": false
+},
+{
+"text": ".",
+"start": 28.53,
+"end": 28.53,
+"punc": true
+},
+{
+"text": "Okay",
+"start": 42.42,
+"end": 43.63,
+"punc": false
+},
+{
+"text": ".",
+"start": 43.63,
+"end": 43.63,
+"punc": true
+},
+{
+"text": "God",
+"start": 43.63,
+"end": 43.81,
+"punc": false
+},
+{
+"text": ",",
+"start": 43.81,
+"end": 43.81,
+"punc": true
+},
+{
+"text": "I",
+"start": 43.81,
+"end": 43.89,
+"punc": false
+},
+{
+"text": "still",
+"start": 43.89,
+"end": 44.14,
+"punc": false
+},
+{
+"text": "don't",
+"start": 44.14,
+"end": 44.29,
+"punc": false
+},
+{
+"text": "know",
+"start": 44.29,
+"end": 44.39,
+"punc": false
+},
+{
+"text": "what",
+"start": 44.39,
+"end": 44.49,
+"punc": false
+},
+{
+"text": "I'm",
+"start": 44.49,
+"end": 44.56,
+"punc": false
+},
+{
+"text": "gonna",
+"start": 44.56,
+"end": 44.72,
+"punc": false
+},
+{
+"text": "write",
+"start": 44.72,
+"end": 44.95,
+"punc": false
+},
+{
+"text": "about",
+"start": 44.95,
+"end": 46.39,
+"punc": false
+},
+{
+"text": ".",
+"start": 46.39,
+"end": 46.39,
+"punc": true
+},
+{
+"text": "Um",
+"start": 46.39,
+"end": 46.85,
+"punc": false
+},
+{
+"text": ".",
+"start": 46.85,
+"end": 46.85,
+"punc": true
+},
+{
+"text": "I",
+"start": 54.91,
+"end": 55.17,
+"punc": false
+},
+{
+"text": "was",
+"start": 55.17,
+"end": 55.27,
+"punc": false
+},
+{
+"text": "gonna",
+"start": 55.27,
+"end": 55.52,
+"punc": false
+},
+{
+"text": "choose",
+"start": 55.52,
+"end": 55.81,
+"punc": false
+},
+{
+"text": "a",
+"start": 55.81,
+"end": 55.86,
+"punc": false
+},
+{
+"text": "dog",
+"start": 55.86,
+"end": 56.16,
+"punc": false
+},
+{
+"text": "as",
+"start": 56.16,
+"end": 56.3,
+"punc": false
+},
+{
+"text": "well",
+"start": 56.3,
+"end": 57.54,
+"punc": false
+},
+{
+"text": ".",
+"start": 57.54,
+"end": 57.54,
+"punc": true
+},
+{
+"text": "But",
+"start": 57.54,
+"end": 58.27,
+"punc": false
+},
+{
+"text": "I'll",
+"start": 58.27,
+"end": 58.4,
+"punc": false
+},
+{
+"text": "just",
+"start": 58.4,
+"end": 58.55,
+"punc": false
+},
+{
+"text": "draw",
+"start": 58.55,
+"end": 58.66,
+"punc": false
+},
+{
+"text": "a",
+"start": 58.66,
+"end": 58.73,
+"punc": false
+},
+{
+"text": "different",
+"start": 58.73,
+"end": 58.99,
+"punc": false
+},
+{
+"text": "kind",
+"start": 58.99,
+"end": 59.21,
+"punc": false
+},
+{
+"text": "of",
+"start": 59.21,
+"end": 59.27,
+"punc": false
+},
+{
+"text": "dog",
+"start": 59.27,
+"end": 60.21,
+"punc": false
+},
+{
+"text": ".",
+"start": 60.21,
+"end": 60.21,
+"punc": true
+},
+{
+"text": "M",
+"start": 60.21,
+"end": 60.36,
+"punc": false
+},
+{
+"text": "my",
+"start": 60.36,
+"end": 60.55,
+"punc": false
+},
+{
+"text": "favourite",
+"start": 60.55,
+"end": 60.87,
+"punc": false
+},
+{
+"text": "animal",
+"start": 60.87,
+"end": 61.31,
+"punc": false
+},
+{
+"text": "is",
+"start": 61.31,
+"end": 61.64,
+"punc": false
+},
+{
+"text": "my",
+"start": 61.64,
+"end": 61.84,
+"punc": false
+},
+{
+"text": "own",
+"start": 61.84,
+"end": 62.08,
+"punc": false
+},
+{
+"text": "dog",
+"start": 62.08,
+"end": 62.46,
+"punc": false
+},
+{
+"text": "at",
+"start": 62.46,
+"end": 62.54,
+"punc": false
+},
+{
+"text": "home",
+"start": 62.54,
+"end": 64.23,
+"punc": false
+},
+{
+"text": ".",
+"start": 64.23,
+"end": 64.23,
+"punc": true
+},
+{
+"text": "Um",
+"start": 64.23,
+"end": 64.92,
+"punc": false
+},
+{
+"text": "That",
+"start": 67.01,
+"end": 67.14,
+"punc": false
+},
+{
+"text": "doesn't",
+"start": 67.14,
+"end": 67.37,
+"punc": false
+},
+{
+"text": "really",
+"start": 67.37,
+"end": 67.57,
+"punc": false
+},
+{
+"text": "look",
+"start": 67.57,
+"end": 67.8,
+"punc": false
+},
+{
+"text": "like",
+"start": 67.8,
+"end": 68.01,
+"punc": false
+},
+{
+"text": "him",
+"start": 68.01,
+"end": 68.15,
+"punc": false
+},
+{
+"text": ",",
+"start": 68.15,
+"end": 68.15,
+"punc": true
+},
+{
+"text": "actually",
+"start": 68.15,
+"end": 68.63,
+"punc": false
+},
+{
+"text": ".",
+"start": 68.63,
+"end": 68.63,
+"punc": true
+},
+{
+"text": "He",
+"start": 73.3,
+"end": 73.41,
+"punc": false
+},
+{
+"text": "looks",
+"start": 73.41,
+"end": 73.63,
+"punc": false
+},
+{
+"text": "more",
+"start": 73.63,
+"end": 73.78,
+"punc": false
+},
+{
+"text": "like",
+"start": 73.78,
+"end": 73.92,
+"punc": false
+},
+{
+"text": "a",
+"start": 73.92,
+"end": 73.98,
+"punc": false
+},
+{
+"text": "pig",
+"start": 73.98,
+"end": 74.22,
+"punc": false
+},
+{
+"text": ",",
+"start": 74.22,
+"end": 74.22,
+"punc": true
+},
+{
+"text": "actually",
+"start": 74.22,
+"end": 74.72,
+"punc": false
+},
+{
+"text": ".",
+"start": 74.72,
+"end": 74.72,
+"punc": true
+},
+{
+"text": "Ah",
+"start": 75.84,
+"end": 75.95,
+"punc": false
+},
+{
+"text": "well",
+"start": 75.95,
+"end": 76.27,
+"punc": false
+},
+{
+"text": ".",
+"start": 76.27,
+"end": 76.27,
+"punc": true
+},
+{
+"text": "Do",
+"start": 79.52,
+"end": 79.98,
+"punc": false
+},
+{
+"text": "you",
+"start": 79.98,
+"end": 80.06,
+"punc": false
+},
+{
+"text": "?",
+"start": 80.06,
+"end": 80.06,
+"punc": true
+},
+{
+"text": "Oh",
+"start": 80.06,
+"end": 80.19,
+"punc": false
+},
+{
+"text": "that's",
+"start": 80.19,
+"end": 80.41,
+"punc": false
+},
+{
+"text": "very",
+"start": 80.41,
+"end": 80.61,
+"punc": false
+},
+{
+"text": "good",
+"start": 80.61,
+"end": 80.74,
+"punc": false
+},
+{
+"text": "of",
+"start": 80.74,
+"end": 80.82,
+"punc": false
+},
+{
+"text": "you",
+"start": 80.82,
+"end": 80.97,
+"punc": false
+},
+{
+"text": ".",
+"start": 80.97,
+"end": 80.97,
+"punc": true
+},
+{
+"text": "Uh",
+"start": 88.27,
+"end": 89.07,
+"punc": false
+},
+{
+"text": ".",
+"start": 89.07,
+"end": 89.07,
+"punc": true
+},
+{
+"text": "Um",
+"start": 94.87,
+"end": 95.33,
+"punc": false
+},
+{
+"text": "he's",
+"start": 95.33,
+"end": 95.51,
+"punc": false
+},
+{
+"text": "a",
+"start": 95.51,
+"end": 95.58,
+"punc": false
+},
+{
+"text": "mixture",
+"start": 95.58,
+"end": 96.41,
+"punc": false
+},
+{
+"text": "of",
+"start": 96.41,
+"end": 96.78,
+"punc": false
+},
+{
+"text": "uh",
+"start": 96.78,
+"end": 97.46,
+"punc": false
+},
+{
+"text": "various",
+"start": 97.46,
+"end": 97.91,
+"punc": false
+},
+{
+"text": "things",
+"start": 97.91,
+"end": 98.71,
+"punc": false
+},
+{
+"text": ".",
+"start": 98.71,
+"end": 98.71,
+"punc": true
+},
+{
+"text": "Um",
+"start": 98.71,
+"end": 99.72,
+"punc": false
+},
+{
+"text": "and",
+"start": 99.72,
+"end": 100.38,
+"punc": false
+},
+{
+"text": "what",
+"start": 100.38,
+"end": 100.6,
+"punc": false
+},
+{
+"text": "do",
+"start": 100.6,
+"end": 100.68,
+"punc": false
+},
+{
+"text": "I",
+"start": 100.68,
+"end": 100.76,
+"punc": false
+},
+{
+"text": "like",
+"start": 100.76,
+"end": 100.92,
+"punc": false
+},
+{
+"text": "about",
+"start": 100.92,
+"end": 101.1,
+"punc": false
+},
+{
+"text": "him",
+"start": 101.1,
+"end": 101.36,
+"punc": false
+},
+{
+"text": ",",
+"start": 101.36,
+"end": 101.36,
+"punc": true
+},
+{
+"text": "um",
+"start": 101.36,
+"end": 103.23,
+"punc": false
+},
+{
+"text": "That's",
+"start": 103.23,
+"end": 103.51,
+"punc": false
+},
+{
+"text": "just",
+"start": 103.51,
+"end": 103.69,
+"punc": false
+},
+{
+"text": "to",
+"start": 103.69,
+"end": 103.79,
+"punc": false
+},
+{
+"text": "suggest",
+"start": 103.79,
+"end": 104.21,
+"punc": false
+},
+{
+"text": "that",
+"start": 104.21,
+"end": 104.35,
+"punc": false
+},
+{
+"text": "his",
+"start": 104.35,
+"end": 104.53,
+"punc": false
+},
+{
+"text": "tail",
+"start": 104.53,
+"end": 104.87,
+"punc": false
+},
+{
+"text": "wags",
+"start": 104.87,
+"end": 105.71,
+"punc": false
+},
+{
+"text": ".",
+"start": 105.71,
+"end": 105.71,
+"punc": true
+},
+{
+"text": "Um",
+"start": 105.71,
+"end": 105.88,
+"punc": false
+},
+{
+"text": "he's",
+"start": 105.88,
+"end": 106.02,
+"punc": false
+},
+{
+"text": "very",
+"start": 106.02,
+"end": 106.25,
+"punc": false
+},
+{
+"text": "friendly",
+"start": 106.25,
+"end": 106.78,
+"punc": false
+},
+{
+"text": "and",
+"start": 106.78,
+"end": 107.0,
+"punc": false
+},
+{
+"text": "cheery",
+"start": 107.0,
+"end": 107.37,
+"punc": false
+},
+{
+"text": "and",
+"start": 107.37,
+"end": 107.99,
+"punc": false
+},
+{
+"text": "always",
+"start": 107.99,
+"end": 108.25,
+"punc": false
+},
+{
+"text": "pleased",
+"start": 108.25,
+"end": 108.56,
+"punc": false
+},
+{
+"text": "to",
+"start": 108.56,
+"end": 108.66,
+"punc": false
+},
+{
+"text": "see",
+"start": 108.66,
+"end": 109.12,
+"punc": false
+},
+{
+"text": "you",
+"start": 109.12,
+"end": 109.2,
+"punc": false
+},
+{
+"text": ",",
+"start": 109.2,
+"end": 109.2,
+"punc": true
+},
+{
+"text": "and",
+"start": 109.2,
+"end": 109.87,
+"punc": false
+},
+{
+"text": "very",
+"start": 109.87,
+"end": 110.02,
+"punc": false
+},
+{
+"text": "kind",
+"start": 110.02,
+"end": 110.24,
+"punc": false
+},
+{
+"text": "of",
+"start": 110.24,
+"end": 110.34,
+"punc": false
+},
+{
+"text": "affectionate",
+"start": 110.34,
+"end": 111.11,
+"punc": false
+},
+{
+"text": "and",
+"start": 111.11,
+"end": 112.22,
+"punc": false
+},
+{
+"text": "um",
+"start": 112.22,
+"end": 113.77,
+"punc": false
+},
+{
+"text": "uh",
+"start": 115.0,
+"end": 115.12,
+"punc": false
+},
+{
+"text": "and",
+"start": 115.12,
+"end": 116.66,
+"punc": false
+},
+{
+"text": "he's",
+"start": 116.66,
+"end": 116.78,
+"punc": false
+},
+{
+"text": "quite",
+"start": 116.78,
+"end": 117.29,
+"punc": false
+},
+{
+"text": "quite",
+"start": 117.29,
+"end": 117.56,
+"punc": false
+},
+{
+"text": "wee",
+"start": 117.56,
+"end": 117.75,
+"punc": false
+},
+{
+"text": "as",
+"start": 117.75,
+"end": 117.92,
+"punc": false
+},
+{
+"text": "well",
+"start": 117.92,
+"end": 118.28,
+"punc": false
+},
+{
+"text": "so",
+"start": 118.28,
+"end": 118.55,
+"punc": false
+},
+{
+"text": "you",
+"start": 118.55,
+"end": 118.67,
+"punc": false
+},
+{
+"text": "know",
+"start": 118.67,
+"end": 118.8,
+"punc": false
+},
+{
+"text": "he",
+"start": 118.8,
+"end": 118.88,
+"punc": false
+},
+{
+"text": "can",
+"start": 118.88,
+"end": 119.52,
+"punc": false
+},
+{
+"text": "doesn't",
+"start": 119.52,
+"end": 119.73,
+"punc": false
+},
+{
+"text": "take",
+"start": 119.73,
+"end": 119.94,
+"punc": false
+},
+{
+"text": "up",
+"start": 119.94,
+"end": 120.07,
+"punc": false
+},
+{
+"text": "too",
+"start": 120.07,
+"end": 120.22,
+"punc": false
+},
+{
+"text": "much",
+"start": 120.22,
+"end": 120.41,
+"punc": false
+},
+{
+"text": "space",
+"start": 120.41,
+"end": 121.48,
+"punc": false
+},
+{
+"text": ".",
+"start": 121.48,
+"end": 121.48,
+"punc": true
+},
+{
+"text": "Um",
+"start": 121.48,
+"end": 122.22,
+"punc": false
+},
+{
+"text": "and",
+"start": 125.56,
+"end": 126.19,
+"punc": false
+},
+{
+"text": "uh",
+"start": 126.19,
+"end": 127.52,
+"punc": false
+},
+{
+"text": "And",
+"start": 127.52,
+"end": 127.62,
+"punc": false
+},
+{
+"text": "he",
+"start": 127.62,
+"end": 127.69,
+"punc": false
+},
+{
+"text": "does",
+"start": 127.69,
+"end": 127.87,
+"punc": false
+},
+{
+"text": "a",
+"start": 127.87,
+"end": 127.93,
+"punc": false
+},
+{
+"text": "funny",
+"start": 127.93,
+"end": 128.14,
+"punc": false
+},
+{
+"text": "thing",
+"start": 128.14,
+"end": 128.3,
+"punc": false
+},
+{
+"text": "where",
+"start": 128.3,
+"end": 128.39,
+"punc": false
+},
+{
+"text": "he",
+"start": 128.39,
+"end": 128.46,
+"punc": false
+},
+{
+"text": "chases",
+"start": 128.46,
+"end": 128.85,
+"punc": false
+},
+{
+"text": "his",
+"start": 128.85,
+"end": 128.94,
+"punc": false
+},
+{
+"text": "tail",
+"start": 128.94,
+"end": 129.88,
+"punc": false
+},
+{
+"text": "as",
+"start": 129.88,
+"end": 130.01,
+"punc": false
+},
+{
+"text": "well",
+"start": 130.01,
+"end": 130.28,
+"punc": false
+},
+{
+"text": ",",
+"start": 130.28,
+"end": 130.28,
+"punc": true
+},
+{
+"text": "which",
+"start": 130.28,
+"end": 130.44,
+"punc": false
+},
+{
+"text": "is",
+"start": 130.44,
+"end": 130.51,
+"punc": false
+},
+{
+"text": "quite",
+"start": 130.51,
+"end": 130.79,
+"punc": false
+},
+{
+"text": "amusing",
+"start": 130.79,
+"end": 131.32,
+"punc": false
+},
+{
+"text": ",",
+"start": 131.32,
+"end": 131.32,
+"punc": true
+},
+{
+"text": "so",
+"start": 131.32,
+"end": 131.6,
+"punc": false
+},
+{
+"text": "It",
+"start": 133.83,
+"end": 133.95,
+"punc": false
+},
+{
+"text": "is",
+"start": 133.95,
+"end": 134.2,
+"punc": false
+},
+{
+"text": ".",
+"start": 134.2,
+"end": 134.2,
+"punc": true
+},
+{
+"text": "I",
+"start": 134.2,
+"end": 134.3,
+"punc": false
+},
+{
+"text": "think",
+"start": 134.3,
+"end": 134.47,
+"punc": false
+},
+{
+"text": "it",
+"start": 134.47,
+"end": 134.55,
+"punc": false
+},
+{
+"text": "is",
+"start": 134.55,
+"end": 134.67,
+"punc": false
+},
+{
+"text": ".",
+"start": 134.67,
+"end": 134.67,
+"punc": true
+},
+{
+"text": "He",
+"start": 134.67,
+"end": 134.78,
+"punc": false
+},
+{
+"text": "only",
+"start": 134.78,
+"end": 134.98,
+"punc": false
+},
+{
+"text": "does",
+"start": 134.98,
+"end": 135.16,
+"punc": false
+},
+{
+"text": "it",
+"start": 135.16,
+"end": 135.22,
+"punc": false
+},
+{
+"text": "after",
+"start": 135.22,
+"end": 135.54,
+"punc": false
+},
+{
+"text": "he's",
+"start": 135.54,
+"end": 135.63,
+"punc": false
+},
+{
+"text": "had",
+"start": 135.63,
+"end": 135.81,
+"punc": false
+},
+{
+"text": "his",
+"start": 135.81,
+"end": 135.94,
+"punc": false
+},
+{
+"text": "dinner",
+"start": 135.94,
+"end": 136.84,
+"punc": false
+},
+{
+"text": "and",
+"start": 136.84,
+"end": 137.29,
+"punc": false
+},
+{
+"text": "um",
+"start": 137.29,
+"end": 137.66,
+"punc": false
+},
+{
+"text": "he'll",
+"start": 137.66,
+"end": 137.76,
+"punc": false
+},
+{
+"text": "just",
+"start": 137.76,
+"end": 137.95,
+"punc": false
+},
+{
+"text": "all",
+"start": 137.95,
+"end": 138.14,
+"punc": false
+},
+{
+"text": "of",
+"start": 138.14,
+"end": 138.2,
+"punc": false
+},
+{
+"text": "a",
+"start": 138.2,
+"end": 138.24,
+"punc": false
+},
+{
+"text": "sudden",
+"start": 138.24,
+"end": 138.48,
+"punc": false
+},
+{
+"text": "just",
+"start": 138.48,
+"end": 138.64,
+"punc": false
+},
+{
+"text": "get",
+"start": 138.64,
+"end": 138.81,
+"punc": false
+},
+{
+"text": "up",
+"start": 138.81,
+"end": 138.98,
+"punc": false
+},
+{
+"text": "and",
+"start": 138.98,
+"end": 139.1,
+"punc": false
+},
+{
+"text": "start",
+"start": 139.1,
+"end": 139.31,
+"punc": false
+},
+{
+"text": "chasing",
+"start": 139.31,
+"end": 139.66,
+"punc": false
+},
+{
+"text": "his",
+"start": 139.66,
+"end": 139.76,
+"punc": false
+},
+{
+"text": "tail",
+"start": 139.76,
+"end": 140.9,
+"punc": false
+},
+{
+"text": "'round",
+"start": 140.9,
+"end": 141.07,
+"punc": false
+},
+{
+"text": "the",
+"start": 141.07,
+"end": 141.13,
+"punc": false
+},
+{
+"text": "living",
+"start": 141.13,
+"end": 141.38,
+"punc": false
+},
+{
+"text": "room",
+"start": 141.38,
+"end": 141.92,
+"punc": false
+},
+{
+"text": ".",
+"start": 141.92,
+"end": 141.92,
+"punc": true
+},
+{
+"text": "Yeah",
+"start": 143.59,
+"end": 144.02,
+"punc": false
+},
+{
+"text": ",",
+"start": 144.02,
+"end": 144.02,
+"punc": true
+},
+{
+"text": "so",
+"start": 144.02,
+"end": 144.34,
+"punc": false
+},
+{
+"text": "uh",
+"start": 144.34,
+"end": 145.26,
+"punc": false
+},
+{
+"text": "Yeah",
+"start": 147.15,
+"end": 147.47,
+"punc": false
+},
+{
+"text": ",",
+"start": 147.47,
+"end": 147.47,
+"punc": true
+},
+{
+"text": "maybe",
+"start": 147.47,
+"end": 148.08,
+"punc": false
+},
+{
+"text": ".",
+"start": 148.08,
+"end": 148.08,
+"punc": true
+},
+{
+"text": "Maybe",
+"start": 149.0,
+"end": 150.7,
+"punc": false
+},
+{
+"text": ".",
+"start": 150.7,
+"end": 150.7,
+"punc": true
+},
+{
+"text": "Right",
+"start": 150.7,
+"end": 150.84,
+"punc": false
+},
+{
+"text": ",",
+"start": 150.84,
+"end": 150.84,
+"punc": true
+},
+{
+"text": "um",
+"start": 150.84,
+"end": 151.55,
+"punc": false
+},
+{
+"text": "where",
+"start": 151.55,
+"end": 151.75,
+"punc": false
+},
+{
+"text": "did",
+"start": 151.75,
+"end": 151.86,
+"punc": false
+},
+{
+"text": "you",
+"start": 151.86,
+"end": 151.97,
+"punc": false
+},
+{
+"text": "find",
+"start": 151.97,
+"end": 152.17,
+"punc": false
+},
+{
+"text": "this",
+"start": 152.17,
+"end": 152.3,
+"punc": false
+},
+{
+"text": "?",
+"start": 152.3,
+"end": 152.3,
+"punc": true
+},
+{
+"text": "Just",
+"start": 152.3,
+"end": 152.46,
+"punc": false
+},
+{
+"text": "down",
+"start": 152.46,
+"end": 152.62,
+"punc": false
+},
+{
+"text": "here",
+"start": 152.62,
+"end": 153.39,
+"punc": false
+},
+{
+"text": "?",
+"start": 153.39,
+"end": 153.39,
+"punc": true
+},
+{
+"text": "Yeah",
+"start": 153.39,
+"end": 153.61,
+"punc": false
+},
+{
+"text": ".",
+"start": 153.61,
+"end": 153.61,
+"punc": true
+},
+{
+"text": "Okay",
+"start": 155.51,
+"end": 156.76,
+"punc": false
+},
+{
+"text": ".",
+"start": 156.76,
+"end": 156.76,
+"punc": true
+},
+{
+"text": "Um",
+"start": 158.92,
+"end": 160.34,
+"punc": false
+},
+{
+"text": "what",
+"start": 160.34,
+"end": 160.47,
+"punc": false
+},
+{
+"text": "are",
+"start": 160.47,
+"end": 160.5,
+"punc": false
+},
+{
+"text": "we",
+"start": 160.5,
+"end": 160.58,
+"punc": false
+},
+{
+"text": "doing",
+"start": 160.58,
+"end": 160.95,
+"punc": false
+},
+{
+"text": "next",
+"start": 160.95,
+"end": 162.47,
+"punc": false
+},
+{
+"text": "?",
+"start": 162.47,
+"end": 162.47,
+"punc": true
+},
+{
+"text": "Uh",
+"start": 162.47,
+"end": 162.75,
+"punc": false
+},
+{
+"text": "um",
+"start": 162.75,
+"end": 162.97,
+"punc": false
+},
+{
+"text": ".",
+"start": 162.97,
+"end": 162.97,
+"punc": true
+},
+{
+"text": "Okay",
+"start": 165.51,
+"end": 166.02,
+"punc": false
+},
+{
+"text": ",",
+"start": 166.02,
+"end": 166.02,
+"punc": true
+},
+{
+"text": "uh",
+"start": 166.02,
+"end": 166.31,
+"punc": false
+},
+{
+"text": "we",
+"start": 166.31,
+"end": 166.41,
+"punc": false
+},
+{
+"text": "now",
+"start": 166.41,
+"end": 166.51,
+"punc": false
+},
+{
+"text": "need",
+"start": 166.51,
+"end": 166.73,
+"punc": false
+},
+{
+"text": "to",
+"start": 166.73,
+"end": 166.83,
+"punc": false
+},
+{
+"text": "discuss",
+"start": 166.83,
+"end": 167.25,
+"punc": false
+},
+{
+"text": "the",
+"start": 167.25,
+"end": 167.33,
+"punc": false
+},
+{
+"text": "project",
+"start": 167.33,
+"end": 167.81,
+"punc": false
+},
+{
+"text": "finance",
+"start": 167.81,
+"end": 170.01,
+"punc": false
+},
+{
+"text": ".",
+"start": 170.01,
+"end": 170.01,
+"punc": true
+},
+{
+"text": "Um",
+"start": 170.01,
+"end": 170.66,
+"punc": false
+},
+{
+"text": "so",
+"start": 172.41,
+"end": 172.61,
+"punc": false
+},
+{
+"text": "according",
+"start": 172.61,
+"end": 172.93,
+"punc": false
+},
+{
+"text": "to",
+"start": 172.93,
+"end": 173.04,
+"punc": false
+},
+{
+"text": "the",
+"start": 173.04,
+"end": 173.15,
+"punc": false
+},
+{
+"text": "brief",
+"start": 173.15,
+"end": 173.68,
+"punc": false
+},
+{
+"text": "um",
+"start": 173.68,
+"end": 174.11,
+"punc": false
+},
+{
+"text": "we're",
+"start": 174.11,
+"end": 174.22,
+"punc": false
+},
+{
+"text": "gonna",
+"start": 174.22,
+"end": 174.39,
+"punc": false
+},
+{
+"text": "be",
+"start": 174.39,
+"end": 174.49,
+"punc": false
+},
+{
+"text": "selling",
+"start": 174.49,
+"end": 174.86,
+"punc": false
+},
+{
+"text": "this",
+"start": 174.86,
+"end": 175.06,
+"punc": false
+},
+{
+"text": "remote",
+"start": 175.06,
+"end": 175.26,
+"punc": false
+},
+{
+"text": "control",
+"start": 175.26,
+"end": 175.59,
+"punc": false
+},
+{
+"text": "for",
+"start": 175.59,
+"end": 175.72,
+"punc": false
+},
+{
+"text": "twenty",
+"start": 175.72,
+"end": 175.97,
+"punc": false
+},
+{
+"text": "five",
+"start": 175.97,
+"end": 176.23,
+"punc": false
+},
+{
+"text": "Euro",
+"start": 176.23,
+"end": 176.53,
+"punc": false
+},
+{
+"text": ",",
+"start": 176.53,
+"end": 176.53,
+"punc": true
+},
+{
+"text": "um",
+"start": 176.53,
+"end": 177.18,
+"punc": false
+},
+{
+"text": "and",
+"start": 177.18,
+"end": 177.89,
+"punc": false
+},
+{
+"text": "we're",
+"start": 177.89,
+"end": 178.86,
+"punc": false
+},
+{
+"text": "aiming",
+"start": 178.86,
+"end": 179.24,
+"punc": false
+},
+{
+"text": "to",
+"start": 179.24,
+"end": 179.39,
+"punc": false
+},
+{
+"text": "make",
+"start": 179.39,
+"end": 180.29,
+"punc": false
+},
+{
+"text": "fifty",
+"start": 180.29,
+"end": 180.73,
+"punc": false
+},
+{
+"text": "million",
+"start": 180.73,
+"end": 181.32,
+"punc": false
+},
+{
+"text": "Euro",
+"start": 181.32,
+"end": 182.77,
+"punc": false
+},
+{
+"text": ".",
+"start": 182.77,
+"end": 182.77,
+"punc": true
+},
+{
+"text": "Um",
+"start": 182.77,
+"end": 183.24,
+"punc": false
+},
+{
+"text": "so",
+"start": 183.24,
+"end": 183.42,
+"punc": false
+},
+{
+"text": "we're",
+"start": 183.42,
+"end": 183.56,
+"punc": false
+},
+{
+"text": "gonna",
+"start": 183.56,
+"end": 183.74,
+"punc": false
+},
+{
+"text": "be",
+"start": 183.74,
+"end": 184.35,
+"punc": false
+},
+{
+"text": "selling",
+"start": 184.35,
+"end": 184.74,
+"punc": false
+},
+{
+"text": "this",
+"start": 184.74,
+"end": 184.93,
+"punc": false
+},
+{
+"text": "on",
+"start": 184.93,
+"end": 185.05,
+"punc": false
+},
+{
+"text": "an",
+"start": 185.05,
+"end": 185.43,
+"punc": false
+},
+{
+"text": "international",
+"start": 185.43,
+"end": 186.12,
+"punc": false
+},
+{
+"text": "scale",
+"start": 186.12,
+"end": 187.21,
+"punc": false
+},
+{
+"text": ".",
+"start": 187.21,
+"end": 187.21,
+"punc": true
+},
+{
+"text": "And",
+"start": 187.21,
+"end": 187.76,
+"punc": false
+},
+{
+"text": "uh",
+"start": 187.76,
+"end": 188.07,
+"punc": false
+},
+{
+"text": "we",
+"start": 188.07,
+"end": 188.42,
+"punc": false
+},
+{
+"text": "don't",
+"start": 188.42,
+"end": 188.64,
+"punc": false
+},
+{
+"text": "want",
+"start": 188.64,
+"end": 188.76,
+"punc": false
+},
+{
+"text": "it",
+"start": 188.76,
+"end": 188.84,
+"punc": false
+},
+{
+"text": "to",
+"start": 188.84,
+"end": 188.93,
+"punc": false
+},
+{
+"text": "cost",
+"start": 188.93,
+"end": 189.23,
+"punc": false
+},
+{
+"text": "any",
+"start": 189.23,
+"end": 189.49,
+"punc": false
+},
+{
+"text": "more",
+"start": 189.49,
+"end": 189.93,
+"punc": false
+},
+{
+"text": "than",
+"start": 189.93,
+"end": 190.47,
+"punc": false
+},
+{
+"text": "uh",
+"start": 190.47,
+"end": 190.79,
+"punc": false
+},
+{
+"text": "twelve",
+"start": 190.79,
+"end": 191.07,
+"punc": false
+},
+{
+"text": "fifty",
+"start": 191.07,
+"end": 191.41,
+"punc": false
+},
+{
+"text": "Euros",
+"start": 191.41,
+"end": 191.96,
+"punc": false
+},
+{
+"text": ",",
+"start": 191.96,
+"end": 191.96,
+"punc": true
+},
+{
+"text": "so",
+"start": 191.96,
+"end": 192.88,
+"punc": false
+},
+{
+"text": "fifty",
+"start": 192.88,
+"end": 193.25,
+"punc": false
+},
+{
+"text": "percent",
+"start": 193.25,
+"end": 193.74,
+"punc": false
+},
+{
+"text": "of",
+"start": 193.74,
+"end": 193.81,
+"punc": false
+},
+{
+"text": "the",
+"start": 193.81,
+"end": 193.92,
+"punc": false
+},
+{
+"text": "selling",
+"start": 193.92,
+"end": 194.29,
+"punc": false
+},
+{
+"text": "price",
+"start": 194.29,
+"end": 195.0,
+"punc": false
+},
+{
+"text": ".",
+"start": 195.0,
+"end": 195.0,
+"punc": true
+},
+{
+"text": "Sure",
+"start": 197.99,
+"end": 198.46,
+"punc": false
+},
+{
+"text": ".",
+"start": 198.46,
+"end": 198.46,
+"punc": true
+},
+{
+"text": "All",
+"start": 208.17,
+"end": 208.36,
+"punc": false
+},
+{
+"text": "together",
+"start": 208.36,
+"end": 208.92,
+"punc": false
+},
+{
+"text": ".",
+"start": 208.92,
+"end": 208.92,
+"punc": true
+},
+{
+"text": "Um",
+"start": 215.16,
+"end": 216.3,
+"punc": false
+},
+{
+"text": "I",
+"start": 216.3,
+"end": 216.47,
+"punc": false
+},
+{
+"text": "dunno",
+"start": 216.47,
+"end": 216.78,
+"punc": false
+},
+{
+"text": ".",
+"start": 216.78,
+"end": 216.78,
+"punc": true
+},
+{
+"text": "I",
+"start": 216.78,
+"end": 216.83,
+"punc": false
+},
+{
+"text": "imagine",
+"start": 216.83,
+"end": 217.97,
+"punc": false
+},
+{
+"text": "That's",
+"start": 217.97,
+"end": 218.14,
+"punc": false
+},
+{
+"text": "a",
+"start": 218.14,
+"end": 218.19,
+"punc": false
+},
+{
+"text": "good",
+"start": 218.19,
+"end": 218.35,
+"punc": false
+},
+{
+"text": "question",
+"start": 218.35,
+"end": 218.91,
+"punc": false
+},
+{
+"text": ".",
+"start": 218.91,
+"end": 218.91,
+"punc": true
+},
+{
+"text": "I",
+"start": 219.67,
+"end": 219.73,
+"punc": false
+},
+{
+"text": "imagine",
+"start": 219.73,
+"end": 220.08,
+"punc": false
+},
+{
+"text": "it",
+"start": 220.08,
+"end": 220.16,
+"punc": false
+},
+{
+"text": "probably",
+"start": 220.16,
+"end": 220.44,
+"punc": false
+},
+{
+"text": "is",
+"start": 220.44,
+"end": 220.65,
+"punc": false
+},
+{
+"text": "our",
+"start": 220.65,
+"end": 220.81,
+"punc": false
+},
+{
+"text": "sale",
+"start": 220.81,
+"end": 221.13,
+"punc": false
+},
+{
+"text": "actually",
+"start": 221.13,
+"end": 221.58,
+"punc": false
+},
+{
+"text": "because",
+"start": 221.58,
+"end": 221.87,
+"punc": false
+},
+{
+"text": "it's",
+"start": 221.87,
+"end": 221.99,
+"punc": false
+},
+{
+"text": "probably",
+"start": 221.99,
+"end": 222.28,
+"punc": false
+},
+{
+"text": "up",
+"start": 222.28,
+"end": 222.44,
+"punc": false
+},
+{
+"text": "to",
+"start": 222.44,
+"end": 222.6,
+"punc": false
+},
+{
+"text": "the",
+"start": 222.6,
+"end": 222.91,
+"punc": false
+},
+{
+"text": "the",
+"start": 224.21,
+"end": 224.5,
+"punc": false
+},
+{
+"text": "um",
+"start": 224.5,
+"end": 225.59,
+"punc": false
+},
+{
+"text": "the",
+"start": 225.59,
+"end": 225.69,
+"punc": false
+},
+{
+"text": "retailer",
+"start": 225.69,
+"end": 226.51,
+"punc": false
+},
+{
+"text": "to",
+"start": 226.51,
+"end": 226.72,
+"punc": false
+},
+{
+"text": "uh",
+"start": 226.72,
+"end": 226.94,
+"punc": false
+},
+{
+"text": "sell",
+"start": 226.94,
+"end": 227.21,
+"punc": false
+},
+{
+"text": "it",
+"start": 227.21,
+"end": 227.28,
+"punc": false
+},
+{
+"text": "for",
+"start": 227.28,
+"end": 227.37,
+"punc": false
+},
+{
+"text": "whatever",
+"start": 227.37,
+"end": 227.62,
+"punc": false
+},
+{
+"text": "price",
+"start": 227.62,
+"end": 227.91,
+"punc": false
+},
+{
+"text": "they",
+"start": 227.91,
+"end": 228.06,
+"punc": false
+},
+{
+"text": "want",
+"start": 228.06,
+"end": 229.56,
+"punc": false
+},
+{
+"text": ".",
+"start": 229.56,
+"end": 229.56,
+"punc": true
+},
+{
+"text": "Um",
+"start": 229.56,
+"end": 230.2,
+"punc": false
+},
+{
+"text": ".",
+"start": 230.2,
+"end": 230.2,
+"punc": true
+},
+{
+"text": "But",
+"start": 231.83,
+"end": 231.93,
+"punc": false
+},
+{
+"text": "I",
+"start": 231.93,
+"end": 232.06,
+"punc": false
+},
+{
+"text": "I",
+"start": 232.06,
+"end": 232.18,
+"punc": false
+},
+{
+"text": "don't",
+"start": 232.18,
+"end": 232.33,
+"punc": false
+},
+{
+"text": "know",
+"start": 232.33,
+"end": 232.46,
+"punc": false
+},
+{
+"text": ",",
+"start": 232.46,
+"end": 232.46,
+"punc": true
+},
+{
+"text": "I",
+"start": 232.46,
+"end": 232.51,
+"punc": false
+},
+{
+"text": "mean",
+"start": 232.51,
+"end": 232.86,
+"punc": false
+},
+{
+"text": "do",
+"start": 232.86,
+"end": 232.93,
+"punc": false
+},
+{
+"text": "you",
+"start": 232.93,
+"end": 232.99,
+"punc": false
+},
+{
+"text": "think",
+"start": 232.99,
+"end": 233.3,
+"punc": false
+},
+{
+"text": "the",
+"start": 233.3,
+"end": 233.41,
+"punc": false
+},
+{
+"text": "fact",
+"start": 233.41,
+"end": 233.64,
+"punc": false
+},
+{
+"text": "that",
+"start": 233.64,
+"end": 233.79,
+"punc": false
+},
+{
+"text": "it's",
+"start": 233.79,
+"end": 233.93,
+"punc": false
+},
+{
+"text": "going",
+"start": 233.93,
+"end": 234.11,
+"punc": false
+},
+{
+"text": "to",
+"start": 234.11,
+"end": 234.17,
+"punc": false
+},
+{
+"text": "be",
+"start": 234.17,
+"end": 234.28,
+"punc": false
+},
+{
+"text": "sold",
+"start": 234.28,
+"end": 234.58,
+"punc": false
+},
+{
+"text": "internationally",
+"start": 234.58,
+"end": 235.28,
+"punc": false
+},
+{
+"text": "will",
+"start": 235.28,
+"end": 235.37,
+"punc": false
+},
+{
+"text": "have",
+"start": 235.37,
+"end": 235.48,
+"punc": false
+},
+{
+"text": "a",
+"start": 235.48,
+"end": 235.54,
+"punc": false
+},
+{
+"text": "bearing",
+"start": 235.54,
+"end": 235.97,
+"punc": false
+},
+{
+"text": "on",
+"start": 235.97,
+"end": 236.86,
+"punc": false
+},
+{
+"text": "how",
+"start": 236.86,
+"end": 237.05,
+"punc": false
+},
+{
+"text": "we",
+"start": 237.05,
+"end": 237.22,
+"punc": false
+},
+{
+"text": "design",
+"start": 237.22,
+"end": 237.6,
+"punc": false
+},
+{
+"text": "it",
+"start": 237.6,
+"end": 237.71,
+"punc": false
+},
+{
+"text": "at",
+"start": 237.71,
+"end": 237.89,
+"punc": false
+},
+{
+"text": "all",
+"start": 237.89,
+"end": 238.19,
+"punc": false
+},
+{
+"text": "?",
+"start": 238.19,
+"end": 238.19,
+"punc": true
+},
+{
+"text": "Think",
+"start": 239.31,
+"end": 239.49,
+"punc": false
+},
+{
+"text": "it",
+"start": 239.49,
+"end": 239.6,
+"punc": false
+},
+{
+"text": "will",
+"start": 239.6,
+"end": 241.17,
+"punc": false
+},
+{
+"text": "?",
+"start": 241.17,
+"end": 241.17,
+"punc": true
+},
+{
+"text": "Um",
+"start": 241.17,
+"end": 242.15,
+"punc": false
+},
+{
+"text": ".",
+"start": 242.15,
+"end": 242.15,
+"punc": true
+},
+{
+"text": "Hmm",
+"start": 245.43,
+"end": 246.06,
+"punc": false
+},
+{
+"text": ".",
+"start": 246.06,
+"end": 246.06,
+"punc": true
+},
+{
+"text": "Oh",
+"start": 253.78,
+"end": 253.96,
+"punc": false
+},
+{
+"text": "yeah",
+"start": 253.96,
+"end": 254.46,
+"punc": false
+},
+{
+"text": ",",
+"start": 254.46,
+"end": 254.46,
+"punc": true
+},
+{
+"text": "regions",
+"start": 254.46,
+"end": 254.91,
+"punc": false
+},
+{
+"text": "and",
+"start": 254.91,
+"end": 255.06,
+"punc": false
+},
+{
+"text": "stuff",
+"start": 255.06,
+"end": 255.43,
+"punc": false
+},
+{
+"text": ",",
+"start": 255.43,
+"end": 255.43,
+"punc": true
+},
+{
+"text": "yeah",
+"start": 255.43,
+"end": 256.62,
+"punc": false
+},
+{
+"text": ".",
+"start": 256.62,
+"end": 256.62,
+"punc": true
+},
+{
+"text": "Yeah",
+"start": 256.62,
+"end": 257.56,
+"punc": false
+},
+{
+"text": ".",
+"start": 257.56,
+"end": 257.56,
+"punc": true
+},
+{
+"text": "Okay",
+"start": 257.56,
+"end": 258.06,
+"punc": false
+},
+{
+"text": ".",
+"start": 258.06,
+"end": 258.06,
+"punc": true
+},
+{
+"text": "Yeah",
+"start": 265.13,
+"end": 265.93,
+"punc": false
+},
+{
+"text": ".",
+"start": 265.93,
+"end": 265.93,
+"punc": true
+},
+{
+"text": "Well",
+"start": 265.93,
+"end": 266.03,
+"punc": false
+},
+{
+"text": "for",
+"start": 266.03,
+"end": 266.23,
+"punc": false
+},
+{
+"text": "a",
+"start": 266.23,
+"end": 266.26,
+"punc": false
+},
+{
+"text": "remote",
+"start": 266.26,
+"end": 266.5,
+"punc": false
+},
+{
+"text": "control",
+"start": 266.5,
+"end": 266.84,
+"punc": false
+},
+{
+"text": ",",
+"start": 266.84,
+"end": 266.84,
+"punc": true
+},
+{
+"text": "do",
+"start": 266.84,
+"end": 267.07,
+"punc": false
+},
+{
+"text": "you",
+"start": 267.07,
+"end": 267.15,
+"punc": false
+},
+{
+"text": "think",
+"start": 267.15,
+"end": 267.35,
+"punc": false
+},
+{
+"text": "that",
+"start": 267.35,
+"end": 267.48,
+"punc": false
+},
+{
+"text": "will",
+"start": 267.48,
+"end": 267.58,
+"punc": false
+},
+{
+"text": "be",
+"start": 267.58,
+"end": 268.3,
+"punc": false
+},
+{
+"text": "I",
+"start": 268.3,
+"end": 268.37,
+"punc": false
+},
+{
+"text": "suppose",
+"start": 268.37,
+"end": 268.63,
+"punc": false
+},
+{
+"text": "it's",
+"start": 268.63,
+"end": 268.81,
+"punc": false
+},
+{
+"text": "depends",
+"start": 268.81,
+"end": 269.16,
+"punc": false
+},
+{
+"text": "on",
+"start": 269.16,
+"end": 269.24,
+"punc": false
+},
+{
+"text": "how",
+"start": 269.24,
+"end": 269.41,
+"punc": false
+},
+{
+"text": "complicated",
+"start": 269.41,
+"end": 269.97,
+"punc": false
+},
+{
+"text": "our",
+"start": 269.97,
+"end": 270.08,
+"punc": false
+},
+{
+"text": "remote",
+"start": 270.08,
+"end": 270.31,
+"punc": false
+},
+{
+"text": "control",
+"start": 270.31,
+"end": 270.72,
+"punc": false
+},
+{
+"text": "is",
+"start": 270.72,
+"end": 271.01,
+"punc": false
+},
+{
+"text": ".",
+"start": 271.01,
+"end": 271.01,
+"punc": true
+},
+{
+"text": "Yeah",
+"start": 280.42,
+"end": 281.33,
+"punc": false
+},
+{
+"text": ",",
+"start": 281.33,
+"end": 281.33,
+"punc": true
+},
+{
+"text": "yeah",
+"start": 281.33,
+"end": 283.04,
+"punc": false
+},
+{
+"text": ".",
+"start": 283.04,
+"end": 283.04,
+"punc": true
+},
+{
+"text": "Okay",
+"start": 283.04,
+"end": 283.9,
+"punc": false
+},
+{
+"text": ".",
+"start": 283.9,
+"end": 283.9,
+"punc": true
+},
+{
+"text": "What",
+"start": 297.79,
+"end": 297.95,
+"punc": false
+},
+{
+"text": ",",
+"start": 297.95,
+"end": 297.95,
+"punc": true
+},
+{
+"text": "just",
+"start": 297.95,
+"end": 298.21,
+"punc": false
+},
+{
+"text": "like",
+"start": 298.21,
+"end": 298.37,
+"punc": false
+},
+{
+"text": "in",
+"start": 298.37,
+"end": 298.48,
+"punc": false
+},
+{
+"text": "terms",
+"start": 298.48,
+"end": 298.85,
+"punc": false
+},
+{
+"text": "of",
+"start": 298.85,
+"end": 298.97,
+"punc": false
+},
+{
+"text": "like",
+"start": 298.97,
+"end": 299.18,
+"punc": false
+},
+{
+"text": "the",
+"start": 299.18,
+"end": 299.27,
+"punc": false
+},
+{
+"text": "wealth",
+"start": 299.27,
+"end": 299.58,
+"punc": false
+},
+{
+"text": "of",
+"start": 299.58,
+"end": 299.64,
+"punc": false
+},
+{
+"text": "the",
+"start": 299.64,
+"end": 299.74,
+"punc": false
+},
+{
+"text": "country",
+"start": 299.74,
+"end": 300.43,
+"punc": false
+}
+]
+}

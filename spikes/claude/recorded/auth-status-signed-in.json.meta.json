@@ -1,0 +1,30 @@
+{
+  "name": "auth-status-signed-in.json",
+  "mode": "normal",
+  "argv": [
+    "claude",
+    "auth",
+    "status",
+    "--json"
+  ],
+  "removed_env_names": [
+    "CLAUDECODE",
+    "CLAUDE_AGENT_SDK_VERSION",
+    "CLAUDE_CODE_CHILD_SESSION",
+    "CLAUDE_CODE_ENTRYPOINT",
+    "CLAUDE_CODE_EXECPATH",
+    "CLAUDE_CODE_MESSAGING_SOCKET",
+    "CLAUDE_CODE_MESSAGING_TOKEN",
+    "CLAUDE_CODE_SESSION_ATTENDED",
+    "CLAUDE_CODE_SESSION_ID",
+    "CLAUDE_EFFORT",
+    "CLAUDE_PID"
+  ],
+  "added_env": [
+    "ENABLE_CLAUDEAI_MCP_SERVERS=false"
+  ],
+  "stdin_bytes": 0,
+  "exit_code": 0,
+  "wall_seconds": 0.63,
+  "files_left_in_cwd": []
+}

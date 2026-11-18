@@ -1,0 +1,246 @@
+/*
+ * The Transcript view (spec 1.7 B and C), after mockups/roughcut-mockups.html (.tx, .src, .p,
+ * .cut, .sug, .why, .sel, .caret, .blk). Colours and type come from src/ui/tokens.css.
+ */
+
+.rc-tx {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  min-height: 0;
+  min-width: 0;
+  height: 100%;
+}
+
+/* ---- the bar above the text: find box, hidden-cut note ---- */
+.rc-tx__bar {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-5);
+  min-height: var(--key-h);
+  margin: 0 0 var(--sp-4) 56px;
+  font: 400 var(--fs-label) / 1 var(--mono);
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+.rc-tx__bar:empty {
+  display: none;
+}
+.rc-tx-find {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  min-width: 0;
+  flex: 1 1 auto;
+}
+.rc-tx-find__input {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 320px;
+  height: var(--key-h);
+  padding: 0 var(--sp-4);
+  border-radius: var(--r-key);
+  border: 1px solid var(--line-2);
+  background: var(--key);
+  color: var(--ink);
+  font: 400 var(--fs-label) / 1 var(--mono);
+}
+/* Focused, the field's own border turns accent (a ring outside a bordered field reads as two boxes). */
+.rc-tx-find__input:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+/* Esc closes and a new search replaces the selected query: the browser's white clear cross is not needed. */
+.rc-tx-find__input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.rc-tx-find__input::placeholder {
+  color: var(--ink-2);
+}
+/* The browser's blue text selection does not belong in this palette. */
+.rc-tx-find__input::selection {
+  background: var(--sel);
+  color: var(--ink);
+}
+.rc-tx-find__count {
+  min-width: 9ch;
+}
+.rc-tx-plain {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink-2);
+  font: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.rc-tx-plain:hover {
+  color: var(--ink);
+}
+
+/* ---- the scrolling text ---- */
+.rc-tx__scroll {
+  position: relative;
+  overflow: auto;
+  min-height: 0;
+  scrollbar-width: none;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: text;
+  outline: none;
+}
+.rc-tx__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Source header: "take-1.mp4" */
+.rc-tx-src {
+  font: 400 var(--fs-label) / 1 var(--mono);
+  color: var(--ink-2);
+  padding: 4px 0 18px 56px;
+  cursor: default;
+}
+
+/* A paragraph: time in a 40px margin, then the text */
+.rc-tx-p {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: var(--sp-5);
+  padding: 0 0 var(--sp-5);
+  /* Lines stay readable in a very wide window (the mockup's are about 60 characters); up to
+     a 1440px window the column is narrower than this anyway. */
+  max-width: 860px;
+  font-size: var(--fs-read);
+  line-height: var(--lh-read);
+  color: var(--ink);
+}
+.rc-tx-p time {
+  font: 400 var(--fs-label) / 1 var(--mono);
+  color: var(--ink-2);
+  text-align: right;
+  padding-top: 7px;
+  cursor: pointer;
+}
+.rc-tx-p__text {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+/* Tokens */
+.rc-tx-w {
+  border-radius: 2px;
+}
+.rc-tx-w.rc-cut,
+.rc-tx-gap.rc-cut {
+  color: var(--ink-2);
+}
+.rc-tx-partial {
+  text-decoration: line-through dotted;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 1.5px;
+}
+.rc-tx-sug {
+  text-decoration: underline dashed var(--accent) 1.5px;
+  text-underline-offset: 5px;
+}
+.rc-cut.rc-tx-sug {
+  text-decoration: line-through;
+  text-decoration-color: var(--accent);
+}
+.rc-tx-w.rc-sel,
+.rc-tx-gap.rc-sel {
+  background: var(--sel);
+  padding: 2px 0;
+  border-radius: 0;
+}
+.rc-tx-find-hit {
+  box-shadow: inset 0 -2px 0 var(--ink-2);
+}
+/* The current match is also the selection: its accent tint wins over the grey selection. */
+.rc-tx-find-hit--current,
+.rc-tx-w.rc-tx-find-hit--current,
+.rc-tx-gap.rc-tx-find-hit--current {
+  background: rgba(255, 77, 0, .28);
+  box-shadow: none;
+}
+.rc-tx-marked {
+  background-image: linear-gradient(var(--line-2), var(--line-2));
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+}
+.rc-tx-unrec {
+  border-style: solid;
+  font-style: italic;
+}
+.rc-tx-caret--steady {
+  animation: none;
+}
+
+/* I / O marks: small accent flags in the text */
+.rc-tx-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  min-width: 14px;
+  padding: 0 3px;
+  margin: 0 3px;
+  vertical-align: 2px;
+  border-radius: var(--r-chip);
+  background: var(--accent);
+  color: var(--on-accent);
+  font: 500 var(--fs-cap) / 1 var(--mono);
+}
+
+/* The reason line under a suggestion: "retake · 1 of 3   a cut   d keep" */
+.rc-tx-why {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 10px;
+  font: 400 var(--fs-label) / 1 var(--mono);
+  color: var(--ink-2);
+  white-space: nowrap;
+  min-width: 0;
+  opacity: .72;
+}
+.rc-tx-why--current {
+  opacity: 1;
+}
+.rc-tx-why__reason {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  flex: 0 1 auto;
+}
+.rc-tx-why .rc-hint {
+  flex: none;
+}
+
+/* Kept time with no text */
+.rc-tx-u {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: var(--sp-5);
+  padding: 0 0 var(--sp-5);
+  cursor: pointer;
+}
+.rc-tx-u time {
+  font: 400 var(--fs-label) / 1 var(--mono);
+  color: var(--ink-2);
+  text-align: right;
+  padding-top: 4px;
+}
+.rc-tx-u__note {
+  font: 400 var(--fs-label) / 1.6 var(--mono);
+  color: var(--ink-2);
+}
+
+.rc-tx-empty {
+  height: 100%;
+}

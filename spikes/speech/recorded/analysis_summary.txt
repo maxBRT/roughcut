@@ -1,0 +1,75 @@
+monologue_clean__qwen3-1.7b-aligner__gpu.jsonl WER 0.012 fillers 5/7 retakes 7/7 abandoned 2/2 silence-words 0 [] swow 0
+   start {'n': 25, 'mean': 0.01, 'mean_abs': 0.055, 'median': -0.02, 'max_abs': 0.58}
+   end {'n': 25, 'mean': 0.008, 'mean_abs': 0.022, 'median': 0.006, 'max_abs': 0.062}
+   endBeforePause {'n': 25, 'mean': 0.008, 'mean_abs': 0.022, 'median': 0.006, 'max_abs': 0.062}
+   wordStart~SAPI {'n': 249, 'mean': -0.011, 'mean_abs': 0.029, 'median': -0.009, 'max_abs': 0.373}
+   vadStart {'n': 25, 'mean': 0.011, 'mean_abs': 0.054, 'median': -0.026, 'max_abs': 0.59} vadEnd {'n': 25, 'mean': 0.065, 'mean_abs': 0.065, 'median': 0.052, 'max_abs': 0.16}
+monologue_clean__v2-int8__cpu_b1.jsonl        WER 0.004 fillers 6/7 retakes 7/7 abandoned 2/2 silence-words 0 [] swow 0
+   start {'n': 25, 'mean': -0.102, 'mean_abs': 0.152, 'median': -0.124, 'max_abs': 0.58}
+   end {'n': 25, 'mean': 0.245, 'mean_abs': 0.252, 'median': 0.262, 'max_abs': 0.352}
+   endBeforePause {'n': 25, 'mean': 0.245, 'mean_abs': 0.252, 'median': 0.262, 'max_abs': 0.352}
+   wordStart~SAPI {'n': 251, 'mean': 0.004, 'mean_abs': 0.058, 'median': 0.018, 'max_abs': 0.373}
+   vadStart {'n': 25, 'mean': 0.011, 'mean_abs': 0.054, 'median': -0.026, 'max_abs': 0.59} vadEnd {'n': 25, 'mean': 0.065, 'mean_abs': 0.065, 'median': 0.052, 'max_abs': 0.16}
+monologue_clean__v2__gpu_b1.jsonl             WER 0.008 fillers 5/7 retakes 7/7 abandoned 2/2 silence-words 0 [] swow 0
+   start {'n': 25, 'mean': -0.102, 'mean_abs': 0.155, 'median': -0.126, 'max_abs': 0.58}
+   end {'n': 25, 'mean': 0.19, 'mean_abs': 0.198, 'median': 0.23, 'max_abs': 0.332}
+   endBeforePause {'n': 25, 'mean': 0.19, 'mean_abs': 0.198, 'median': 0.23, 'max_abs': 0.332}
+   wordStart~SAPI {'n': 250, 'mean': 0.009, 'mean_abs': 0.062, 'median': 0.021, 'max_abs': 0.373}
+   vadStart {'n': 25, 'mean': 0.011, 'mean_abs': 0.054, 'median': -0.026, 'max_abs': 0.59} vadEnd {'n': 25, 'mean': 0.065, 'mean_abs': 0.065, 'median': 0.052, 'max_abs': 0.16}
+monologue_clean__v3-int8__cpu_b1.jsonl        WER 0.008 fillers 5/7 retakes 7/7 abandoned 2/2 silence-words 0 [] swow 0
+   start {'n': 25, 'mean': -0.188, 'mean_abs': 0.215, 'median': -0.224, 'max_abs': 0.34}
+   end {'n': 25, 'mean': 0.158, 'mean_abs': 0.166, 'median': 0.164, 'max_abs': 0.252}
+   endBeforePause {'n': 25, 'mean': 0.158, 'mean_abs': 0.166, 'median': 0.164, 'max_abs': 0.252}
+   wordStart~SAPI {'n': 250, 'mean': -0.034, 'mean_abs': 0.076, 'median': -0.018, 'max_abs': 0.292}
+   vadStart {'n': 25, 'mean': 0.011, 'mean_abs': 0.054, 'median': -0.026, 'max_abs': 0.59} vadEnd {'n': 25, 'mean': 0.065, 'mean_abs': 0.065, 'median': 0.052, 'max_abs': 0.16}
+monologue_clean__v3__gpu_b1.jsonl             WER 0.004 fillers 6/7 retakes 7/7 abandoned 2/2 silence-words 0 [] swow 0
+   start {'n': 25, 'mean': -0.159, 'mean_abs': 0.187, 'median': -0.198, 'max_abs': 0.34}
+   end {'n': 25, 'mean': 0.181, 'mean_abs': 0.182, 'median': 0.2, 'max_abs': 0.272}
+   endBeforePause {'n': 25, 'mean': 0.181, 'mean_abs': 0.182, 'median': 0.2, 'max_abs': 0.272}
+   wordStart~SAPI {'n': 251, 'mean': -0.016, 'mean_abs': 0.076, 'median': -0.004, 'max_abs': 0.373}
+   vadStart {'n': 25, 'mean': 0.011, 'mean_abs': 0.054, 'median': -0.026, 'max_abs': 0.59} vadEnd {'n': 25, 'mean': 0.065, 'mean_abs': 0.065, 'median': 0.052, 'max_abs': 0.16}
+monologue_noisy__qwen3-1.7b-aligner__gpu.jsonl WER 0.012 fillers 5/7 retakes 7/7 abandoned 2/2 silence-words 0 [] swow 0
+   start {'n': 25, 'mean': 0.009, 'mean_abs': 0.052, 'median': -0.018, 'max_abs': 0.548}
+   end {'n': 25, 'mean': 0.013, 'mean_abs': 0.02, 'median': 0.012, 'max_abs': 0.062}
+   endBeforePause {'n': 25, 'mean': 0.013, 'mean_abs': 0.02, 'median': 0.012, 'max_abs': 0.062}
+   wordStart~SAPI {'n': 249, 'mean': -0.011, 'mean_abs': 0.029, 'median': -0.009, 'max_abs': 0.437}
+   vadStart {'n': 25, 'mean': -0.125, 'mean_abs': 0.17, 'median': -0.028, 'max_abs': 3.142} vadEnd {'n': 25, 'mean': 0.497, 'mean_abs': 0.497, 'median': 0.35, 'max_abs': 5.864}
+monologue_noisy__v2-int8__cpu_b1.jsonl        WER 0.008 fillers 5/7 retakes 7/7 abandoned 2/2 silence-words 0 [] swow 0
+   start {'n': 25, 'mean': -0.106, 'mean_abs': 0.15, 'median': -0.124, 'max_abs': 0.548}
+   end {'n': 25, 'mean': 0.346, 'mean_abs': 0.346, 'median': 0.334, 'max_abs': 0.888}
+   endBeforePause {'n': 25, 'mean': 0.346, 'mean_abs': 0.346, 'median': 0.334, 'max_abs': 0.888}
+   wordStart~SAPI {'n': 250, 'mean': 0.012, 'mean_abs': 0.065, 'median': 0.027, 'max_abs': 0.371}
+   vadStart {'n': 25, 'mean': -0.125, 'mean_abs': 0.17, 'median': -0.028, 'max_abs': 3.142} vadEnd {'n': 25, 'mean': 0.497, 'mean_abs': 0.497, 'median': 0.35, 'max_abs': 5.864}
+monologue_noisy__v2__gpu_b1.jsonl             WER 0.008 fillers 5/7 retakes 7/7 abandoned 2/2 silence-words 0 [] swow 0
+   start {'n': 25, 'mean': -0.1, 'mean_abs': 0.15, 'median': -0.112, 'max_abs': 0.628}
+   end {'n': 25, 'mean': 0.291, 'mean_abs': 0.291, 'median': 0.33, 'max_abs': 0.888}
+   endBeforePause {'n': 25, 'mean': 0.291, 'mean_abs': 0.291, 'median': 0.33, 'max_abs': 0.888}
+   wordStart~SAPI {'n': 250, 'mean': 0.016, 'mean_abs': 0.067, 'median': 0.028, 'max_abs': 0.371}
+   vadStart {'n': 25, 'mean': -0.125, 'mean_abs': 0.17, 'median': -0.028, 'max_abs': 3.142} vadEnd {'n': 25, 'mean': 0.497, 'mean_abs': 0.497, 'median': 0.35, 'max_abs': 5.864}
+monologue_noisy__v3-int8__cpu_b1.jsonl        WER 0.012 fillers 5/7 retakes 7/7 abandoned 2/2 silence-words 0 [] swow 0
+   start {'n': 25, 'mean': -0.206, 'mean_abs': 0.243, 'median': -0.258, 'max_abs': 0.468}
+   end {'n': 25, 'mean': 0.381, 'mean_abs': 0.381, 'median': 0.41, 'max_abs': 0.808}
+   endBeforePause {'n': 25, 'mean': 0.381, 'mean_abs': 0.381, 'median': 0.41, 'max_abs': 0.808}
+   wordStart~SAPI {'n': 249, 'mean': -0.027, 'mean_abs': 0.082, 'median': -0.016, 'max_abs': 0.292}
+   vadStart {'n': 25, 'mean': -0.125, 'mean_abs': 0.17, 'median': -0.028, 'max_abs': 3.142} vadEnd {'n': 25, 'mean': 0.497, 'mean_abs': 0.497, 'median': 0.35, 'max_abs': 5.864}
+monologue_noisy__v3__gpu_b1.jsonl             WER 0.004 fillers 6/7 retakes 7/7 abandoned 2/2 silence-words 0 [] swow 0
+   start {'n': 25, 'mean': -0.174, 'mean_abs': 0.217, 'median': -0.254, 'max_abs': 0.548}
+   end {'n': 25, 'mean': 0.39, 'mean_abs': 0.39, 'median': 0.412, 'max_abs': 0.808}
+   endBeforePause {'n': 25, 'mean': 0.39, 'mean_abs': 0.39, 'median': 0.412, 'max_abs': 0.808}
+   wordStart~SAPI {'n': 251, 'mean': 0.002, 'mean_abs': 0.089, 'median': 0.007, 'max_abs': 0.371}
+   vadStart {'n': 25, 'mean': -0.125, 'mean_abs': 0.17, 'median': -0.028, 'max_abs': 3.142} vadEnd {'n': 25, 'mean': 0.497, 'mean_abs': 0.497, 'median': 0.35, 'max_abs': 5.864}
+ami_B_300_600__qwen3-1.7b-aligner__gpu.jsonl  WER 0.135 (S24 D27 I6 of 422) fillers 12/33 hypFillers 12
+   start {'n': 371, 'mean': 0.007, 'mean_abs': 0.049, 'median': 0.01, 'max_abs': 1.42}
+   end {'n': 371, 'mean': -0.092, 'mean_abs': 0.128, 'median': -0.006, 'max_abs': 2.702}
+ami_B_300_600__v2-int8__cpu_b1.jsonl          WER 0.102 (S21 D11 I11 of 422) fillers 25/33 hypFillers 25
+   start {'n': 390, 'mean': 0.018, 'mean_abs': 0.1, 'median': 0.03, 'max_abs': 7.326}
+   end {'n': 390, 'mean': -0.051, 'mean_abs': 0.164, 'median': 0.016, 'max_abs': 7.186}
+ami_B_300_600__v2__gpu_b1.jsonl               WER 0.102 (S21 D10 I12 of 422) fillers 27/33 hypFillers 27
+   start {'n': 391, 'mean': 0.027, 'mean_abs': 0.106, 'median': 0.03, 'max_abs': 7.326}
+   end {'n': 391, 'mean': -0.038, 'mean_abs': 0.161, 'median': 0.016, 'max_abs': 7.186}
+ami_B_300_600__v3-int8__cpu_b1.jsonl          WER 0.071 (S13 D14 I3 of 422) fillers 28/33 hypFillers 28
+   start {'n': 395, 'mean': 0.013, 'mean_abs': 0.091, 'median': 0.018, 'max_abs': 1.34}
+   end {'n': 395, 'mean': -0.062, 'mean_abs': 0.162, 'median': 0.0, 'max_abs': 2.222}
+ami_B_300_600__v3__gpu_b1.jsonl               WER 0.069 (S14 D8 I7 of 422) fillers 28/33 hypFillers 28
+   start {'n': 400, 'mean': 0.032, 'mean_abs': 0.102, 'median': 0.026, 'max_abs': 1.34}
+   end {'n': 400, 'mean': -0.037, 'mean_abs': 0.164, 'median': 0.009, 'max_abs': 1.982}

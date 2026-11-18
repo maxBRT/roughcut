@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# build output
+target/
+target-tracks/
+dist/
+dist-app/
+src-tauri/gen/
+*.tsbuildinfo
+coverage/
+
+# large local downloads and generated test media
+.cache-dev/
+fixtures/out/
+
+# editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.log

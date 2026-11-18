@@ -1,0 +1,262 @@
+/*
+ * Export dialog, drawn as the mockup's Export screen (mockups/roughcut-mockups.html ".exp",
+ * screens/export.png): it covers the editor below the header bar, which stays in view.
+ * Confirm on the left, running above done on the right, the hint bar along the bottom.
+ * Tokens from src/ui/tokens.css.
+ */
+
+/* Where the editor's body starts: the frame's padding, the 32px header, the gap under it. */
+.rcx-sheet {
+  --rcx-top: calc(var(--sp-6) + var(--key-h) + var(--sp-6));
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  padding: var(--rcx-top) var(--sp-6) var(--sp-6);
+  /* The header shows through (it stays in view, as in the mockup) but takes no clicks while
+     the dialog is open; everything below it is covered. */
+  background: linear-gradient(to bottom, transparent var(--rcx-top), var(--body) var(--rcx-top));
+  color: var(--ink);
+  font: 400 var(--fs-ui) / var(--lh-ui) var(--sans);
+}
+
+/* The editor's own "export mp4" key is hidden while exporting, as in the mockup's header. */
+.rc-ed-root:has(~ .rcx-sheet) .rc-top__r .rc-key--fill {
+  display: none;
+}
+
+.rcx-export {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  grid-template-rows: minmax(0, 1fr) var(--cap-h);
+  row-gap: var(--sp-6);
+  min-width: 0;
+  min-height: 0;
+}
+.rcx-hints {
+  grid-column: 1 / -1;
+}
+
+/* The accessible name follows the stage; the screen itself shows the stage labels instead. */
+.rcx-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---- panes ---- */
+.rcx-pane {
+  min-width: 0;
+  min-height: 0;
+}
+.rcx-pane--a {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-6);
+  padding-right: var(--sp-8);
+  border-right: 1px solid var(--line);
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.rcx-pane--a::-webkit-scrollbar {
+  display: none;
+}
+.rcx-pane--b {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+  padding-left: var(--sp-8);
+}
+.rcx-part {
+  display: grid;
+  align-content: start;
+  gap: var(--sp-5);
+  min-width: 0;
+  min-height: 0;
+}
+.rcx-part + .rcx-part {
+  border-top: 1px solid var(--line);
+  padding-top: var(--sp-7);
+}
+
+/* A stage that is not the current one stays in place, dimmed. */
+.rcx-pane--a[data-active="false"] > *,
+.rcx-part[data-active="false"] > * {
+  opacity: .45;
+}
+.rcx-pane--a[data-active="false"] > .rc-lbl,
+.rcx-part[data-active="false"] > .rc-lbl {
+  opacity: 1;
+}
+
+/* ---- confirm ---- */
+.rcx-figures {
+  display: grid;
+  gap: var(--sp-2);
+  min-width: 0;
+}
+.rcx-line {
+  margin: 0;
+  font: 400 var(--fs-label) / 1.4 var(--mono);
+  color: var(--ink);
+}
+.rcx-line[data-planning],
+.rcx-line--idle {
+  color: var(--ink-2);
+}
+.rcx-sub {
+  margin: 0;
+  font: 400 var(--fs-label) / 1.4 var(--mono);
+  color: var(--ink-2);
+}
+.rcx-path {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+.rcx-folder {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+.rcx-export .rc-info dd > span:first-child {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+.rcx-name {
+  margin: 0;
+  display: flex;
+  min-width: 0;
+  width: 100%;
+}
+/* The name reads as plain text, as in the mockup, until it is pointed at or focused. */
+.rcx-name__input {
+  width: 100%;
+  min-width: 0;
+  font: 400 var(--fs-label) / 1.2 var(--mono);
+  color: var(--ink);
+  caret-color: var(--accent);
+  background: transparent;
+  border: 0;
+  border-radius: var(--r-chip);
+  padding: var(--sp-1) var(--sp-2);
+  margin-left: calc(-1 * var(--sp-2));
+  outline: none;
+  text-overflow: ellipsis;
+  transition: background var(--dur-hover) var(--ease);
+}
+.rcx-name__input:hover:not(:disabled) {
+  background: var(--panel);
+  cursor: text;
+}
+.rcx-name__input:focus {
+  background: var(--panel);
+  outline: var(--focus-ring);
+  outline-offset: 0;
+}
+.rcx-name__input::selection {
+  background: var(--sel);
+}
+.rcx-name__input:disabled {
+  color: var(--ink);
+  opacity: 1;
+}
+.rcx-notes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--sp-2);
+  font: 400 var(--fs-label) / 1.4 var(--mono);
+  color: var(--ink-2);
+}
+.rcx-notes li {
+  display: flex;
+  gap: var(--sp-3);
+}
+.rcx-notes li::before {
+  content: "";
+  flex: none;
+  width: 7px;
+  height: 7px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: var(--off);
+}
+.rcx-blocked {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-4);
+  padding: var(--sp-4) var(--sp-5);
+  background: var(--panel);
+  border-radius: var(--r-key);
+  font: 400 var(--fs-label) / 1.4 var(--mono);
+}
+.rcx-blocked .rc-led {
+  margin-top: 6px;
+  flex: none;
+}
+.rcx-blocked__msg {
+  margin: 0;
+  color: var(--ink);
+}
+.rcx-blocked__detail {
+  margin: var(--sp-1) 0 0;
+  color: var(--ink-2);
+  overflow-wrap: anywhere;
+}
+.rcx-blocked__tech {
+  margin-top: var(--sp-2);
+  color: var(--ink-2);
+}
+.rcx-blocked__tech summary {
+  cursor: pointer;
+}
+.rcx-blocked__tech pre {
+  margin: var(--sp-1) 0 0;
+  max-height: 120px;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: inherit;
+  font-size: 11px;
+}
+.rcx-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--sp-3);
+  margin-top: auto;
+}
+
+/* ---- running and done ---- */
+.rcx-keys {
+  display: flex;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
+}
+
+/* A narrow window: the two panes stack. */
+@media (max-width: 760px) {
+  .rcx-export {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr) var(--cap-h);
+  }
+  .rcx-pane--a {
+    padding-right: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: var(--sp-6);
+  }
+  .rcx-pane--b {
+    padding-left: 0;
+  }
+}

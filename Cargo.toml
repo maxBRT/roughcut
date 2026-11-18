@@ -1,0 +1,60 @@
+[workspace]
+resolver = "3"
+members = [
+    "src-tauri",
+    "src-tauri/crates/rc-types",
+    "src-tauri/crates/rc-project",
+    "src-tauri/crates/rc-source",
+    "src-tauri/crates/rc-cache",
+    "src-tauri/crates/rc-jobs",
+    "src-tauri/crates/rc-media",
+    "src-tauri/crates/rc-server",
+    "src-tauri/crates/rc-speech",
+    "src-tauri/crates/rc-suggest",
+    "src-tauri/crates/rc-settings",
+    "transcriber",
+]
+# spikes/ are throwaway experiments with their own manifests; keep them out of this workspace.
+exclude = ["spikes"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.90"
+license = "UNLICENSED"
+publish = false
+
+# Shared dependency versions: crates use `dep = { workspace = true }`.
+[workspace.dependencies]
+# internal crates
+rc-types = { path = "src-tauri/crates/rc-types" }
+rc-project = { path = "src-tauri/crates/rc-project" }
+rc-source = { path = "src-tauri/crates/rc-source" }
+rc-cache = { path = "src-tauri/crates/rc-cache" }
+rc-jobs = { path = "src-tauri/crates/rc-jobs" }
+rc-media = { path = "src-tauri/crates/rc-media" }
+rc-server = { path = "src-tauri/crates/rc-server" }
+rc-speech = { path = "src-tauri/crates/rc-speech" }
+rc-suggest = { path = "src-tauri/crates/rc-suggest" }
+rc-settings = { path = "src-tauri/crates/rc-settings" }
+
+# external
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2.0.21"
+anyhow = "1.0"
+tokio = { version = "1.54", features = ["full"] }
+ts-rs = "12.0.1"
+tauri = { version = "2.12", features = [] }
+tauri-build = { version = "2.7", features = [] }
+
+[profile.dev]
+# Keep debug builds reasonably fast for media work while staying debuggable.
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 2
+
+# Skeleton crates depend on rc-types before they use it; keep that from flooding every build.
+[workspace.lints.cargo]
+unused_dependencies = "allow"

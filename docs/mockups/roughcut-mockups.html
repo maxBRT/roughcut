@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roughcut mockups</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+button{font:inherit;color:inherit}
+
+/* page chrome: follows the host theme */
+.rc{--mono:"DM Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;--sans:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;--ease:cubic-bezier(.2,.8,.2,1)}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;padding:0}
+.tab{font:500 13px/1 var(--mono);height:32px;padding:0 12px;border-radius:6px;border:1px solid var(--border,#d6d6d0);background:transparent;color:var(--muted-foreground,#5a5a54);cursor:pointer;display:inline-flex;align-items:center;transition:transform 120ms var(--ease),border-color 120ms var(--ease),color 120ms var(--ease)}
+.tab:hover{transform:translateY(-1px);color:var(--foreground,#101010);border-color:var(--foreground,#101010);transition-duration:150ms}
+.tab:active{transform:translateY(1px) scale(.985);transition-duration:90ms}
+.tab[aria-selected="true"]{background:var(--foreground,#101010);border-color:var(--foreground,#101010);color:var(--background,#fff)}
+.tab:focus-visible,.key:focus-visible,.row:focus-visible{outline:2px solid #FF4D00;outline-offset:2px}
+.fit{width:100%}
+
+/* the device */
+.device{
+  --body:#1B1B19;--panel:#232321;--key:#2A2A27;--key-hi:#353532;--ink:#EEEEE7;--ink-2:#A6A69E;
+  --line:rgba(238,238,231,.14);--line-2:rgba(238,238,231,.28);
+  --off:rgba(238,238,231,.22);--sel:rgba(238,238,231,.2);
+  --oled:#080808;--o-ink:#F2F2EC;--o-dim:#9A9A93;
+  --accent:#FF4D00;--on-accent:#101010;
+  width:960px;height:660px;padding:20px;border-radius:12px;border:1px solid var(--line-2);
+  background:var(--body);color:var(--ink);font:400 14px/1.4 var(--sans);
+  display:grid;grid-template-rows:32px minmax(0,1fr);gap:20px;overflow:hidden;text-align:left;
+}
+
+/* keys: one secondary, one filled */
+.key{font:500 13px/1 var(--mono);height:32px;padding:0 14px;border-radius:6px;background:var(--key);border:0;color:var(--ink);display:inline-flex;align-items:center;gap:8px;white-space:nowrap;cursor:pointer;transition:transform 120ms var(--ease),background 120ms var(--ease)}
+.key:hover{transform:translateY(-1px);background:var(--key-hi);transition-duration:150ms}
+.key:active{transform:translateY(1px) scale(.985);transition-duration:90ms}
+.key--fill{background:var(--accent);color:var(--on-accent)}
+.key--fill:hover{background:#E64500}
+.cap{font:500 11px/1 var(--mono);min-width:20px;height:20px;padding:0 5px;border-radius:4px;border:1px solid var(--line-2);color:var(--ink);display:inline-flex;align-items:center;justify-content:center;white-space:nowrap}
+.led{width:7px;height:7px;border-radius:50%;background:var(--off);flex:none}
+
+/* header */
+.top{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px}
+.top-l{display:flex;align-items:baseline;gap:14px;min-width:0}
+.brand{font:700 18px/1 var(--sans);letter-spacing:-.02em}
+.proj{font:400 13px/1 var(--mono);color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.views{grid-column:2;display:flex;gap:6px}
+.top-r{grid-column:3;justify-self:end;display:flex;align-items:center;gap:16px}
+.readout{font:400 13px/1 var(--mono);color:var(--ink-2);display:flex;gap:8px;align-items:baseline}
+.readout b{font:500 18px/1 var(--mono);color:var(--ink);letter-spacing:-.02em}
+.device[data-screen="home"] .only-editor,.device[data-screen="export"] .not-export{display:none}
+.views .key{color:var(--ink-2)}
+.device[data-screen="timeline"] [data-view="timeline"] .led,
+.device:is([data-screen="transcript"],[data-screen="transcribing"],[data-screen="export"]) [data-view="transcript"] .led{background:var(--accent)}
+.device[data-screen="timeline"] [data-view="timeline"],
+.device:is([data-screen="transcript"],[data-screen="transcribing"],[data-screen="export"]) [data-view="transcript"]{color:var(--ink)}
+
+/* shared pieces */
+.screen{display:grid;gap:20px;min-height:0;min-width:0}
+.hints{display:flex;align-items:center;gap:22px;font:400 13px/1 var(--mono);color:var(--ink-2);height:20px;white-space:nowrap}
+.hint{display:inline-flex;align-items:center;gap:7px}
+.hints .last{margin-left:auto}
+.oled{background:var(--oled);color:var(--o-ink);border-radius:8px;position:relative;overflow:hidden}
+.player{aspect-ratio:16/9;width:100%}
+.player svg{position:absolute;inset:0;width:100%;height:100%}
+.tc{font:500 26px/1 var(--mono);letter-spacing:-.03em;white-space:nowrap}
+.tc small{font:400 13px/1 var(--mono);color:var(--ink-2);letter-spacing:0;margin-left:8px}
+.transport{display:flex;align-items:center;gap:6px;height:32px}
+.transport .tc{margin-right:auto}
+.note{font:400 13px/1.4 var(--mono);color:var(--ink-2);margin:0}
+.caret{display:inline-block;width:2px;height:1.2em;background:var(--ink);vertical-align:-4px;margin:0 1px;animation:blink 1.1s steps(1) infinite}
+.blk{display:inline-block;width:9px;height:1.05em;background:var(--accent);vertical-align:-3px;margin-left:2px;animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+
+/* editor, transcript view */
+.ed{grid-template-columns:minmax(0,1fr) 380px;grid-template-rows:minmax(0,1fr) 50px 20px;column-gap:32px}
+.ed .strip,.ed .hints{grid-column:1/-1}
+.tx{overflow:auto;scrollbar-width:none;min-height:0}
+.tx::-webkit-scrollbar{display:none}
+.src{font:400 13px/1 var(--mono);color:var(--ink-2);margin:4px 0 18px 56px}
+.p{display:grid;grid-template-columns:40px minmax(0,1fr);gap:16px;margin:0 0 16px;font-size:16px;line-height:1.6}
+.p time{font:400 13px/1 var(--mono);color:var(--ink-2);text-align:right;padding-top:7px}
+.cut{color:var(--ink-2);text-decoration:line-through;text-decoration-color:var(--accent);text-decoration-thickness:1.5px}
+.sug{text-decoration:underline dashed var(--accent) 1.5px;text-underline-offset:5px}
+.why{display:flex;align-items:center;gap:18px;font:400 13px/1 var(--mono);color:var(--ink-2);margin-top:10px;white-space:nowrap}
+.sel{background:var(--sel);border-radius:2px;padding:2px 0}
+.side{display:grid;align-content:start;gap:16px;min-height:0}
+.strip{padding:8px 16px}
+.strip svg{display:block}
+
+/* editor, timeline view */
+.tlv{grid-template-rows:minmax(0,1fr) 146px 20px}
+.stage{display:grid;grid-template-columns:480px;justify-content:center;align-content:center;gap:14px;min-height:0}
+.capt{font-size:16px;line-height:1.6;color:var(--ink-2);text-align:center;white-space:nowrap;overflow:hidden;margin:0}
+.capt b{font-weight:600;color:var(--ink)}
+.tl{padding:12px 16px}
+.tl-in{position:relative;display:grid;grid-template-rows:22px 92px;gap:8px}
+.ruler{position:relative;font:400 12px/1 var(--mono);color:var(--o-dim)}
+.ruler span{position:absolute;top:2px}
+.track{position:relative;overflow:hidden}
+.clip{position:absolute;top:0;bottom:0;background:#1C1C1A;border:1px solid transparent;border-radius:4px;overflow:hidden;transition:background 150ms var(--ease)}
+.clip:hover{background:#262623}
+.clip.on{border-color:var(--o-ink)}
+.clip-h{height:24px;padding:0 8px;display:flex;align-items:center;font:400 12px/1 var(--mono);color:var(--o-dim);white-space:nowrap}
+.ph{position:absolute;top:0;bottom:0;width:1px;background:var(--accent);pointer-events:none}
+.ph b{position:absolute;top:0;right:0;font:500 12px/1 var(--mono);background:var(--accent);color:var(--on-accent);padding:3px 5px;border-radius:3px 0 0 3px}
+
+/* home */
+.home{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);grid-template-rows:minmax(0,1fr) 20px;column-gap:32px}
+.home .hints{grid-column:1/-1}
+.drop{display:grid;place-items:center;text-align:center}
+.drop .mid{display:grid;justify-items:center;gap:18px}
+.drop svg{width:150px;height:auto}
+.drop h2{margin:0;font:400 26px/1.2 var(--sans);letter-spacing:-.02em}
+.recent{min-height:0}
+.rhead{font:400 13px/1 var(--mono);color:var(--ink-2);padding:6px 12px 14px}
+.rows{list-style:none;margin:0;padding:0}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:14px 12px;border-radius:6px;cursor:pointer;transition:background 150ms var(--ease),transform 150ms var(--ease)}
+.row:hover{background:var(--panel);transform:translateY(-2px)}
+.row.on{background:var(--panel)}
+.row .name{font:600 16px/1.3 var(--sans);letter-spacing:-.01em}
+.row .meta,.row .stat{font:400 13px/1.4 var(--mono);color:var(--ink-2)}
+.row .meta{margin-top:4px}
+
+/* export */
+.exp{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);grid-template-rows:minmax(0,1fr) 20px;column-gap:0}
+.exp .hints{grid-column:1/-1}
+.pane{display:grid;align-content:start;gap:20px;min-height:0}
+.pane.a{padding-right:32px;border-right:1px solid var(--line);grid-template-rows:auto auto auto 1fr}
+.pane.b{padding-left:32px;grid-template-rows:1fr 1fr;gap:0}
+.pane.b>div{display:grid;align-content:start;gap:16px}
+.pane.b>div+div{border-top:1px solid var(--line);padding-top:24px}
+.lbl{font:400 13px/1 var(--mono);color:var(--ink-2)}
+.info{display:grid;grid-template-columns:84px 1fr;margin:0;font:400 13px/1.2 var(--mono)}
+.info dt,.info dd{margin:0;display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:48px;border-bottom:1px solid var(--line)}
+.info dt{color:var(--ink-2)}
+.keys{display:flex;gap:6px;flex-wrap:wrap}
+.foot{display:flex;justify-content:space-between;align-items:center;align-self:end}
+.pct{font:400 44px/1 var(--mono);letter-spacing:-.04em;display:flex;justify-content:space-between;align-items:baseline}
+.pct small{font:400 13px/1 var(--mono);color:var(--ink-2);letter-spacing:0}
+.meter{height:3px;background:var(--off);border-radius:2px}
+.meter i{display:block;height:100%;width:62%;background:var(--ink);border-radius:2px}
+.line1{font:400 13px/1.4 var(--mono);margin:0}
+
+@media (prefers-reduced-motion:reduce){.caret,.blk{animation:none}.key,.tab,.row,.clip{transition:none}}
+</style>
+</head>
+<body>
+<div class="rc">
+  <div class="tabs" role="tablist" aria-label="Screens">
+    <button class="tab" role="tab" data-go="home">home</button>
+    <button class="tab" role="tab" data-go="transcribing">transcribing</button>
+    <button class="tab" role="tab" data-go="transcript">transcript</button>
+    <button class="tab" role="tab" data-go="timeline">timeline</button>
+    <button class="tab" role="tab" data-go="export">export</button>
+  </div>
+
+  <div class="fit">
+  <div class="device" data-screen="transcript">
+
+    <header class="top">
+      <div class="top-l">
+        <span class="brand">roughcut</span>
+        <span class="proj only-editor">weekly update · nov 13</span>
+      </div>
+      <div class="views only-editor">
+        <button class="key" data-go="transcript" data-view="transcript"><i class="led"></i>transcript</button>
+        <button class="key" data-go="timeline" data-view="timeline"><i class="led"></i>timeline</button>
+      </div>
+      <div class="top-r only-editor">
+        <span class="readout">kept <b id="kept">41:12</b></span>
+        <button class="key key--fill not-export" data-go="export">export mp4</button>
+      </div>
+    </header>
+
+    <!-- home -->
+    <section class="screen home" data-name="home" hidden>
+      <div class="oled drop">
+        <div class="mid">
+          <svg viewBox="0 0 200 112" fill="none" stroke="#F2F2EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="74" y="4" width="52" height="62" rx="6"/>
+            <path d="M93 26l16 9-16 9z"/>
+            <path d="M100 76v18M92 87l8 8 8-8" stroke="#FF4D00"/>
+            <path d="M52 106h96" stroke-width="4"/>
+          </svg>
+          <h2>drop this week's footage</h2>
+          <button class="key key--fill" data-go="transcribing">pick footage</button>
+        </div>
+      </div>
+      <div class="recent">
+        <div class="rhead">recent</div>
+        <ul class="rows">
+          <li class="row on" tabindex="0" data-go="transcript">
+            <div><div class="name">weekly update · nov 13</div><div class="meta">41:12 kept of 1:04:30</div></div>
+            <div class="stat">edited 2 h ago</div>
+          </li>
+          <li class="row" tabindex="0" data-go="transcript">
+            <div><div class="name">weekly update · nov 6</div><div class="meta">37:45 kept of 58:10</div></div>
+            <div class="stat">exported nov 6</div>
+          </li>
+          <li class="row" tabindex="0" data-go="transcript">
+            <div><div class="name">weekly update · oct 30</div><div class="meta">44:20 kept of 1:12:02</div></div>
+            <div class="stat">exported oct 30</div>
+          </li>
+        </ul>
+      </div>
+      <div class="hints">
+        <span class="hint"><span class="cap">enter</span>open</span>
+        <span class="hint"><span class="cap">ctrl n</span>new project</span>
+        <span class="hint last"><span class="cap">?</span>all shortcuts</span>
+      </div>
+    </section>
+
+    <!-- transcribing -->
+    <section class="screen ed" data-name="transcribing" hidden>
+      <div class="tx">
+        <div class="src">take-1.mp4</div>
+        <p class="p"><time>0:00</time><span>Hey everyone, welcome back. This week I want to walk through the new onboarding flow.</span></p>
+        <p class="p"><time>0:09</time><span>So the first thing is, uh, the first thing you'll notice</span></p>
+        <p class="p"><time>0:15</time><span>So the first thing you'll notice is the signup form. Wait, let me redo that.</span></p>
+        <p class="p"><time>0:24</time><span>So the first thing you'll notice is the new signup form, which is<i class="blk"></i></span></p>
+      </div>
+      <div class="side">
+        <div class="oled player" role="img" aria-label="Video preview"><svg viewBox="0 0 320 180" aria-hidden="true"><use href="#presenter"/></svg></div>
+        <div class="transport">
+          <span class="tc">0:00.0<small>/ 1:04:30</small></span>
+          <button class="key" data-cycle="1×,1.5×,2×">1×</button>
+          <button class="key">play</button>
+        </div>
+        <p class="note">transcribing · 34% · about 3 min left</p>
+      </div>
+      <div class="oled strip"><svg width="888" height="34" data-wave="progress"></svg></div>
+      <div class="hints">
+        <span class="hint"><span class="cap">space</span>play</span>
+        <span class="hint"><span class="cap">i</span><span class="cap">o</span>mark range</span>
+        <span class="hint"><span class="cap">del</span>cut</span>
+        <span class="hint last"><span class="cap">?</span>all shortcuts</span>
+      </div>
+    </section>
+
+    <!-- transcript -->
+    <section class="screen ed" data-name="transcript">
+      <div class="tx">
+        <div class="src">take-1.mp4</div>
+        <p class="p"><time>0:00</time><span>Hey everyone, welcome back. This week I want to walk through the new onboarding flow.</span></p>
+        <p class="p"><time>0:09</time><span class="cut">So the first thing is, uh, the first thing you'll notice</span></p>
+        <div class="p"><time>0:15</time><div><span class="sug">So the first thing you'll notice is the signup form. Wait, let me redo that.</span>
+          <div class="why"><span>retake · 1 of 3</span><span class="hint"><span class="cap">a</span>cut</span><span class="hint"><span class="cap">d</span>keep</span></div></div></div>
+        <p class="p"><time>0:24</time><span>So the first thing you'll notice is the new signup form, which is down to two fields.</span></p>
+        <p class="p"><time>0:31</time><span><span class="sel">Um, sorry, I lost my place there.</span><i class="caret"></i> Okay. The second field is your work email, and that is all we ask for.</span></p>
+        <p class="p"><time>0:40</time><span>Once you submit, we send a magic link, so there is no password step at all.</span></p>
+      </div>
+      <div class="side">
+        <div class="oled player" role="img" aria-label="Video preview"><svg viewBox="0 0 320 180" aria-hidden="true"><use href="#presenter"/></svg></div>
+        <div class="transport">
+          <span class="tc">0:28.2<small>/ 41:12</small></span>
+          <button class="key" data-cycle="1×,1.5×,2×">1.5×</button>
+          <button class="key">play</button>
+        </div>
+        <p class="note">7 words selected · 3.2 s</p>
+      </div>
+      <div class="oled strip"><svg width="888" height="34" data-wave="edit"></svg></div>
+      <div class="hints">
+        <span class="hint"><span class="cap">space</span>play</span>
+        <span class="hint"><span class="cap">del</span>cut</span>
+        <span class="hint"><span class="cap">r</span>restore</span>
+        <span class="hint"><span class="cap">n</span>next suggestion</span>
+        <span class="hint last"><span class="cap">?</span>all shortcuts</span>
+      </div>
+    </section>
+
+    <!-- timeline -->
+    <section class="screen tlv" data-name="timeline" hidden>
+      <div class="stage">
+        <div class="oled player" role="img" aria-label="Video preview"><svg viewBox="0 0 320 180" aria-hidden="true"><use href="#presenter"/></svg></div>
+        <p class="capt">notice is the new <b>signup</b> form, which is down to two fields</p>
+        <div class="transport">
+          <span class="tc">0:27.4<small>/ 41:12</small></span>
+          <button class="key" data-cycle="1×,1.5×,2×">1×</button>
+          <button class="key">play</button>
+        </div>
+      </div>
+      <div class="oled tl">
+        <div class="tl-in">
+          <div class="ruler" id="ruler"></div>
+          <div class="track" id="track"></div>
+          <div class="ph" id="ph"><b>0:27.4</b></div>
+        </div>
+      </div>
+      <div class="hints">
+        <span class="hint"><span class="cap">↑</span><span class="cap">↓</span>jump to cut</span>
+        <span class="hint"><span class="cap">,</span><span class="cap">.</span>nudge edge</span>
+        <span class="hint"><span class="cap">s</span>split</span>
+        <span class="hint"><span class="cap">del</span>remove clip</span>
+        <span class="hint last"><span class="cap">?</span>all shortcuts</span>
+      </div>
+    </section>
+
+    <!-- export -->
+    <section class="screen exp" data-name="export" hidden>
+      <div class="pane a">
+        <span class="lbl">confirm</span>
+        <dl class="info">
+          <dt>name</dt><dd>weekly-update-2026-11-13.mp4</dd>
+          <dt>save to</dt><dd>D:\Videos\To editor<button class="key">change folder</button></dd>
+        </dl>
+        <p class="line1">41:12 · full quality · about 18 gb</p>
+        <div class="foot">
+          <button class="key" data-go="transcript">cancel</button>
+          <button class="key key--fill">export mp4</button>
+        </div>
+      </div>
+      <div class="pane b">
+        <div>
+          <span class="lbl">running</span>
+          <div class="pct">62%<small>1:10 left</small></div>
+          <div class="meter"><i></i></div>
+          <div class="keys"><button class="key">cancel export</button></div>
+        </div>
+        <div>
+          <span class="lbl">done</span>
+          <p class="line1">41:12 · 17.6 gb · took 2:54</p>
+          <div class="keys"><button class="key">show in folder</button><button class="key">copy path</button></div>
+        </div>
+      </div>
+      <div class="hints">
+        <span class="hint"><span class="cap">enter</span>export</span>
+        <span class="hint"><span class="cap">esc</span>cancel</span>
+        <span class="hint last"><span class="cap">?</span>all shortcuts</span>
+      </div>
+    </section>
+
+  </div>
+  </div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="presenter" viewBox="0 0 320 180" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="160" cy="80" r="24" stroke="#F2F2EC" stroke-width="2"/>
+      <path d="M98 180c0-38 24-56 62-56s62 18 62 56" stroke="#F2F2EC" stroke-width="2"/>
+    </symbol>
+  </svg>
+</div>
+
+<script>
+(function () {
+  var device = document.querySelector('.device');
+  var fit = document.querySelector('.fit');
+  var tabs = [].slice.call(document.querySelectorAll('.tab'));
+  var order = ['home', 'transcribing', 'transcript', 'timeline', 'export'];
+  var kept = { transcribing: '1:04:30' };
+
+  function show(name) {
+    if (order.indexOf(name) < 0) return;
+    device.dataset.screen = name;
+    [].forEach.call(device.querySelectorAll('.screen'), function (s) { s.hidden = s.dataset.name !== name; });
+    tabs.forEach(function (t) { t.setAttribute('aria-selected', String(t.dataset.go === name)); });
+    document.getElementById('kept').textContent = kept[name] || '41:12';
+  }
+  document.addEventListener('click', function (e) {
+    var go = e.target.closest('[data-go]');
+    if (go) { show(go.dataset.go); return; }
+    var cycle = e.target.closest('[data-cycle]');
+    if (cycle) {
+      var steps = cycle.dataset.cycle.split(',');
+      cycle.textContent = steps[(steps.indexOf(cycle.textContent) + 1) % steps.length];
+    }
+  });
+  document.addEventListener('keydown', function (e) {
+    var n = parseInt(e.key, 10);
+    if (n >= 1 && n <= 5 && !e.ctrlKey && !e.metaKey && !e.altKey) show(order[n - 1]);
+    if (e.key === 'Enter' && e.target.classList && e.target.classList.contains('row')) show('transcript');
+  });
+
+  function size() { device.style.zoom = Math.min(1.45, fit.clientWidth / 960); }
+  if (window.ResizeObserver) new ResizeObserver(size).observe(fit);
+  size();
+
+  // seeded noise so the drawings are the same on every load
+  function rng(seed) {
+    return function () {
+      seed = (seed + 0x6D2B79F5) | 0;
+      var t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+  function bars(svg, width, height, seed, style) {
+    var r = rng(seed), out = '', prev = 0.5;
+    for (var x = 0; x < width - 1; x += 4) {
+      var v = r() < 0.09 ? 0.08 : 0.25 + 0.75 * r();
+      prev = prev * 0.45 + v * 0.55;
+      var s = style(x / width);
+      var h = Math.max(2, Math.round(prev * height * s.scale));
+      out += '<rect x="' + x + '" y="' + ((height - h) / 2) + '" width="2" height="' + h + '" rx="1" ' + s.paint + '/>';
+    }
+    svg.innerHTML = out;
+  }
+  function inside(f, ranges) { return ranges.some(function (a) { return f >= a[0] && f < a[1]; }); }
+
+  var CUTS = [[.004, .006], [.03, .06], [.10, .118], [.16, .19], [.235, .25], [.29, .33], [.37, .385], [.42, .45], [.53, .56], [.60, .64], [.70, .72], [.76, .80], [.87, .90], [.94, .97]];
+  var SUGS = [[.007, .016], [.205, .22], [.67, .69]];
+  var WHITE = { scale: 1, paint: 'fill="#F2F2EC"' };
+  var edit = document.querySelector('[data-wave="edit"]');
+  bars(edit, 888, 34, 7, function (f) {
+    if (inside(f, CUTS)) return { scale: .3, paint: 'fill="#FF4D00"' };
+    if (inside(f, SUGS)) return { scale: 1, paint: 'fill="none" stroke="#FF4D00" stroke-width="1"' };
+    return WHITE;
+  });
+  edit.innerHTML += '<rect x="8" y="0" width="1.5" height="34" fill="#FF4D00"/>';
+  bars(document.querySelector('[data-wave="progress"]'), 888, 34, 7, function (f) {
+    return f < .34 ? WHITE : { scale: 1, paint: 'fill="#3A3A36"' };
+  });
+
+  // timeline: a four-minute window, drawn to scale
+  var PX = 888 / 240;
+  var ruler = document.getElementById('ruler'), track = document.getElementById('track'), rh = '';
+  for (var s = 0; s < 240; s += 30) rh += '<span style="left:' + (s * PX) + 'px">' + Math.floor(s / 60) + ':' + ('0' + (s % 60)).slice(-2) + '</span>';
+  ruler.innerHTML = rh;
+  var clips = [['take-1.mp4', 0, 9], ['take-1.mp4', 9, 167.6], ['take-1.mp4', 167.6, 211], ['screen-demo.mp4', 211, 262]];
+  clips.forEach(function (c, i) {
+    var w = (c[2] - c[1]) * PX - 2;
+    var el = document.createElement('div');
+    el.className = 'clip' + (i === 1 ? ' on' : '');
+    el.style.left = (c[1] * PX) + 'px';
+    el.style.width = w + 'px';
+    el.innerHTML = '<div class="clip-h">' + (w > 90 ? c[0] : '') + '</div><svg width="' + Math.ceil(w) + '" height="60" style="display:block;margin-left:5px"></svg>';
+    track.appendChild(el);
+    bars(el.querySelector('svg'), Math.ceil(w) - 10, 56, 11 + i * 17, function () { return WHITE; });
+  });
+  document.getElementById('ph').style.left = (27.4 * PX) + 'px';
+
+  show((location.hash || '').slice(1) || device.dataset.screen);
+})();
+</script>
+</body>
+</html>

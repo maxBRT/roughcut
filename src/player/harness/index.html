@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Player harness</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #111; color: #ddd; font: 13px/1.4 system-ui, sans-serif; }
+  main { max-width: 1000px; margin: 16px auto; padding: 0 16px; }
+  #stage { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #000; }
+  #log { white-space: pre-wrap; font: 12px/1.4 Consolas, monospace; color: #999; }
+</style>
+</head>
+<body>
+<main>
+  <div id="stage"></div>
+  <div id="log"></div>
+</main>
+<script type="module" src="./main.ts"></script>
+</body>
+</html>

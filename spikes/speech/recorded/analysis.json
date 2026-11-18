@@ -1,0 +1,7370 @@
+{
+ "monologue": [
+  {
+   "file": "monologue_clean__qwen3-1.7b-aligner__gpu.jsonl",
+   "device": "cuda:0",
+   "stats": {
+    "audio_seconds": 139.76,
+    "model_load_seconds": 22.13265562057495,
+    "decode_seconds": 6.271872282028198,
+    "speed_x_realtime_excluding_load": 22.28361703099037
+   },
+   "wer": 0.0119,
+   "ref_words": 252,
+   "fillers_kept": "5/7",
+   "retake_lines_transcribed": "7/7",
+   "abandoned_lines_transcribed": "2/2",
+   "words_in_silence": [],
+   "speech_without_words": 0,
+   "line_start_err": {
+    "n": 25,
+    "mean": 0.01,
+    "mean_abs": 0.055,
+    "median": -0.02,
+    "max_abs": 0.58
+   },
+   "line_end_err": {
+    "n": 25,
+    "mean": 0.008,
+    "mean_abs": 0.022,
+    "median": 0.006,
+    "max_abs": 0.062
+   },
+   "last_word_end_minus_true_end_before_pause": {
+    "n": 25,
+    "mean": 0.008,
+    "mean_abs": 0.022,
+    "median": 0.006,
+    "max_abs": 0.062
+   },
+   "word_start_vs_sapi": {
+    "n": 249,
+    "mean": -0.011,
+    "mean_abs": 0.029,
+    "median": -0.009,
+    "max_abs": 0.373
+   },
+   "vad_start_minus_true": {
+    "n": 25,
+    "mean": 0.011,
+    "mean_abs": 0.054,
+    "median": -0.026,
+    "max_abs": 0.59
+   },
+   "vad_end_minus_true": {
+    "n": 25,
+    "mean": 0.065,
+    "mean_abs": 0.065,
+    "median": 0.052,
+    "max_abs": 0.16
+   },
+   "lines": [
+    {
+     "index": 0,
+     "kind": "normal",
+     "ref": "hi everyone and welcome back to the channel",
+     "hyp": "hi everyone and welcome back to the channel",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": 0.06,
+     "end_err": 0.04,
+     "word_start_diffs": [
+      0.06,
+      0.01,
+      -0.035,
+      0.035,
+      0.03,
+      0.0,
+      -0.045,
+      0.01
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 1,
+     "kind": "retake_first",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": 0.016,
+     "end_err": -0.014,
+     "word_start_diffs": [
+      0.016,
+      0.011,
+      0.021,
+      -0.034,
+      0.056,
+      0.016,
+      -0.049,
+      0.026,
+      -0.024,
+      0.001,
+      -0.024,
+      -0.004,
+      -0.044,
+      0.021,
+      -0.024,
+      -0.009,
+      -0.009
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 2,
+     "kind": "retake_repeat",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.062,
+     "end_err": -0.012,
+     "word_start_diffs": [
+      -0.062,
+      0.013,
+      0.023,
+      -0.032,
+      0.058,
+      0.018,
+      -0.047,
+      0.028,
+      -0.022,
+      0.003,
+      -0.022,
+      -0.002,
+      -0.042,
+      0.023,
+      -0.022,
+      -0.007,
+      -0.007
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 3,
+     "kind": "filler",
+     "ref": "so the first thing you want to do is uh open the project folder",
+     "hyp": "so the first thing you want to do is ah open the project folder",
+     "errors": 1,
+     "ref_words": 14,
+     "start_err": -0.028,
+     "end_err": 0.022,
+     "word_start_diffs": [
+      -0.028,
+      0.002,
+      -0.023,
+      0.022,
+      -0.033,
+      -0.013,
+      0.057,
+      -0.043,
+      0.012,
+      -0.028,
+      0.007,
+      0.002,
+      -0.028
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [
+      "uh"
+     ],
+     "hyp_fillers": [
+      "ah"
+     ]
+    },
+    {
+     "index": 4,
+     "kind": "abandoned",
+     "ref": "and then we",
+     "hyp": "and then we",
+     "errors": 0,
+     "ref_words": 3,
+     "start_err": -0.038,
+     "end_err": 0.062,
+     "word_start_diffs": [
+      -0.038,
+      0.047,
+      0.007
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 5,
+     "kind": "aside",
+     "ref": "sorry let me start that again",
+     "hyp": "sorry let me start that again",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": 0.006,
+     "end_err": 0.026,
+     "word_start_diffs": [
+      0.006,
+      -0.059,
+      -0.039,
+      -0.019,
+      0.021,
+      0.006
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 6,
+     "kind": "normal",
+     "ref": "and then we drag the recording onto the window",
+     "hyp": "and then we drag the recording onto the window",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.014,
+     "end_err": 0.046,
+     "word_start_diffs": [
+      -0.014,
+      -0.009,
+      0.031,
+      -0.034,
+      0.051,
+      0.006,
+      -0.009,
+      0.006,
+      -0.014
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 7,
+     "kind": "filler",
+     "ref": "um the transcript shows up while the video is still loading",
+     "hyp": "um the transcript shows up while the video is still loading",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.034,
+     "end_err": 0.046,
+     "word_start_diffs": [
+      -0.034,
+      -0.039,
+      0.021,
+      -0.024,
+      -0.019,
+      -0.044,
+      -0.034,
+      0.021,
+      0.041,
+      -0.029,
+      -0.059
+     ],
+     "fillers_ref": [
+      "um"
+     ],
+     "fillers_kept": [
+      "um"
+     ],
+     "hyp_fillers": [
+      "um"
+     ]
+    },
+    {
+     "index": 8,
+     "kind": "filler",
+     "ref": "you can you know read it like a document",
+     "hyp": "you can you know read it like a document",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.042,
+     "end_err": -0.022,
+     "word_start_diffs": [
+      -0.042,
+      -0.017,
+      -0.027,
+      -0.012,
+      -0.047,
+      -0.022,
+      0.008,
+      0.028,
+      -0.042
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 9,
+     "kind": "normal",
+     "ref": "every word has a time so cutting a sentence cuts the video too",
+     "hyp": "every word has a time so cutting a sentence cuts the video too",
+     "errors": 0,
+     "ref_words": 13,
+     "start_err": 0.022,
+     "end_err": 0.012,
+     "word_start_diffs": [
+      0.022,
+      -0.033,
+      0.027,
+      -0.028,
+      -0.013,
+      -0.058,
+      0.012,
+      -0.018,
+      0.007,
+      -0.043,
+      -0.033,
+      0.027,
+      -0.028
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 10,
+     "kind": "aside",
+     "ref": "hang on my phone is ringing",
+     "hyp": "hang on my phone is ringing",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": -0.02,
+     "end_err": 0.0,
+     "word_start_diffs": [
+      -0.02,
+      0.02,
+      0.0,
+      0.0,
+      0.02,
+      0.02
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 11,
+     "kind": "aside",
+     "ref": "okay where was i",
+     "hyp": "okay where was i",
+     "errors": 0,
+     "ref_words": 4,
+     "start_err": -0.048,
+     "end_err": 0.032,
+     "word_start_diffs": [
+      -0.048,
+      0.007,
+      -0.048,
+      -0.023
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 12,
+     "kind": "retake_first",
+     "ref": "the second step is to look at the suggestions on the right",
+     "hyp": "the second step is to look at the suggestions on the right",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.024,
+     "end_err": -0.024,
+     "word_start_diffs": [
+      -0.024,
+      -0.034,
+      0.031,
+      0.016,
+      -0.004,
+      -0.044,
+      -0.024,
+      0.036,
+      -0.044,
+      -0.024,
+      -0.019,
+      -0.044
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 13,
+     "kind": "retake_repeat",
+     "ref": "the second step is to look at the suggestions in the margin",
+     "hyp": "the second step is to look at the suggestions in the margin",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.036,
+     "end_err": -0.016,
+     "word_start_diffs": [
+      -0.036,
+      0.034,
+      0.019,
+      0.004,
+      -0.016,
+      0.024,
+      -0.036,
+      0.024,
+      0.024,
+      -0.036,
+      -0.021,
+      -0.016
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 14,
+     "kind": "filler",
+     "ref": "each one is uh um a retake or a false start",
+     "hyp": "each one is a um a retake or a false start",
+     "errors": 1,
+     "ref_words": 11,
+     "start_err": 0.032,
+     "end_err": 0.012,
+     "word_start_diffs": [
+      0.032,
+      0.007,
+      0.032,
+      -0.028,
+      -0.043,
+      -0.058,
+      -0.003,
+      -0.033,
+      -0.003,
+      -0.048
+     ],
+     "fillers_ref": [
+      "uh",
+      "um"
+     ],
+     "fillers_kept": [
+      "uh"
+     ],
+     "hyp_fillers": [
+      "um"
+     ]
+    },
+    {
+     "index": 15,
+     "kind": "normal",
+     "ref": "if you agree with it you press enter",
+     "hyp": "if you agree with it you press enter",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.052,
+     "end_err": -0.012,
+     "word_start_diffs": [
+      -0.052,
+      0.038,
+      0.058,
+      -0.002,
+      -0.037,
+      0.008,
+      0.028,
+      0.018
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 16,
+     "kind": "abandoned",
+     "ref": "if you don't you press",
+     "hyp": "if you don't you press",
+     "errors": 0,
+     "ref_words": 5,
+     "start_err": -0.052,
+     "end_err": -0.022,
+     "word_start_diffs": [
+      -0.052,
+      0.038,
+      -0.012,
+      -0.027,
+      -0.022
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 17,
+     "kind": "normal",
+     "ref": "if you don't agree you just press escape and it goes away",
+     "hyp": "if you don't agree you just press escape and it goes away",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.038,
+     "end_err": 0.012,
+     "word_start_diffs": [
+      -0.038,
+      -0.023,
+      0.002,
+      -0.013,
+      0.017,
+      0.017,
+      0.057,
+      -0.018,
+      -0.013,
+      -0.008,
+      0.017,
+      -0.038
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 18,
+     "kind": "filler",
+     "ref": "uh so the third step is export",
+     "hyp": "so the third step is export",
+     "errors": 1,
+     "ref_words": 7,
+     "start_err": 0.58,
+     "end_err": -0.04,
+     "word_start_diffs": [
+      -0.01,
+      -0.02,
+      0.035,
+      -0.03,
+      -0.045,
+      0.025
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 19,
+     "kind": "retake_first",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": 0.032,
+     "end_err": 0.002,
+     "word_start_diffs": [
+      0.032,
+      -0.028,
+      -0.003,
+      -0.023,
+      0.032,
+      0.017,
+      0.027,
+      0.032,
+      -0.373,
+      -0.033,
+      -0.008,
+      -0.018,
+      -0.008,
+      0.007
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 20,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": 0.034,
+     "end_err": 0.004,
+     "word_start_diffs": [
+      0.034,
+      -0.026,
+      -0.001,
+      -0.021,
+      -0.046,
+      0.019,
+      0.029,
+      0.034,
+      -0.371,
+      -0.031,
+      -0.006,
+      -0.016,
+      -0.006,
+      0.009
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 21,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": 0.036,
+     "end_err": 0.006,
+     "word_start_diffs": [
+      0.036,
+      -0.024,
+      0.001,
+      -0.019,
+      -0.044,
+      0.021,
+      0.031,
+      0.036,
+      -0.369,
+      -0.029,
+      -0.004,
+      -0.014,
+      -0.004,
+      0.011
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 22,
+     "kind": "filler",
+     "ref": "i think that's you know pretty much it",
+     "hyp": "i think that's you know pretty much it",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.018,
+     "end_err": 0.032,
+     "word_start_diffs": [
+      -0.018,
+      0.027,
+      -0.003,
+      -0.023,
+      -0.008,
+      0.037,
+      -0.003,
+      -0.003
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 23,
+     "kind": "aside",
+     "ref": "let me check the chat real quick",
+     "hyp": "let me check the chat real quick",
+     "errors": 0,
+     "ref_words": 7,
+     "start_err": -0.04,
+     "end_err": -0.01,
+     "word_start_diffs": [
+      -0.04,
+      -0.01,
+      0.005,
+      0.05,
+      0.015,
+      -0.05,
+      0.025
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 24,
+     "kind": "normal",
+     "ref": "thanks for watching and i'll see you in the next one",
+     "hyp": "thanks for watching and i'll see you in the next one",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.018,
+     "end_err": 0.012,
+     "word_start_diffs": [
+      -0.018,
+      -0.058,
+      -0.023,
+      -0.063,
+      0.017,
+      -0.008,
+      -0.053,
+      0.017,
+      -0.028,
+      -0.033,
+      -0.018
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    }
+   ]
+  },
+  {
+   "file": "monologue_clean__v2-int8__cpu_b1.jsonl",
+   "device": "cpu",
+   "stats": {
+    "audio_seconds": 139.76,
+    "decode_seconds": 5.3251675999999994,
+    "model_load_seconds": 2.1116162,
+    "segments": 25,
+    "speed_x_realtime_excluding_load": 21.572952901038896,
+    "speed_x_realtime_wall": 16.269894357908896,
+    "vad_seconds": 0.9584154000000005,
+    "wall_seconds": 8.5900988
+   },
+   "wer": 0.004,
+   "ref_words": 252,
+   "fillers_kept": "6/7",
+   "retake_lines_transcribed": "7/7",
+   "abandoned_lines_transcribed": "2/2",
+   "words_in_silence": [],
+   "speech_without_words": 0,
+   "line_start_err": {
+    "n": 25,
+    "mean": -0.102,
+    "mean_abs": 0.152,
+    "median": -0.124,
+    "max_abs": 0.58
+   },
+   "line_end_err": {
+    "n": 25,
+    "mean": 0.245,
+    "mean_abs": 0.252,
+    "median": 0.262,
+    "max_abs": 0.352
+   },
+   "last_word_end_minus_true_end_before_pause": {
+    "n": 25,
+    "mean": 0.245,
+    "mean_abs": 0.252,
+    "median": 0.262,
+    "max_abs": 0.352
+   },
+   "word_start_vs_sapi": {
+    "n": 251,
+    "mean": 0.004,
+    "mean_abs": 0.058,
+    "median": 0.018,
+    "max_abs": 0.373
+   },
+   "vad_start_minus_true": {
+    "n": 25,
+    "mean": 0.011,
+    "mean_abs": 0.054,
+    "median": -0.026,
+    "max_abs": 0.59
+   },
+   "vad_end_minus_true": {
+    "n": 25,
+    "mean": 0.065,
+    "mean_abs": 0.065,
+    "median": 0.052,
+    "max_abs": 0.16
+   },
+   "lines": [
+    {
+     "index": 0,
+     "kind": "normal",
+     "ref": "hi everyone and welcome back to the channel",
+     "hyp": "hi everyone and welcome back to the channel",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.26,
+     "end_err": 0.28,
+     "word_start_diffs": [
+      -0.26,
+      0.17,
+      -0.035,
+      0.035,
+      0.03,
+      0.0,
+      0.035,
+      0.01
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 1,
+     "kind": "retake_first",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.064,
+     "end_err": 0.226,
+     "word_start_diffs": [
+      -0.064,
+      0.091,
+      0.101,
+      0.126,
+      -0.024,
+      0.016,
+      -0.049,
+      0.026,
+      -0.024,
+      0.001,
+      0.056,
+      0.076,
+      0.036,
+      0.021,
+      0.056,
+      -0.009,
+      -0.009
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 2,
+     "kind": "retake_repeat",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.062,
+     "end_err": 0.228,
+     "word_start_diffs": [
+      -0.062,
+      0.093,
+      0.103,
+      0.128,
+      -0.022,
+      0.018,
+      -0.047,
+      0.028,
+      -0.022,
+      0.003,
+      0.058,
+      0.078,
+      0.038,
+      0.023,
+      0.058,
+      -0.007,
+      -0.007
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 3,
+     "kind": "filler",
+     "ref": "so the first thing you want to do is uh open the project folder",
+     "hyp": "so the first thing you want to do is uh open the project folder",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": 0.052,
+     "end_err": 0.262,
+     "word_start_diffs": [
+      0.052,
+      0.082,
+      0.137,
+      0.022,
+      0.047,
+      0.067,
+      -0.023,
+      0.037,
+      0.012,
+      -0.068,
+      -0.028,
+      0.007,
+      0.082,
+      0.052
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [
+      "uh"
+     ],
+     "hyp_fillers": [
+      "uh"
+     ]
+    },
+    {
+     "index": 4,
+     "kind": "abandoned",
+     "ref": "and then we",
+     "hyp": "and then we",
+     "errors": 0,
+     "ref_words": 3,
+     "start_err": -0.038,
+     "end_err": -0.098,
+     "word_start_diffs": [
+      -0.038,
+      -0.033,
+      0.007
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 5,
+     "kind": "aside",
+     "ref": "sorry let me start that again",
+     "hyp": "sorry let me start that again",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": -0.154,
+     "end_err": 0.266,
+     "word_start_diffs": [
+      -0.154,
+      -0.059,
+      -0.039,
+      0.061,
+      0.021,
+      0.086
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 6,
+     "kind": "normal",
+     "ref": "and then we drag the recording onto the window",
+     "hyp": "and then we drag the recording onto the window",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.014,
+     "end_err": 0.286,
+     "word_start_diffs": [
+      -0.014,
+      -0.009,
+      0.031,
+      0.046,
+      0.051,
+      0.006,
+      -0.009,
+      0.006,
+      0.066
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 7,
+     "kind": "filler",
+     "ref": "um the transcript shows up while the video is still loading",
+     "hyp": "um the transcript shows up while the video is still loading",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.034,
+     "end_err": 0.286,
+     "word_start_diffs": [
+      -0.034,
+      -0.039,
+      0.021,
+      0.056,
+      0.061,
+      0.036,
+      0.046,
+      0.021,
+      0.041,
+      0.051,
+      0.021
+     ],
+     "fillers_ref": [
+      "um"
+     ],
+     "fillers_kept": [
+      "um"
+     ],
+     "hyp_fillers": [
+      "um"
+     ]
+    },
+    {
+     "index": 8,
+     "kind": "filler",
+     "ref": "you can you know read it like a document",
+     "hyp": "you can you know read it like a document",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.122,
+     "end_err": 0.298,
+     "word_start_diffs": [
+      -0.122,
+      0.063,
+      -0.027,
+      -0.012,
+      -0.047,
+      -0.022,
+      0.008,
+      0.028,
+      0.118
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 9,
+     "kind": "normal",
+     "ref": "every word has a time so cutting a sentence cuts the video too",
+     "hyp": "every word has a time so cutting a sentence cuts the video too",
+     "errors": 0,
+     "ref_words": 13,
+     "start_err": -0.138,
+     "end_err": 0.252,
+     "word_start_diffs": [
+      -0.138,
+      -0.033,
+      0.027,
+      -0.028,
+      0.147,
+      0.022,
+      -0.068,
+      -0.018,
+      0.007,
+      0.037,
+      0.047,
+      0.027,
+      0.052
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 10,
+     "kind": "aside",
+     "ref": "hang on my phone is ringing",
+     "hyp": "hang on my phone is ringing",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": -0.1,
+     "end_err": 0.24,
+     "word_start_diffs": [
+      -0.1,
+      0.1,
+      -0.08,
+      0.0,
+      0.02,
+      0.02
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 11,
+     "kind": "aside",
+     "ref": "okay where was i",
+     "hyp": "okay where was i",
+     "errors": 0,
+     "ref_words": 4,
+     "start_err": -0.048,
+     "end_err": 0.352,
+     "word_start_diffs": [
+      -0.048,
+      -0.073,
+      0.032,
+      -0.023
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 12,
+     "kind": "retake_first",
+     "ref": "the second step is to look at the suggestions on the right",
+     "hyp": "the second step is to look at the suggestions on the right",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.264,
+     "end_err": 0.296,
+     "word_start_diffs": [
+      -0.264,
+      0.046,
+      0.031,
+      0.016,
+      -0.004,
+      0.036,
+      -0.024,
+      0.036,
+      0.116,
+      -0.024,
+      -0.019,
+      0.036
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 13,
+     "kind": "retake_repeat",
+     "ref": "the second step is to look at the suggestions in the margin",
+     "hyp": "the second step is to look at the suggestions in the margin",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.276,
+     "end_err": 0.224,
+     "word_start_diffs": [
+      -0.276,
+      0.034,
+      0.019,
+      0.004,
+      -0.016,
+      0.024,
+      -0.036,
+      0.024,
+      0.104,
+      -0.036,
+      -0.021,
+      -0.016
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 14,
+     "kind": "filler",
+     "ref": "each one is uh um a retake or a false start",
+     "hyp": "each one is uh um a retake or a false start",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.128,
+     "end_err": 0.012,
+     "word_start_diffs": [
+      -0.128,
+      0.087,
+      0.112,
+      -0.068,
+      -0.028,
+      -0.123,
+      -0.058,
+      -0.003,
+      -0.033,
+      0.077,
+      0.112
+     ],
+     "fillers_ref": [
+      "uh",
+      "um"
+     ],
+     "fillers_kept": [
+      "uh",
+      "um"
+     ],
+     "hyp_fillers": [
+      "uh",
+      "um"
+     ]
+    },
+    {
+     "index": 15,
+     "kind": "normal",
+     "ref": "if you agree with it you press enter",
+     "hyp": "if you agree with it you press enter",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.132,
+     "end_err": 0.228,
+     "word_start_diffs": [
+      -0.132,
+      -0.042,
+      -0.022,
+      -0.002,
+      -0.037,
+      0.088,
+      0.108,
+      0.018
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 16,
+     "kind": "abandoned",
+     "ref": "if you don't you press",
+     "hyp": "if you don't you press",
+     "errors": 0,
+     "ref_words": 5,
+     "start_err": -0.292,
+     "end_err": 0.298,
+     "word_start_diffs": [
+      -0.292,
+      0.038,
+      0.068,
+      -0.027,
+      -0.022
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 17,
+     "kind": "normal",
+     "ref": "if you don't agree you just press escape and it goes away",
+     "hyp": "if you don't agree you just press escape and it goes away",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.278,
+     "end_err": 0.332,
+     "word_start_diffs": [
+      -0.278,
+      -0.023,
+      0.002,
+      0.067,
+      0.017,
+      0.017,
+      -0.103,
+      -0.018,
+      0.067,
+      0.072,
+      0.097,
+      0.042
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 18,
+     "kind": "filler",
+     "ref": "uh so the third step is export",
+     "hyp": "so the third step is export",
+     "errors": 1,
+     "ref_words": 7,
+     "start_err": 0.58,
+     "end_err": 0.28,
+     "word_start_diffs": [
+      -0.01,
+      -0.1,
+      -0.045,
+      0.05,
+      -0.045,
+      0.105
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 19,
+     "kind": "retake_first",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.128,
+     "end_err": 0.242,
+     "word_start_diffs": [
+      -0.128,
+      0.052,
+      -0.003,
+      0.057,
+      0.112,
+      0.017,
+      -0.053,
+      0.032,
+      -0.373,
+      0.047,
+      0.072,
+      -0.018,
+      0.072,
+      0.087
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 20,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.126,
+     "end_err": 0.244,
+     "word_start_diffs": [
+      -0.126,
+      0.054,
+      -0.001,
+      0.059,
+      0.114,
+      0.019,
+      -0.051,
+      0.034,
+      -0.371,
+      0.049,
+      0.074,
+      -0.016,
+      0.074,
+      0.089
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 21,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.124,
+     "end_err": 0.246,
+     "word_start_diffs": [
+      -0.124,
+      0.056,
+      0.001,
+      0.061,
+      0.116,
+      0.021,
+      -0.049,
+      0.036,
+      -0.369,
+      0.051,
+      0.076,
+      -0.014,
+      0.076,
+      0.091
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 22,
+     "kind": "filler",
+     "ref": "i think that's you know pretty much it",
+     "hyp": "i think that's you know pretty much it",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.018,
+     "end_err": 0.272,
+     "word_start_diffs": [
+      -0.018,
+      0.027,
+      -0.003,
+      -0.023,
+      -0.008,
+      -0.043,
+      -0.003,
+      -0.003
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 23,
+     "kind": "aside",
+     "ref": "let me check the chat real quick",
+     "hyp": "let me check the chat real quick",
+     "errors": 0,
+     "ref_words": 7,
+     "start_err": -0.12,
+     "end_err": 0.23,
+     "word_start_diffs": [
+      -0.12,
+      -0.01,
+      0.005,
+      0.05,
+      0.015,
+      0.11,
+      0.025
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 24,
+     "kind": "normal",
+     "ref": "thanks for watching and i'll see you in the next one",
+     "hyp": "thanks for watching and i'll see you in the next one",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.258,
+     "end_err": 0.332,
+     "word_start_diffs": [
+      -0.258,
+      0.102,
+      0.057,
+      -0.063,
+      -0.063,
+      0.072,
+      0.027,
+      0.017,
+      0.052,
+      0.127,
+      0.062
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    }
+   ]
+  },
+  {
+   "file": "monologue_clean__v2__gpu_b1.jsonl",
+   "device": "gpu",
+   "stats": {
+    "audio_seconds": 139.76,
+    "decode_seconds": 2.8738284000000003,
+    "model_load_seconds": 3.0036533,
+    "segments": 25,
+    "speed_x_realtime_excluding_load": 37.24268643947046,
+    "speed_x_realtime_wall": 20.685766919480205,
+    "vad_seconds": 0.6948809999999999,
+    "wall_seconds": 6.7563364
+   },
+   "wer": 0.0079,
+   "ref_words": 252,
+   "fillers_kept": "5/7",
+   "retake_lines_transcribed": "7/7",
+   "abandoned_lines_transcribed": "2/2",
+   "words_in_silence": [],
+   "speech_without_words": 0,
+   "line_start_err": {
+    "n": 25,
+    "mean": -0.102,
+    "mean_abs": 0.155,
+    "median": -0.126,
+    "max_abs": 0.58
+   },
+   "line_end_err": {
+    "n": 25,
+    "mean": 0.19,
+    "mean_abs": 0.198,
+    "median": 0.23,
+    "max_abs": 0.332
+   },
+   "last_word_end_minus_true_end_before_pause": {
+    "n": 25,
+    "mean": 0.19,
+    "mean_abs": 0.198,
+    "median": 0.23,
+    "max_abs": 0.332
+   },
+   "word_start_vs_sapi": {
+    "n": 250,
+    "mean": 0.009,
+    "mean_abs": 0.062,
+    "median": 0.021,
+    "max_abs": 0.373
+   },
+   "vad_start_minus_true": {
+    "n": 25,
+    "mean": 0.011,
+    "mean_abs": 0.054,
+    "median": -0.026,
+    "max_abs": 0.59
+   },
+   "vad_end_minus_true": {
+    "n": 25,
+    "mean": 0.065,
+    "mean_abs": 0.065,
+    "median": 0.052,
+    "max_abs": 0.16
+   },
+   "lines": [
+    {
+     "index": 0,
+     "kind": "normal",
+     "ref": "hi everyone and welcome back to the channel",
+     "hyp": "hi everyone and welcome back to the channel",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.26,
+     "end_err": 0.28,
+     "word_start_diffs": [
+      -0.26,
+      0.17,
+      -0.035,
+      0.035,
+      0.03,
+      0.0,
+      0.035,
+      0.01
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 1,
+     "kind": "retake_first",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.064,
+     "end_err": 0.226,
+     "word_start_diffs": [
+      -0.064,
+      0.091,
+      0.021,
+      0.126,
+      -0.024,
+      0.016,
+      -0.049,
+      0.026,
+      -0.024,
+      0.001,
+      0.056,
+      0.156,
+      0.036,
+      0.021,
+      0.056,
+      -0.009,
+      -0.009
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 2,
+     "kind": "retake_repeat",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.062,
+     "end_err": 0.228,
+     "word_start_diffs": [
+      -0.062,
+      0.093,
+      0.023,
+      0.128,
+      -0.022,
+      0.018,
+      -0.047,
+      0.028,
+      -0.022,
+      0.003,
+      0.058,
+      0.158,
+      0.038,
+      0.023,
+      0.058,
+      -0.007,
+      -0.007
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 3,
+     "kind": "filler",
+     "ref": "so the first thing you want to do is uh open the project folder",
+     "hyp": "so the first thing you want to do is uh open the project folder",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": 0.052,
+     "end_err": 0.262,
+     "word_start_diffs": [
+      0.052,
+      0.082,
+      0.137,
+      0.022,
+      0.047,
+      0.067,
+      -0.023,
+      0.037,
+      0.092,
+      -0.068,
+      -0.028,
+      0.007,
+      0.082,
+      0.052
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [
+      "uh"
+     ],
+     "hyp_fillers": [
+      "uh"
+     ]
+    },
+    {
+     "index": 4,
+     "kind": "abandoned",
+     "ref": "and then we",
+     "hyp": "and then we",
+     "errors": 0,
+     "ref_words": 3,
+     "start_err": -0.038,
+     "end_err": -0.098,
+     "word_start_diffs": [
+      -0.038,
+      -0.033,
+      0.007
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 5,
+     "kind": "aside",
+     "ref": "sorry let me start that again",
+     "hyp": "sorry let me start that again",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": -0.154,
+     "end_err": 0.266,
+     "word_start_diffs": [
+      -0.154,
+      -0.059,
+      -0.039,
+      0.141,
+      0.021,
+      0.086
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 6,
+     "kind": "normal",
+     "ref": "and then we drag the recording onto the window",
+     "hyp": "and then we drag the recording onto the window",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.094,
+     "end_err": 0.286,
+     "word_start_diffs": [
+      -0.094,
+      -0.009,
+      0.031,
+      0.046,
+      0.051,
+      0.006,
+      -0.009,
+      0.006,
+      0.066
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 7,
+     "kind": "filler",
+     "ref": "um the transcript shows up while the video is still loading",
+     "hyp": "um the transcript shows up while the video is still loading",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.034,
+     "end_err": 0.286,
+     "word_start_diffs": [
+      -0.034,
+      -0.039,
+      0.021,
+      0.056,
+      0.061,
+      0.036,
+      0.046,
+      0.101,
+      0.041,
+      0.051,
+      0.021
+     ],
+     "fillers_ref": [
+      "um"
+     ],
+     "fillers_kept": [
+      "um"
+     ],
+     "hyp_fillers": [
+      "um"
+     ]
+    },
+    {
+     "index": 8,
+     "kind": "filler",
+     "ref": "you can you know read it like a document",
+     "hyp": "you can you know read it like a document",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.282,
+     "end_err": 0.058,
+     "word_start_diffs": [
+      -0.282,
+      0.143,
+      -0.027,
+      0.068,
+      -0.127,
+      -0.022,
+      0.008,
+      0.028,
+      0.118
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 9,
+     "kind": "normal",
+     "ref": "every word has a time so cutting a sentence cuts the video too",
+     "hyp": "every word has a time so cutting a sentence cuts the video too",
+     "errors": 0,
+     "ref_words": 13,
+     "start_err": -0.138,
+     "end_err": 0.252,
+     "word_start_diffs": [
+      -0.138,
+      -0.033,
+      0.027,
+      0.052,
+      0.227,
+      0.022,
+      -0.068,
+      -0.018,
+      0.007,
+      0.037,
+      0.047,
+      0.107,
+      0.052
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 10,
+     "kind": "aside",
+     "ref": "hang on my phone is ringing",
+     "hyp": "hang on my phone is ringing",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": -0.1,
+     "end_err": 0.24,
+     "word_start_diffs": [
+      -0.1,
+      0.18,
+      -0.08,
+      0.0,
+      0.02,
+      0.02
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 11,
+     "kind": "aside",
+     "ref": "okay where was i",
+     "hyp": "okay where was i",
+     "errors": 0,
+     "ref_words": 4,
+     "start_err": 0.032,
+     "end_err": 0.112,
+     "word_start_diffs": [
+      0.032,
+      -0.073,
+      0.032,
+      0.057
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 12,
+     "kind": "retake_first",
+     "ref": "the second step is to look at the suggestions on the right",
+     "hyp": "the second step is to look at the suggestions on the right",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.264,
+     "end_err": 0.296,
+     "word_start_diffs": [
+      -0.264,
+      0.046,
+      0.031,
+      0.016,
+      -0.004,
+      0.036,
+      -0.024,
+      0.036,
+      0.116,
+      -0.024,
+      -0.019,
+      0.116
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 13,
+     "kind": "retake_repeat",
+     "ref": "the second step is to look at the suggestions in the margin",
+     "hyp": "the second step is to look at the suggestions in the margin",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.276,
+     "end_err": 0.224,
+     "word_start_diffs": [
+      -0.276,
+      0.114,
+      0.019,
+      0.004,
+      -0.016,
+      0.024,
+      -0.036,
+      0.024,
+      0.104,
+      -0.036,
+      -0.021,
+      -0.016
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 14,
+     "kind": "filler",
+     "ref": "each one is uh um a retake or a false start",
+     "hyp": "each one is a um a retake or a false start",
+     "errors": 1,
+     "ref_words": 11,
+     "start_err": -0.128,
+     "end_err": 0.092,
+     "word_start_diffs": [
+      -0.128,
+      0.087,
+      0.112,
+      -0.028,
+      -0.123,
+      -0.058,
+      -0.003,
+      -0.033,
+      0.077,
+      0.112
+     ],
+     "fillers_ref": [
+      "uh",
+      "um"
+     ],
+     "fillers_kept": [
+      "uh"
+     ],
+     "hyp_fillers": [
+      "um"
+     ]
+    },
+    {
+     "index": 15,
+     "kind": "normal",
+     "ref": "if you agree with it you press enter",
+     "hyp": "if you agree with it you press enter",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.132,
+     "end_err": 0.228,
+     "word_start_diffs": [
+      -0.132,
+      -0.042,
+      -0.022,
+      -0.002,
+      -0.037,
+      0.088,
+      0.108,
+      0.018
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 16,
+     "kind": "abandoned",
+     "ref": "if you don't you press",
+     "hyp": "if you don't you press",
+     "errors": 0,
+     "ref_words": 5,
+     "start_err": -0.132,
+     "end_err": 0.298,
+     "word_start_diffs": [
+      -0.132,
+      0.038,
+      0.148,
+      -0.027,
+      0.058
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 17,
+     "kind": "normal",
+     "ref": "if you don't agree you just press escape and it goes away",
+     "hyp": "if you don't agree you just press escape and it goes away",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.278,
+     "end_err": 0.332,
+     "word_start_diffs": [
+      -0.278,
+      -0.023,
+      0.002,
+      0.067,
+      0.017,
+      0.017,
+      -0.103,
+      -0.018,
+      0.067,
+      0.072,
+      0.097,
+      0.042
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 18,
+     "kind": "filler",
+     "ref": "uh so the third step is export",
+     "hyp": "so the third step is export",
+     "errors": 1,
+     "ref_words": 7,
+     "start_err": 0.58,
+     "end_err": 0.28,
+     "word_start_diffs": [
+      -0.01,
+      -0.1,
+      -0.045,
+      0.05,
+      -0.045,
+      0.025
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 19,
+     "kind": "retake_first",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.128,
+     "end_err": 0.002,
+     "word_start_diffs": [
+      -0.128,
+      0.052,
+      -0.003,
+      0.057,
+      0.112,
+      0.017,
+      -0.053,
+      0.032,
+      -0.373,
+      0.047,
+      0.072,
+      -0.018,
+      0.072,
+      0.087
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 20,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.126,
+     "end_err": 0.004,
+     "word_start_diffs": [
+      -0.126,
+      0.054,
+      -0.001,
+      0.059,
+      0.114,
+      0.019,
+      -0.051,
+      0.034,
+      -0.371,
+      0.049,
+      0.074,
+      -0.016,
+      0.074,
+      0.089
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 21,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.124,
+     "end_err": 0.006,
+     "word_start_diffs": [
+      -0.124,
+      0.056,
+      0.001,
+      0.061,
+      0.116,
+      0.021,
+      -0.049,
+      0.036,
+      -0.369,
+      0.051,
+      0.076,
+      -0.014,
+      0.076,
+      0.091
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 22,
+     "kind": "filler",
+     "ref": "i think that's you know pretty much it",
+     "hyp": "i think that's you know pretty much it",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.018,
+     "end_err": 0.272,
+     "word_start_diffs": [
+      -0.018,
+      0.107,
+      -0.003,
+      -0.023,
+      0.072,
+      -0.043,
+      -0.003,
+      -0.003
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 23,
+     "kind": "aside",
+     "ref": "let me check the chat real quick",
+     "hyp": "let me check the chat real quick",
+     "errors": 0,
+     "ref_words": 7,
+     "start_err": -0.12,
+     "end_err": 0.23,
+     "word_start_diffs": [
+      -0.12,
+      -0.01,
+      0.005,
+      0.05,
+      0.015,
+      0.11,
+      0.025
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 24,
+     "kind": "normal",
+     "ref": "thanks for watching and i'll see you in the next one",
+     "hyp": "thanks for watching and i'll see you in the next one",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.258,
+     "end_err": 0.092,
+     "word_start_diffs": [
+      -0.258,
+      0.022,
+      0.057,
+      -0.063,
+      -0.063,
+      0.072,
+      0.027,
+      0.017,
+      0.052,
+      0.127,
+      0.062
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    }
+   ]
+  },
+  {
+   "file": "monologue_clean__v3-int8__cpu_b1.jsonl",
+   "device": "cpu",
+   "stats": {
+    "audio_seconds": 139.76,
+    "decode_seconds": 5.3263605,
+    "model_load_seconds": 4.7795091,
+    "segments": 25,
+    "speed_x_realtime_excluding_load": 21.64552247902068,
+    "speed_x_realtime_wall": 12.43828947283288,
+    "vad_seconds": 0.9929401999999998,
+    "wall_seconds": 11.2362717
+   },
+   "wer": 0.0079,
+   "ref_words": 252,
+   "fillers_kept": "5/7",
+   "retake_lines_transcribed": "7/7",
+   "abandoned_lines_transcribed": "2/2",
+   "words_in_silence": [],
+   "speech_without_words": 0,
+   "line_start_err": {
+    "n": 25,
+    "mean": -0.188,
+    "mean_abs": 0.215,
+    "median": -0.224,
+    "max_abs": 0.34
+   },
+   "line_end_err": {
+    "n": 25,
+    "mean": 0.158,
+    "mean_abs": 0.166,
+    "median": 0.164,
+    "max_abs": 0.252
+   },
+   "last_word_end_minus_true_end_before_pause": {
+    "n": 25,
+    "mean": 0.158,
+    "mean_abs": 0.166,
+    "median": 0.164,
+    "max_abs": 0.252
+   },
+   "word_start_vs_sapi": {
+    "n": 250,
+    "mean": -0.034,
+    "mean_abs": 0.076,
+    "median": -0.018,
+    "max_abs": 0.292
+   },
+   "vad_start_minus_true": {
+    "n": 25,
+    "mean": 0.011,
+    "mean_abs": 0.054,
+    "median": -0.026,
+    "max_abs": 0.59
+   },
+   "vad_end_minus_true": {
+    "n": 25,
+    "mean": 0.065,
+    "mean_abs": 0.065,
+    "median": 0.052,
+    "max_abs": 0.16
+   },
+   "lines": [
+    {
+     "index": 0,
+     "kind": "normal",
+     "ref": "hi everyone and welcome back to the channel",
+     "hyp": "hi everyone and welcome back to the channel",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.26,
+     "end_err": 0.2,
+     "word_start_diffs": [
+      -0.26,
+      0.09,
+      -0.115,
+      -0.045,
+      0.03,
+      -0.08,
+      -0.045,
+      0.01
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 1,
+     "kind": "retake_first",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.224,
+     "end_err": 0.146,
+     "word_start_diffs": [
+      -0.224,
+      0.011,
+      0.021,
+      0.046,
+      -0.024,
+      -0.064,
+      -0.129,
+      -0.054,
+      -0.104,
+      -0.079,
+      0.056,
+      0.076,
+      0.036,
+      0.021,
+      0.056,
+      -0.009,
+      0.071
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 2,
+     "kind": "retake_repeat",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.222,
+     "end_err": 0.148,
+     "word_start_diffs": [
+      -0.222,
+      0.013,
+      0.023,
+      0.048,
+      -0.022,
+      -0.062,
+      -0.127,
+      -0.052,
+      -0.102,
+      -0.077,
+      0.058,
+      0.078,
+      0.038,
+      0.023,
+      0.058,
+      -0.007,
+      0.073
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 3,
+     "kind": "filler",
+     "ref": "so the first thing you want to do is uh open the project folder",
+     "hyp": "so the first thing you want to do is uh open the project folder",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.188,
+     "end_err": 0.102,
+     "word_start_diffs": [
+      -0.188,
+      0.002,
+      0.057,
+      -0.058,
+      0.047,
+      0.067,
+      -0.023,
+      0.037,
+      0.092,
+      -0.148,
+      -0.108,
+      0.007,
+      0.082,
+      -0.028
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [
+      "uh"
+     ],
+     "hyp_fillers": [
+      "uh"
+     ]
+    },
+    {
+     "index": 4,
+     "kind": "abandoned",
+     "ref": "and then we",
+     "hyp": "and then we",
+     "errors": 0,
+     "ref_words": 3,
+     "start_err": -0.118,
+     "end_err": -0.098,
+     "word_start_diffs": [
+      -0.118,
+      -0.113,
+      -0.073
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 5,
+     "kind": "aside",
+     "ref": "sorry let me start that again",
+     "hyp": "sorry let me start that again",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": -0.154,
+     "end_err": 0.186,
+     "word_start_diffs": [
+      -0.154,
+      -0.139,
+      -0.119,
+      -0.019,
+      -0.059,
+      0.006
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 6,
+     "kind": "normal",
+     "ref": "and then we drag the recording onto the window",
+     "hyp": "and then we drag the recording onto the window",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.254,
+     "end_err": 0.206,
+     "word_start_diffs": [
+      -0.254,
+      -0.089,
+      -0.049,
+      -0.034,
+      -0.029,
+      0.006,
+      -0.009,
+      0.006,
+      0.066
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 7,
+     "kind": "filler",
+     "ref": "um the transcript shows up while the video is still loading",
+     "hyp": "um the transcript shows up while the video is still loading",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.114,
+     "end_err": 0.206,
+     "word_start_diffs": [
+      -0.114,
+      -0.199,
+      0.021,
+      0.056,
+      0.061,
+      0.036,
+      0.046,
+      0.101,
+      -0.039,
+      -0.029,
+      -0.059
+     ],
+     "fillers_ref": [
+      "um"
+     ],
+     "fillers_kept": [
+      "um"
+     ],
+     "hyp_fillers": [
+      "um"
+     ]
+    },
+    {
+     "index": 8,
+     "kind": "filler",
+     "ref": "you can you know read it like a document",
+     "hyp": "you can you know read it like a document",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.282,
+     "end_err": 0.138,
+     "word_start_diffs": [
+      -0.282,
+      0.063,
+      -0.107,
+      -0.012,
+      -0.207,
+      -0.022,
+      0.008,
+      0.028,
+      0.118
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 9,
+     "kind": "normal",
+     "ref": "every word has a time so cutting a sentence cuts the video too",
+     "hyp": "every word has a time so cutting a sentence cuts the video too",
+     "errors": 0,
+     "ref_words": 13,
+     "start_err": -0.138,
+     "end_err": 0.092,
+     "word_start_diffs": [
+      -0.138,
+      -0.033,
+      0.027,
+      -0.028,
+      0.147,
+      -0.138,
+      -0.068,
+      -0.018,
+      0.007,
+      0.037,
+      0.047,
+      0.027,
+      -0.028
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 10,
+     "kind": "aside",
+     "ref": "hang on my phone is ringing",
+     "hyp": "hang on my phone is ringing",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": -0.26,
+     "end_err": 0.16,
+     "word_start_diffs": [
+      -0.26,
+      0.1,
+      -0.16,
+      -0.08,
+      -0.06,
+      -0.06
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 11,
+     "kind": "aside",
+     "ref": "okay where was i",
+     "hyp": "okay where was i",
+     "errors": 0,
+     "ref_words": 4,
+     "start_err": -0.128,
+     "end_err": 0.192,
+     "word_start_diffs": [
+      -0.128,
+      -0.153,
+      -0.048,
+      0.057
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 12,
+     "kind": "retake_first",
+     "ref": "the second step is to look at the suggestions on the right",
+     "hyp": "the second step is to look at the suggestions on the right",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.264,
+     "end_err": 0.216,
+     "word_start_diffs": [
+      -0.264,
+      -0.034,
+      -0.049,
+      -0.064,
+      -0.084,
+      -0.044,
+      -0.024,
+      -0.044,
+      0.036,
+      -0.024,
+      -0.019,
+      0.116
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 13,
+     "kind": "retake_repeat",
+     "ref": "the second step is to look at the suggestions in the margin",
+     "hyp": "the second step is to look at the suggestions in the margin",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.276,
+     "end_err": 0.144,
+     "word_start_diffs": [
+      -0.276,
+      -0.046,
+      -0.061,
+      -0.076,
+      -0.016,
+      0.024,
+      -0.036,
+      -0.056,
+      0.024,
+      -0.116,
+      -0.101,
+      -0.016
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 14,
+     "kind": "filler",
+     "ref": "each one is uh um a retake or a false start",
+     "hyp": "each one is a um a retake or a false start",
+     "errors": 1,
+     "ref_words": 11,
+     "start_err": -0.128,
+     "end_err": 0.252,
+     "word_start_diffs": [
+      -0.128,
+      0.087,
+      0.112,
+      -0.108,
+      -0.203,
+      -0.138,
+      -0.003,
+      -0.113,
+      -0.003,
+      0.112
+     ],
+     "fillers_ref": [
+      "uh",
+      "um"
+     ],
+     "fillers_kept": [
+      "uh"
+     ],
+     "hyp_fillers": [
+      "um"
+     ]
+    },
+    {
+     "index": 15,
+     "kind": "normal",
+     "ref": "if you agree with it you press enter",
+     "hyp": "if you agree with it you press enter",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.292,
+     "end_err": 0.068,
+     "word_start_diffs": [
+      -0.292,
+      -0.122,
+      -0.102,
+      -0.082,
+      -0.117,
+      0.008,
+      0.028,
+      0.018
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 16,
+     "kind": "abandoned",
+     "ref": "if you don't you press",
+     "hyp": "if you don't you press",
+     "errors": 0,
+     "ref_words": 5,
+     "start_err": -0.292,
+     "end_err": 0.138,
+     "word_start_diffs": [
+      -0.292,
+      -0.042,
+      -0.012,
+      -0.187,
+      -0.022
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 17,
+     "kind": "normal",
+     "ref": "if you don't agree you just press escape and it goes away",
+     "hyp": "if you don't agree you just press escape and it goes away",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.278,
+     "end_err": 0.172,
+     "word_start_diffs": [
+      -0.278,
+      -0.023,
+      0.002,
+      0.067,
+      -0.143,
+      -0.063,
+      -0.103,
+      -0.018,
+      0.067,
+      0.072,
+      0.097,
+      0.042
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 18,
+     "kind": "filler",
+     "ref": "uh so the third step is export",
+     "hyp": "so the third step is export",
+     "errors": 1,
+     "ref_words": 7,
+     "start_err": 0.34,
+     "end_err": 0.2,
+     "word_start_diffs": [
+      -0.25,
+      -0.26,
+      -0.125,
+      -0.03,
+      -0.045,
+      0.025
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 19,
+     "kind": "retake_first",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.128,
+     "end_err": 0.162,
+     "word_start_diffs": [
+      -0.128,
+      0.052,
+      -0.003,
+      0.057,
+      0.112,
+      -0.143,
+      -0.053,
+      0.032,
+      0.027,
+      0.047,
+      -0.008,
+      -0.018,
+      0.072,
+      0.087
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 20,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.126,
+     "end_err": 0.164,
+     "word_start_diffs": [
+      -0.126,
+      0.054,
+      -0.001,
+      0.059,
+      0.114,
+      -0.141,
+      -0.051,
+      0.034,
+      0.029,
+      0.049,
+      -0.006,
+      -0.016,
+      0.074,
+      0.089
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 21,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.124,
+     "end_err": 0.166,
+     "word_start_diffs": [
+      -0.124,
+      0.056,
+      0.001,
+      0.061,
+      0.116,
+      -0.139,
+      -0.129,
+      0.036,
+      0.031,
+      0.051,
+      -0.004,
+      -0.014,
+      0.076,
+      0.091
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 22,
+     "kind": "filler",
+     "ref": "i think that's you know pretty much it",
+     "hyp": "i think that's you know pretty much it",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.258,
+     "end_err": 0.192,
+     "word_start_diffs": [
+      -0.258,
+      -0.053,
+      -0.003,
+      -0.103,
+      -0.008,
+      -0.123,
+      -0.083,
+      -0.003
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 23,
+     "kind": "aside",
+     "ref": "let me check the chat real quick",
+     "hyp": "let me check the chat real quick",
+     "errors": 0,
+     "ref_words": 7,
+     "start_err": -0.28,
+     "end_err": 0.15,
+     "word_start_diffs": [
+      -0.28,
+      -0.09,
+      -0.075,
+      -0.03,
+      0.015,
+      0.03,
+      0.025
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 24,
+     "kind": "normal",
+     "ref": "thanks for watching and i'll see you in the next one",
+     "hyp": "thanks for watching and i'll see you in the next one",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.258,
+     "end_err": 0.252,
+     "word_start_diffs": [
+      -0.258,
+      0.022,
+      0.057,
+      -0.143,
+      -0.143,
+      -0.008,
+      0.027,
+      0.017,
+      0.052,
+      0.047,
+      0.062
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    }
+   ]
+  },
+  {
+   "file": "monologue_clean__v3__gpu_b1.jsonl",
+   "device": "gpu",
+   "stats": {
+    "audio_seconds": 139.76,
+    "decode_seconds": 2.8766853,
+    "model_load_seconds": 2.7209775,
+    "segments": 25,
+    "speed_x_realtime_excluding_load": 37.22529729564448,
+    "speed_x_realtime_wall": 21.583177327854393,
+    "vad_seconds": 0.6967173,
+    "wall_seconds": 6.4754135999999995
+   },
+   "wer": 0.004,
+   "ref_words": 252,
+   "fillers_kept": "6/7",
+   "retake_lines_transcribed": "7/7",
+   "abandoned_lines_transcribed": "2/2",
+   "words_in_silence": [],
+   "speech_without_words": 0,
+   "line_start_err": {
+    "n": 25,
+    "mean": -0.159,
+    "mean_abs": 0.187,
+    "median": -0.198,
+    "max_abs": 0.34
+   },
+   "line_end_err": {
+    "n": 25,
+    "mean": 0.181,
+    "mean_abs": 0.182,
+    "median": 0.2,
+    "max_abs": 0.272
+   },
+   "last_word_end_minus_true_end_before_pause": {
+    "n": 25,
+    "mean": 0.181,
+    "mean_abs": 0.182,
+    "median": 0.2,
+    "max_abs": 0.272
+   },
+   "word_start_vs_sapi": {
+    "n": 251,
+    "mean": -0.016,
+    "mean_abs": 0.076,
+    "median": -0.004,
+    "max_abs": 0.373
+   },
+   "vad_start_minus_true": {
+    "n": 25,
+    "mean": 0.011,
+    "mean_abs": 0.054,
+    "median": -0.026,
+    "max_abs": 0.59
+   },
+   "vad_end_minus_true": {
+    "n": 25,
+    "mean": 0.065,
+    "mean_abs": 0.065,
+    "median": 0.052,
+    "max_abs": 0.16
+   },
+   "lines": [
+    {
+     "index": 0,
+     "kind": "normal",
+     "ref": "hi everyone and welcome back to the channel",
+     "hyp": "hi everyone and welcome back to the channel",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.26,
+     "end_err": 0.2,
+     "word_start_diffs": [
+      -0.26,
+      0.09,
+      -0.115,
+      -0.045,
+      0.03,
+      -0.08,
+      -0.045,
+      0.09
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 1,
+     "kind": "retake_first",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.224,
+     "end_err": 0.146,
+     "word_start_diffs": [
+      -0.224,
+      0.011,
+      0.021,
+      0.126,
+      -0.024,
+      -0.064,
+      -0.129,
+      -0.054,
+      -0.104,
+      0.001,
+      0.056,
+      0.156,
+      0.036,
+      0.021,
+      0.056,
+      -0.009,
+      0.071
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 2,
+     "kind": "retake_repeat",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.222,
+     "end_err": 0.148,
+     "word_start_diffs": [
+      -0.222,
+      0.013,
+      0.023,
+      0.128,
+      -0.022,
+      -0.062,
+      -0.127,
+      -0.052,
+      -0.102,
+      0.003,
+      0.058,
+      0.158,
+      0.038,
+      0.023,
+      0.058,
+      -0.007,
+      0.073
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 3,
+     "kind": "filler",
+     "ref": "so the first thing you want to do is uh open the project folder",
+     "hyp": "so the first thing you want to do is uh open the project folder",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.188,
+     "end_err": 0.262,
+     "word_start_diffs": [
+      -0.188,
+      0.002,
+      0.137,
+      -0.058,
+      0.047,
+      0.067,
+      -0.023,
+      0.117,
+      0.172,
+      -0.148,
+      -0.108,
+      0.007,
+      0.082,
+      0.052
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [
+      "uh"
+     ],
+     "hyp_fillers": [
+      "uh"
+     ]
+    },
+    {
+     "index": 4,
+     "kind": "abandoned",
+     "ref": "and then we",
+     "hyp": "and then we",
+     "errors": 0,
+     "ref_words": 3,
+     "start_err": -0.198,
+     "end_err": -0.018,
+     "word_start_diffs": [
+      -0.198,
+      -0.033,
+      -0.073
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 5,
+     "kind": "aside",
+     "ref": "sorry let me start that again",
+     "hyp": "sorry let me start that again",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": -0.154,
+     "end_err": 0.186,
+     "word_start_diffs": [
+      -0.154,
+      -0.059,
+      -0.039,
+      0.061,
+      0.021,
+      0.006
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 6,
+     "kind": "normal",
+     "ref": "and then we drag the recording onto the window",
+     "hyp": "and then we drag the recording onto the window",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.254,
+     "end_err": 0.206,
+     "word_start_diffs": [
+      -0.254,
+      -0.089,
+      -0.049,
+      -0.034,
+      -0.029,
+      0.006,
+      0.071,
+      0.006,
+      0.066
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 7,
+     "kind": "filler",
+     "ref": "um the transcript shows up while the video is still loading",
+     "hyp": "um the transcript shows up while the video is still loading",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.034,
+     "end_err": 0.206,
+     "word_start_diffs": [
+      -0.034,
+      -0.119,
+      0.021,
+      0.056,
+      0.061,
+      0.036,
+      0.046,
+      0.101,
+      -0.039,
+      -0.029,
+      0.021
+     ],
+     "fillers_ref": [
+      "um"
+     ],
+     "fillers_kept": [
+      "um"
+     ],
+     "hyp_fillers": [
+      "um"
+     ]
+    },
+    {
+     "index": 8,
+     "kind": "filler",
+     "ref": "you can you know read it like a document",
+     "hyp": "you can you know read it like a document",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.042,
+     "end_err": 0.218,
+     "word_start_diffs": [
+      -0.042,
+      0.143,
+      -0.107,
+      0.068,
+      -0.127,
+      -0.022,
+      0.008,
+      0.028,
+      0.118
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 9,
+     "kind": "normal",
+     "ref": "every word has a time so cutting a sentence cuts the video too",
+     "hyp": "every word has a time so cutting a sentence cuts the video too",
+     "errors": 0,
+     "ref_words": 13,
+     "start_err": -0.138,
+     "end_err": 0.172,
+     "word_start_diffs": [
+      -0.138,
+      0.047,
+      0.027,
+      -0.028,
+      0.227,
+      -0.058,
+      -0.068,
+      -0.018,
+      0.007,
+      -0.043,
+      0.047,
+      0.107,
+      -0.028
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 10,
+     "kind": "aside",
+     "ref": "hang on my phone is ringing",
+     "hyp": "hang on my phone is ringing",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": -0.26,
+     "end_err": 0.16,
+     "word_start_diffs": [
+      -0.26,
+      0.18,
+      -0.16,
+      -0.08,
+      -0.06,
+      -0.06
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 11,
+     "kind": "aside",
+     "ref": "okay where was i",
+     "hyp": "okay where was i",
+     "errors": 0,
+     "ref_words": 4,
+     "start_err": -0.048,
+     "end_err": 0.272,
+     "word_start_diffs": [
+      -0.048,
+      -0.073,
+      0.032,
+      0.137
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 12,
+     "kind": "retake_first",
+     "ref": "the second step is to look at the suggestions on the right",
+     "hyp": "the second step is to look at the suggestions on the right",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.264,
+     "end_err": 0.216,
+     "word_start_diffs": [
+      -0.264,
+      -0.034,
+      -0.049,
+      -0.064,
+      -0.084,
+      0.036,
+      -0.024,
+      -0.044,
+      0.036,
+      0.056,
+      -0.019,
+      0.116
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 13,
+     "kind": "retake_repeat",
+     "ref": "the second step is to look at the suggestions in the margin",
+     "hyp": "the second step is to look at the suggestions in the margin",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.276,
+     "end_err": 0.144,
+     "word_start_diffs": [
+      -0.276,
+      -0.046,
+      -0.061,
+      0.004,
+      -0.016,
+      0.024,
+      -0.036,
+      -0.056,
+      0.024,
+      -0.036,
+      -0.101,
+      0.064
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 14,
+     "kind": "filler",
+     "ref": "each one is uh um a retake or a false start",
+     "hyp": "each one is uh um a retake or a false start",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.128,
+     "end_err": 0.252,
+     "word_start_diffs": [
+      -0.128,
+      0.087,
+      0.192,
+      -0.068,
+      -0.028,
+      -0.123,
+      -0.058,
+      -0.003,
+      -0.033,
+      0.077,
+      0.112
+     ],
+     "fillers_ref": [
+      "uh",
+      "um"
+     ],
+     "fillers_kept": [
+      "uh",
+      "um"
+     ],
+     "hyp_fillers": [
+      "uh",
+      "um"
+     ]
+    },
+    {
+     "index": 15,
+     "kind": "normal",
+     "ref": "if you agree with it you press enter",
+     "hyp": "if you agree with it you press enter",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.292,
+     "end_err": 0.228,
+     "word_start_diffs": [
+      -0.292,
+      -0.042,
+      -0.022,
+      -0.082,
+      -0.117,
+      0.008,
+      0.028,
+      0.018
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 16,
+     "kind": "abandoned",
+     "ref": "if you don't you press",
+     "hyp": "if you don't you press",
+     "errors": 0,
+     "ref_words": 5,
+     "start_err": -0.292,
+     "end_err": 0.218,
+     "word_start_diffs": [
+      -0.292,
+      -0.042,
+      0.068,
+      -0.027,
+      0.058
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 17,
+     "kind": "normal",
+     "ref": "if you don't agree you just press escape and it goes away",
+     "hyp": "if you don't agree you just press escape and it goes away",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.278,
+     "end_err": 0.252,
+     "word_start_diffs": [
+      -0.278,
+      -0.023,
+      0.002,
+      0.067,
+      -0.063,
+      0.017,
+      -0.103,
+      -0.018,
+      0.067,
+      0.072,
+      0.097,
+      0.042
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 18,
+     "kind": "filler",
+     "ref": "uh so the third step is export",
+     "hyp": "so the third step is export",
+     "errors": 1,
+     "ref_words": 7,
+     "start_err": 0.34,
+     "end_err": 0.2,
+     "word_start_diffs": [
+      -0.25,
+      -0.18,
+      -0.125,
+      -0.03,
+      -0.045,
+      0.025
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 19,
+     "kind": "retake_first",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.048,
+     "end_err": 0.082,
+     "word_start_diffs": [
+      -0.048,
+      0.052,
+      -0.003,
+      0.057,
+      0.192,
+      -0.063,
+      -0.053,
+      0.032,
+      -0.373,
+      0.127,
+      -0.008,
+      -0.018,
+      -0.008,
+      0.007
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 20,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.046,
+     "end_err": 0.084,
+     "word_start_diffs": [
+      -0.046,
+      0.054,
+      -0.001,
+      0.059,
+      0.194,
+      -0.061,
+      -0.051,
+      0.034,
+      -0.371,
+      0.129,
+      -0.006,
+      -0.016,
+      -0.006,
+      0.089
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 21,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.044,
+     "end_err": 0.086,
+     "word_start_diffs": [
+      -0.044,
+      0.056,
+      0.001,
+      0.061,
+      0.196,
+      -0.059,
+      -0.049,
+      0.036,
+      -0.369,
+      0.131,
+      -0.004,
+      -0.014,
+      -0.004,
+      0.011
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 22,
+     "kind": "filler",
+     "ref": "i think that's you know pretty much it",
+     "hyp": "i think that's you know pretty much it",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.098,
+     "end_err": 0.192,
+     "word_start_diffs": [
+      -0.098,
+      0.107,
+      0.077,
+      -0.103,
+      0.072,
+      -0.123,
+      -0.003,
+      -0.003
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 23,
+     "kind": "aside",
+     "ref": "let me check the chat real quick",
+     "hyp": "let me check the chat real quick",
+     "errors": 0,
+     "ref_words": 7,
+     "start_err": -0.28,
+     "end_err": 0.15,
+     "word_start_diffs": [
+      -0.28,
+      -0.09,
+      0.005,
+      -0.03,
+      0.015,
+      0.11,
+      0.025
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 24,
+     "kind": "normal",
+     "ref": "thanks for watching and i'll see you in the next one",
+     "hyp": "thanks for watching and i'll see you in the next one",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.258,
+     "end_err": 0.252,
+     "word_start_diffs": [
+      -0.258,
+      0.102,
+      0.057,
+      -0.143,
+      -0.143,
+      0.072,
+      0.027,
+      0.017,
+      0.052,
+      0.047,
+      0.142
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    }
+   ]
+  },
+  {
+   "file": "monologue_noisy__qwen3-1.7b-aligner__gpu.jsonl",
+   "device": "cuda:0",
+   "stats": {
+    "audio_seconds": 139.76,
+    "model_load_seconds": 5.3466949462890625,
+    "decode_seconds": 5.206499814987183,
+    "speed_x_realtime_excluding_load": 26.843369819719094
+   },
+   "wer": 0.0119,
+   "ref_words": 252,
+   "fillers_kept": "5/7",
+   "retake_lines_transcribed": "7/7",
+   "abandoned_lines_transcribed": "2/2",
+   "words_in_silence": [],
+   "speech_without_words": 0,
+   "line_start_err": {
+    "n": 25,
+    "mean": 0.009,
+    "mean_abs": 0.052,
+    "median": -0.018,
+    "max_abs": 0.548
+   },
+   "line_end_err": {
+    "n": 25,
+    "mean": 0.013,
+    "mean_abs": 0.02,
+    "median": 0.012,
+    "max_abs": 0.062
+   },
+   "last_word_end_minus_true_end_before_pause": {
+    "n": 25,
+    "mean": 0.013,
+    "mean_abs": 0.02,
+    "median": 0.012,
+    "max_abs": 0.062
+   },
+   "word_start_vs_sapi": {
+    "n": 249,
+    "mean": -0.011,
+    "mean_abs": 0.029,
+    "median": -0.009,
+    "max_abs": 0.437
+   },
+   "vad_start_minus_true": {
+    "n": 25,
+    "mean": -0.125,
+    "mean_abs": 0.17,
+    "median": -0.028,
+    "max_abs": 3.142
+   },
+   "vad_end_minus_true": {
+    "n": 25,
+    "mean": 0.497,
+    "mean_abs": 0.497,
+    "median": 0.35,
+    "max_abs": 5.864
+   },
+   "lines": [
+    {
+     "index": 0,
+     "kind": "normal",
+     "ref": "hi everyone and welcome back to the channel",
+     "hyp": "hi everyone and welcome back to the channel",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": 0.06,
+     "end_err": 0.04,
+     "word_start_diffs": [
+      0.06,
+      0.01,
+      -0.035,
+      0.035,
+      0.03,
+      0.08,
+      -0.045,
+      0.01
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 1,
+     "kind": "retake_first",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.016,
+     "end_err": 0.034,
+     "word_start_diffs": [
+      -0.016,
+      -0.021,
+      -0.011,
+      0.014,
+      0.024,
+      -0.016,
+      -0.001,
+      -0.006,
+      0.024,
+      -0.031,
+      0.024,
+      -0.036,
+      0.004,
+      -0.011,
+      0.024,
+      0.039,
+      -0.041
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 2,
+     "kind": "retake_repeat",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.014,
+     "end_err": 0.036,
+     "word_start_diffs": [
+      -0.014,
+      -0.019,
+      -0.009,
+      0.016,
+      0.026,
+      -0.014,
+      0.001,
+      -0.004,
+      0.026,
+      -0.029,
+      0.026,
+      -0.034,
+      0.006,
+      -0.009,
+      0.026,
+      0.041,
+      -0.039
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 3,
+     "kind": "filler",
+     "ref": "so the first thing you want to do is uh open the project folder",
+     "hyp": "so the first thing you want to do is ah open the project folder",
+     "errors": 1,
+     "ref_words": 14,
+     "start_err": -0.012,
+     "end_err": 0.038,
+     "word_start_diffs": [
+      -0.012,
+      0.018,
+      -0.007,
+      0.038,
+      -0.017,
+      0.003,
+      0.073,
+      -0.027,
+      0.028,
+      -0.012,
+      0.023,
+      0.018,
+      -0.012
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [
+      "uh"
+     ],
+     "hyp_fillers": [
+      "ah"
+     ]
+    },
+    {
+     "index": 4,
+     "kind": "abandoned",
+     "ref": "and then we",
+     "hyp": "and then we",
+     "errors": 0,
+     "ref_words": 3,
+     "start_err": -0.038,
+     "end_err": 0.062,
+     "word_start_diffs": [
+      -0.038,
+      -0.033,
+      0.007
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 5,
+     "kind": "aside",
+     "ref": "sorry let me start that again",
+     "hyp": "sorry let me start that again",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": -0.01,
+     "end_err": 0.01,
+     "word_start_diffs": [
+      -0.01,
+      0.005,
+      -0.055,
+      -0.035,
+      0.005,
+      -0.01
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 6,
+     "kind": "normal",
+     "ref": "and then we drag the recording onto the window",
+     "hyp": "and then we drag the recording onto the window",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": 0.034,
+     "end_err": 0.014,
+     "word_start_diffs": [
+      0.034,
+      -0.041,
+      -0.001,
+      0.014,
+      0.019,
+      -0.026,
+      0.039,
+      -0.026,
+      -0.046
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 7,
+     "kind": "filler",
+     "ref": "um the transcript shows up while the video is still loading",
+     "hyp": "um the transcript shows up while the video is still loading",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.034,
+     "end_err": 0.046,
+     "word_start_diffs": [
+      -0.034,
+      -0.039,
+      0.021,
+      -0.024,
+      -0.019,
+      -0.044,
+      -0.034,
+      0.021,
+      0.041,
+      -0.029,
+      -0.059
+     ],
+     "fillers_ref": [
+      "um"
+     ],
+     "fillers_kept": [
+      "um"
+     ],
+     "hyp_fillers": [
+      "um"
+     ]
+    },
+    {
+     "index": 8,
+     "kind": "filler",
+     "ref": "you can you know read it like a document",
+     "hyp": "you can you know read it like a document",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.042,
+     "end_err": -0.022,
+     "word_start_diffs": [
+      -0.042,
+      -0.017,
+      -0.027,
+      -0.012,
+      -0.047,
+      -0.022,
+      0.008,
+      0.028,
+      -0.042
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 9,
+     "kind": "normal",
+     "ref": "every word has a time so cutting a sentence cuts the video too",
+     "hyp": "every word has a time so cutting a sentence cuts the video too",
+     "errors": 0,
+     "ref_words": 13,
+     "start_err": 0.022,
+     "end_err": 0.012,
+     "word_start_diffs": [
+      0.022,
+      -0.033,
+      0.027,
+      -0.028,
+      -0.013,
+      -0.058,
+      0.012,
+      -0.018,
+      0.007,
+      -0.043,
+      -0.033,
+      0.027,
+      -0.028
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 10,
+     "kind": "aside",
+     "ref": "hang on my phone is ringing",
+     "hyp": "hang on my phone is ringing",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": -0.02,
+     "end_err": 0.0,
+     "word_start_diffs": [
+      -0.02,
+      0.02,
+      0.0,
+      0.0,
+      0.02,
+      0.02
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 11,
+     "kind": "aside",
+     "ref": "okay where was i",
+     "hyp": "okay where was i",
+     "errors": 0,
+     "ref_words": 4,
+     "start_err": -0.048,
+     "end_err": 0.032,
+     "word_start_diffs": [
+      -0.048,
+      0.007,
+      -0.048,
+      -0.023
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 12,
+     "kind": "retake_first",
+     "ref": "the second step is to look at the suggestions on the right",
+     "hyp": "the second step is to look at the suggestions on the right",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.024,
+     "end_err": -0.024,
+     "word_start_diffs": [
+      -0.024,
+      -0.034,
+      0.031,
+      0.016,
+      -0.004,
+      -0.044,
+      -0.024,
+      0.036,
+      -0.044,
+      -0.024,
+      -0.019,
+      -0.044
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 13,
+     "kind": "retake_repeat",
+     "ref": "the second step is to look at the suggestions in the margin",
+     "hyp": "the second step is to look at the suggestions in the margin",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.004,
+     "end_err": 0.016,
+     "word_start_diffs": [
+      -0.004,
+      -0.014,
+      -0.029,
+      0.036,
+      0.016,
+      -0.024,
+      -0.004,
+      -0.024,
+      -0.024,
+      -0.004,
+      0.011,
+      0.016
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 14,
+     "kind": "filler",
+     "ref": "each one is uh um a retake or a false start",
+     "hyp": "each one is a um a retake or a false start",
+     "errors": 1,
+     "ref_words": 11,
+     "start_err": -0.048,
+     "end_err": 0.012,
+     "word_start_diffs": [
+      -0.048,
+      0.007,
+      -0.048,
+      -0.028,
+      -0.043,
+      -0.058,
+      -0.003,
+      -0.033,
+      -0.003,
+      -0.048
+     ],
+     "fillers_ref": [
+      "uh",
+      "um"
+     ],
+     "fillers_kept": [
+      "uh"
+     ],
+     "hyp_fillers": [
+      "um"
+     ]
+    },
+    {
+     "index": 15,
+     "kind": "normal",
+     "ref": "if you agree with it you press enter",
+     "hyp": "if you agree with it you press enter",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.052,
+     "end_err": -0.012,
+     "word_start_diffs": [
+      -0.052,
+      0.038,
+      0.058,
+      -0.002,
+      -0.037,
+      0.008,
+      0.028,
+      0.018
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 16,
+     "kind": "abandoned",
+     "ref": "if you don't you press",
+     "hyp": "if you don't you press",
+     "errors": 0,
+     "ref_words": 5,
+     "start_err": -0.052,
+     "end_err": -0.022,
+     "word_start_diffs": [
+      -0.052,
+      0.038,
+      -0.012,
+      -0.027,
+      -0.022
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 17,
+     "kind": "normal",
+     "ref": "if you don't agree you just press escape and it goes away",
+     "hyp": "if you don't agree you just press escape and it goes away",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.038,
+     "end_err": 0.012,
+     "word_start_diffs": [
+      -0.038,
+      -0.023,
+      0.002,
+      -0.013,
+      0.017,
+      0.017,
+      0.057,
+      -0.018,
+      -0.013,
+      -0.008,
+      0.017,
+      -0.038
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 18,
+     "kind": "filler",
+     "ref": "uh so the third step is export",
+     "hyp": "so the third step is export",
+     "errors": 1,
+     "ref_words": 7,
+     "start_err": 0.548,
+     "end_err": 0.008,
+     "word_start_diffs": [
+      -0.042,
+      0.028,
+      0.003,
+      0.018,
+      0.003,
+      -0.007
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 19,
+     "kind": "retake_first",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.032,
+     "end_err": 0.018,
+     "word_start_diffs": [
+      -0.032,
+      -0.012,
+      0.013,
+      -0.007,
+      -0.032,
+      -0.047,
+      0.043,
+      -0.032,
+      -0.437,
+      -0.017,
+      0.008,
+      -0.002,
+      0.008,
+      0.023
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 20,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": 0.034,
+     "end_err": 0.004,
+     "word_start_diffs": [
+      0.034,
+      -0.026,
+      -0.001,
+      -0.021,
+      -0.046,
+      0.019,
+      0.029,
+      0.034,
+      -0.371,
+      -0.031,
+      -0.006,
+      -0.016,
+      -0.006,
+      0.009
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 21,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": 0.036,
+     "end_err": 0.006,
+     "word_start_diffs": [
+      0.036,
+      -0.024,
+      0.001,
+      -0.019,
+      -0.044,
+      0.021,
+      0.031,
+      0.036,
+      -0.369,
+      -0.029,
+      -0.004,
+      -0.014,
+      -0.004,
+      0.011
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 22,
+     "kind": "filler",
+     "ref": "i think that's you know pretty much it",
+     "hyp": "i think that's you know pretty much it",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": 0.03,
+     "end_err": 0.0,
+     "word_start_diffs": [
+      0.03,
+      -0.005,
+      -0.035,
+      0.025,
+      -0.04,
+      0.005,
+      -0.035,
+      0.045
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 23,
+     "kind": "aside",
+     "ref": "let me check the chat real quick",
+     "hyp": "let me check the chat real quick",
+     "errors": 0,
+     "ref_words": 7,
+     "start_err": -0.04,
+     "end_err": -0.01,
+     "word_start_diffs": [
+      -0.04,
+      -0.01,
+      0.005,
+      -0.03,
+      0.015,
+      -0.05,
+      0.025
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 24,
+     "kind": "normal",
+     "ref": "thanks for watching and i'll see you in the next one",
+     "hyp": "thanks for watching and i'll see you in the next one",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.018,
+     "end_err": 0.012,
+     "word_start_diffs": [
+      -0.018,
+      -0.058,
+      -0.023,
+      0.017,
+      0.017,
+      -0.008,
+      -0.053,
+      0.017,
+      -0.028,
+      -0.033,
+      -0.018
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    }
+   ]
+  },
+  {
+   "file": "monologue_noisy__v2-int8__cpu_b1.jsonl",
+   "device": "cpu",
+   "stats": {
+    "audio_seconds": 139.76,
+    "decode_seconds": 5.2689285,
+    "model_load_seconds": 3.7931198,
+    "segments": 24,
+    "speed_x_realtime_excluding_load": 21.67608463282696,
+    "speed_x_realtime_wall": 13.64739968455719,
+    "vad_seconds": 0.8635740000000002,
+    "wall_seconds": 10.2407787
+   },
+   "wer": 0.0079,
+   "ref_words": 252,
+   "fillers_kept": "5/7",
+   "retake_lines_transcribed": "7/7",
+   "abandoned_lines_transcribed": "2/2",
+   "words_in_silence": [],
+   "speech_without_words": 0,
+   "line_start_err": {
+    "n": 25,
+    "mean": -0.106,
+    "mean_abs": 0.15,
+    "median": -0.124,
+    "max_abs": 0.548
+   },
+   "line_end_err": {
+    "n": 25,
+    "mean": 0.346,
+    "mean_abs": 0.346,
+    "median": 0.334,
+    "max_abs": 0.888
+   },
+   "last_word_end_minus_true_end_before_pause": {
+    "n": 25,
+    "mean": 0.346,
+    "mean_abs": 0.346,
+    "median": 0.334,
+    "max_abs": 0.888
+   },
+   "word_start_vs_sapi": {
+    "n": 250,
+    "mean": 0.012,
+    "mean_abs": 0.065,
+    "median": 0.027,
+    "max_abs": 0.371
+   },
+   "vad_start_minus_true": {
+    "n": 25,
+    "mean": -0.125,
+    "mean_abs": 0.17,
+    "median": -0.028,
+    "max_abs": 3.142
+   },
+   "vad_end_minus_true": {
+    "n": 25,
+    "mean": 0.497,
+    "mean_abs": 0.497,
+    "median": 0.35,
+    "max_abs": 5.864
+   },
+   "lines": [
+    {
+     "index": 0,
+     "kind": "normal",
+     "ref": "hi everyone and welcome back to the channel",
+     "hyp": "hi everyone and welcome back to the channel",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.26,
+     "end_err": 0.28,
+     "word_start_diffs": [
+      -0.26,
+      0.17,
+      -0.035,
+      0.035,
+      0.03,
+      0.0,
+      0.035,
+      0.01
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 1,
+     "kind": "retake_first",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.096,
+     "end_err": 0.274,
+     "word_start_diffs": [
+      -0.096,
+      0.059,
+      0.069,
+      0.094,
+      -0.056,
+      -0.016,
+      -0.081,
+      -0.006,
+      -0.056,
+      -0.031,
+      0.024,
+      0.124,
+      0.084,
+      0.069,
+      0.104,
+      0.039,
+      0.039
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 2,
+     "kind": "retake_repeat",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.094,
+     "end_err": 0.276,
+     "word_start_diffs": [
+      -0.094,
+      0.061,
+      0.071,
+      0.096,
+      -0.054,
+      -0.014,
+      -0.079,
+      -0.004,
+      -0.054,
+      -0.029,
+      0.026,
+      0.126,
+      0.086,
+      0.071,
+      0.106,
+      0.041,
+      0.041
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 3,
+     "kind": "filler",
+     "ref": "so the first thing you want to do is uh open the project folder",
+     "hyp": "so the first thing you want to do is uh open the project folder",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.092,
+     "end_err": 0.358,
+     "word_start_diffs": [
+      -0.092,
+      0.018,
+      0.073,
+      -0.042,
+      0.063,
+      0.083,
+      -0.007,
+      0.053,
+      0.028,
+      -0.052,
+      -0.012,
+      0.023,
+      0.098,
+      0.068
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [
+      "uh"
+     ],
+     "hyp_fillers": [
+      "uh"
+     ]
+    },
+    {
+     "index": 4,
+     "kind": "abandoned",
+     "ref": "and then we",
+     "hyp": "and then we",
+     "errors": 0,
+     "ref_words": 3,
+     "start_err": -0.038,
+     "end_err": 0.062,
+     "word_start_diffs": [
+      -0.038,
+      0.047,
+      0.087
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 5,
+     "kind": "aside",
+     "ref": "sorry let me start that again",
+     "hyp": "sorry let me start that again",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": -0.01,
+     "end_err": 0.33,
+     "word_start_diffs": [
+      -0.01,
+      0.005,
+      0.025,
+      0.125,
+      0.085,
+      0.15
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 6,
+     "kind": "normal",
+     "ref": "and then we drag the recording onto the window",
+     "hyp": "and then we drag the recording onto the window",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.046,
+     "end_err": 0.334,
+     "word_start_diffs": [
+      -0.046,
+      0.039,
+      -0.001,
+      0.014,
+      0.019,
+      0.054,
+      -0.041,
+      0.054,
+      0.114
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 7,
+     "kind": "filler",
+     "ref": "um the transcript shows up while the video is still loading",
+     "hyp": "um the transcript shows up while the video is still loading",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.034,
+     "end_err": 0.366,
+     "word_start_diffs": [
+      -0.034,
+      -0.039,
+      0.021,
+      0.056,
+      0.061,
+      0.036,
+      0.046,
+      0.021,
+      0.041,
+      0.051,
+      0.021
+     ],
+     "fillers_ref": [
+      "um"
+     ],
+     "fillers_kept": [
+      "um"
+     ],
+     "hyp_fillers": [
+      "um"
+     ]
+    },
+    {
+     "index": 8,
+     "kind": "filler",
+     "ref": "you can you know read it like a document",
+     "hyp": "you can you know read it like a document",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.042,
+     "end_err": 0.378,
+     "word_start_diffs": [
+      -0.042,
+      0.063,
+      -0.027,
+      -0.012,
+      -0.047,
+      -0.022,
+      0.008,
+      0.028,
+      0.118
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 9,
+     "kind": "normal",
+     "ref": "every word has a time so cutting a sentence cuts the video too",
+     "hyp": "every word has a time so cutting a sentence cuts the video too",
+     "errors": 0,
+     "ref_words": 13,
+     "start_err": -0.138,
+     "end_err": 0.252,
+     "word_start_diffs": [
+      -0.138,
+      -0.033,
+      0.027,
+      -0.028,
+      0.147,
+      0.022,
+      -0.068,
+      -0.018,
+      0.087,
+      0.037,
+      0.047,
+      0.027,
+      0.052
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 10,
+     "kind": "aside",
+     "ref": "hang on my phone is ringing",
+     "hyp": "hang on my phone is ringing",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": -0.26,
+     "end_err": 0.32,
+     "word_start_diffs": [
+      -0.26,
+      0.18,
+      -0.08,
+      0.0,
+      0.02,
+      0.02
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 11,
+     "kind": "aside",
+     "ref": "okay where was i",
+     "hyp": "okay where was i",
+     "errors": 0,
+     "ref_words": 4,
+     "start_err": -0.048,
+     "end_err": 0.432,
+     "word_start_diffs": [
+      -0.048,
+      -0.073,
+      0.112,
+      0.057
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 12,
+     "kind": "retake_first",
+     "ref": "the second step is to look at the suggestions on the right",
+     "hyp": "the second step is to look at the suggestions on the right",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.264,
+     "end_err": 0.376,
+     "word_start_diffs": [
+      -0.264,
+      0.046,
+      0.031,
+      0.016,
+      -0.004,
+      0.036,
+      -0.024,
+      0.036,
+      0.116,
+      -0.024,
+      0.061,
+      0.116
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 13,
+     "kind": "retake_repeat",
+     "ref": "the second step is to look at the suggestions in the margin",
+     "hyp": "the second step is to look at the suggestions in the margin",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.244,
+     "end_err": 0.336,
+     "word_start_diffs": [
+      -0.244,
+      0.066,
+      0.051,
+      0.036,
+      0.016,
+      0.056,
+      -0.004,
+      0.056,
+      0.056,
+      -0.004,
+      0.011,
+      0.016
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 14,
+     "kind": "filler",
+     "ref": "each one is uh um a retake or a false start",
+     "hyp": "each one is a um a retake or a false start",
+     "errors": 1,
+     "ref_words": 11,
+     "start_err": -0.128,
+     "end_err": 0.492,
+     "word_start_diffs": [
+      -0.128,
+      0.087,
+      0.112,
+      -0.028,
+      -0.123,
+      -0.058,
+      0.077,
+      0.047,
+      0.077,
+      0.272
+     ],
+     "fillers_ref": [
+      "uh",
+      "um"
+     ],
+     "fillers_kept": [
+      "uh"
+     ],
+     "hyp_fillers": [
+      "um"
+     ]
+    },
+    {
+     "index": 15,
+     "kind": "normal",
+     "ref": "if you agree with it you press enter",
+     "hyp": "if you agree with it you press enter",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.132,
+     "end_err": 0.228,
+     "word_start_diffs": [
+      -0.132,
+      -0.042,
+      -0.022,
+      -0.002,
+      -0.037,
+      0.088,
+      0.108,
+      0.018
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 16,
+     "kind": "abandoned",
+     "ref": "if you don't you press",
+     "hyp": "if you don't you press",
+     "errors": 0,
+     "ref_words": 5,
+     "start_err": -0.132,
+     "end_err": 0.378,
+     "word_start_diffs": [
+      -0.132,
+      0.038,
+      0.068,
+      -0.027,
+      0.058
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 17,
+     "kind": "normal",
+     "ref": "if you don't agree you just press escape and it goes away",
+     "hyp": "if you don't agree you just press escape and it goes away",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.278,
+     "end_err": 0.412,
+     "word_start_diffs": [
+      -0.278,
+      -0.023,
+      0.002,
+      0.067,
+      0.017,
+      0.017,
+      -0.103,
+      -0.018,
+      0.067,
+      0.072,
+      0.097,
+      0.122
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 18,
+     "kind": "filler",
+     "ref": "uh so the third step is export",
+     "hyp": "so the third step is export",
+     "errors": 1,
+     "ref_words": 7,
+     "start_err": 0.548,
+     "end_err": 0.888,
+     "word_start_diffs": [
+      -0.042,
+      -0.132,
+      0.003,
+      0.098,
+      0.003,
+      0.073
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 19,
+     "kind": "retake_first",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.112,
+     "end_err": 0.098,
+     "word_start_diffs": [
+      -0.112,
+      0.068,
+      -0.067,
+      -0.007,
+      0.048,
+      0.033,
+      -0.037,
+      0.048,
+      -0.357,
+      0.063,
+      0.088,
+      -0.002,
+      0.088,
+      0.103
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 20,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.126,
+     "end_err": 0.324,
+     "word_start_diffs": [
+      -0.126,
+      0.054,
+      -0.001,
+      0.059,
+      0.114,
+      0.019,
+      -0.051,
+      0.034,
+      -0.371,
+      0.049,
+      0.074,
+      -0.016,
+      0.074,
+      0.089
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 21,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.124,
+     "end_err": 0.326,
+     "word_start_diffs": [
+      -0.124,
+      0.056,
+      0.001,
+      0.061,
+      0.116,
+      0.021,
+      -0.049,
+      0.036,
+      -0.369,
+      0.051,
+      0.076,
+      -0.014,
+      0.076,
+      0.091
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 22,
+     "kind": "filler",
+     "ref": "i think that's you know pretty much it",
+     "hyp": "i think that's you know pretty much it",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.13,
+     "end_err": 0.4,
+     "word_start_diffs": [
+      -0.13,
+      -0.005,
+      0.045,
+      0.025,
+      0.04,
+      0.005,
+      0.045,
+      0.045
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 23,
+     "kind": "aside",
+     "ref": "let me check the chat real quick",
+     "hyp": "let me check the chat real quick",
+     "errors": 0,
+     "ref_words": 7,
+     "start_err": -0.12,
+     "end_err": 0.39,
+     "word_start_diffs": [
+      -0.12,
+      -0.01,
+      0.005,
+      0.05,
+      0.015,
+      0.11,
+      0.105
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 24,
+     "kind": "normal",
+     "ref": "thanks for watching and i'll see you in the next one",
+     "hyp": "thanks for watching and i'll see you in the next one",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.258,
+     "end_err": 0.332,
+     "word_start_diffs": [
+      -0.258,
+      0.102,
+      0.057,
+      -0.063,
+      -0.063,
+      0.072,
+      0.027,
+      0.017,
+      0.052,
+      0.127,
+      0.062
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    }
+   ]
+  },
+  {
+   "file": "monologue_noisy__v2__gpu_b1.jsonl",
+   "device": "gpu",
+   "stats": {
+    "audio_seconds": 139.76,
+    "decode_seconds": 6.045077499999999,
+    "model_load_seconds": 4.9638176000000005,
+    "segments": 24,
+    "speed_x_realtime_excluding_load": 18.463081129970156,
+    "speed_x_realtime_wall": 11.150899176084506,
+    "vad_seconds": 1.2340257999999997,
+    "wall_seconds": 12.5335184
+   },
+   "wer": 0.0079,
+   "ref_words": 252,
+   "fillers_kept": "5/7",
+   "retake_lines_transcribed": "7/7",
+   "abandoned_lines_transcribed": "2/2",
+   "words_in_silence": [],
+   "speech_without_words": 0,
+   "line_start_err": {
+    "n": 25,
+    "mean": -0.1,
+    "mean_abs": 0.15,
+    "median": -0.112,
+    "max_abs": 0.628
+   },
+   "line_end_err": {
+    "n": 25,
+    "mean": 0.291,
+    "mean_abs": 0.291,
+    "median": 0.33,
+    "max_abs": 0.888
+   },
+   "last_word_end_minus_true_end_before_pause": {
+    "n": 25,
+    "mean": 0.291,
+    "mean_abs": 0.291,
+    "median": 0.33,
+    "max_abs": 0.888
+   },
+   "word_start_vs_sapi": {
+    "n": 250,
+    "mean": 0.016,
+    "mean_abs": 0.067,
+    "median": 0.028,
+    "max_abs": 0.371
+   },
+   "vad_start_minus_true": {
+    "n": 25,
+    "mean": -0.125,
+    "mean_abs": 0.17,
+    "median": -0.028,
+    "max_abs": 3.142
+   },
+   "vad_end_minus_true": {
+    "n": 25,
+    "mean": 0.497,
+    "mean_abs": 0.497,
+    "median": 0.35,
+    "max_abs": 5.864
+   },
+   "lines": [
+    {
+     "index": 0,
+     "kind": "normal",
+     "ref": "hi everyone and welcome back to the channel",
+     "hyp": "hi everyone and welcome back to the channel",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.26,
+     "end_err": 0.28,
+     "word_start_diffs": [
+      -0.26,
+      0.09,
+      -0.035,
+      0.035,
+      0.03,
+      0.0,
+      0.035,
+      0.01
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 1,
+     "kind": "retake_first",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.096,
+     "end_err": 0.034,
+     "word_start_diffs": [
+      -0.096,
+      0.059,
+      0.069,
+      0.094,
+      -0.056,
+      -0.016,
+      -0.081,
+      -0.006,
+      -0.056,
+      -0.031,
+      0.024,
+      0.124,
+      0.084,
+      0.069,
+      0.104,
+      0.039,
+      0.039
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 2,
+     "kind": "retake_repeat",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.094,
+     "end_err": 0.036,
+     "word_start_diffs": [
+      -0.094,
+      0.061,
+      0.071,
+      0.096,
+      -0.054,
+      -0.014,
+      -0.079,
+      -0.004,
+      -0.054,
+      -0.029,
+      0.026,
+      0.126,
+      0.086,
+      -0.009,
+      0.106,
+      0.041,
+      0.041
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 3,
+     "kind": "filler",
+     "ref": "so the first thing you want to do is uh open the project folder",
+     "hyp": "so the first thing you want to do is uh open the project folder",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.092,
+     "end_err": 0.358,
+     "word_start_diffs": [
+      -0.092,
+      0.018,
+      0.153,
+      0.038,
+      -0.017,
+      0.083,
+      -0.007,
+      0.053,
+      0.108,
+      -0.052,
+      -0.012,
+      0.023,
+      0.098,
+      0.068
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [
+      "uh"
+     ],
+     "hyp_fillers": [
+      "uh"
+     ]
+    },
+    {
+     "index": 4,
+     "kind": "abandoned",
+     "ref": "and then we",
+     "hyp": "and then we",
+     "errors": 0,
+     "ref_words": 3,
+     "start_err": -0.038,
+     "end_err": 0.062,
+     "word_start_diffs": [
+      -0.038,
+      0.047,
+      0.087
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 5,
+     "kind": "aside",
+     "ref": "sorry let me start that again",
+     "hyp": "sorry let me start that again",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": -0.01,
+     "end_err": 0.33,
+     "word_start_diffs": [
+      -0.01,
+      0.005,
+      0.025,
+      0.205,
+      0.165,
+      0.23
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 6,
+     "kind": "normal",
+     "ref": "and then we drag the recording onto the window",
+     "hyp": "and then we drag the recording onto the window",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.046,
+     "end_err": 0.334,
+     "word_start_diffs": [
+      -0.046,
+      0.039,
+      -0.001,
+      0.014,
+      0.019,
+      0.054,
+      -0.041,
+      0.054,
+      0.114
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 7,
+     "kind": "filler",
+     "ref": "um the transcript shows up while the video is still loading",
+     "hyp": "um the transcript shows up while the video is still loading",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.034,
+     "end_err": 0.366,
+     "word_start_diffs": [
+      -0.034,
+      -0.039,
+      0.021,
+      0.056,
+      0.061,
+      0.036,
+      0.046,
+      0.101,
+      0.041,
+      0.051,
+      0.021
+     ],
+     "fillers_ref": [
+      "um"
+     ],
+     "fillers_kept": [
+      "um"
+     ],
+     "hyp_fillers": [
+      "um"
+     ]
+    },
+    {
+     "index": 8,
+     "kind": "filler",
+     "ref": "you can you know read it like a document",
+     "hyp": "you can you know read it like a document",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.042,
+     "end_err": 0.218,
+     "word_start_diffs": [
+      -0.042,
+      0.143,
+      -0.027,
+      0.068,
+      -0.047,
+      -0.022,
+      0.008,
+      0.028,
+      0.118
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 9,
+     "kind": "normal",
+     "ref": "every word has a time so cutting a sentence cuts the video too",
+     "hyp": "every word has a time so cutting a sentence cuts the video too",
+     "errors": 0,
+     "ref_words": 13,
+     "start_err": -0.298,
+     "end_err": 0.252,
+     "word_start_diffs": [
+      -0.298,
+      -0.033,
+      0.027,
+      0.052,
+      0.227,
+      0.022,
+      -0.068,
+      -0.018,
+      0.007,
+      0.037,
+      0.047,
+      0.107,
+      0.052
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 10,
+     "kind": "aside",
+     "ref": "hang on my phone is ringing",
+     "hyp": "hang on my phone is ringing",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": -0.1,
+     "end_err": 0.24,
+     "word_start_diffs": [
+      -0.1,
+      0.18,
+      -0.08,
+      0.0,
+      0.02,
+      0.02
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 11,
+     "kind": "aside",
+     "ref": "okay where was i",
+     "hyp": "okay where was i",
+     "errors": 0,
+     "ref_words": 4,
+     "start_err": -0.048,
+     "end_err": 0.352,
+     "word_start_diffs": [
+      -0.048,
+      -0.073,
+      0.032,
+      0.057
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 12,
+     "kind": "retake_first",
+     "ref": "the second step is to look at the suggestions on the right",
+     "hyp": "the second step is to look at the suggestions on the right",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.264,
+     "end_err": 0.296,
+     "word_start_diffs": [
+      -0.264,
+      0.046,
+      0.031,
+      0.016,
+      -0.004,
+      0.036,
+      -0.024,
+      0.036,
+      0.116,
+      -0.024,
+      0.061,
+      0.116
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 13,
+     "kind": "retake_repeat",
+     "ref": "the second step is to look at the suggestions in the margin",
+     "hyp": "the second step is to look at the suggestions in the margin",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.244,
+     "end_err": 0.336,
+     "word_start_diffs": [
+      -0.244,
+      0.066,
+      0.051,
+      0.036,
+      0.016,
+      0.056,
+      -0.004,
+      0.056,
+      0.056,
+      -0.004,
+      0.011,
+      0.016
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 14,
+     "kind": "filler",
+     "ref": "each one is uh um a retake or a false start",
+     "hyp": "each one is a um a retake or a false start",
+     "errors": 1,
+     "ref_words": 11,
+     "start_err": -0.128,
+     "end_err": 0.492,
+     "word_start_diffs": [
+      -0.128,
+      0.087,
+      0.112,
+      -0.028,
+      -0.123,
+      -0.058,
+      0.077,
+      0.047,
+      0.077,
+      0.272
+     ],
+     "fillers_ref": [
+      "uh",
+      "um"
+     ],
+     "fillers_kept": [
+      "uh"
+     ],
+     "hyp_fillers": [
+      "um"
+     ]
+    },
+    {
+     "index": 15,
+     "kind": "normal",
+     "ref": "if you agree with it you press enter",
+     "hyp": "if you agree with it you press enter",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.052,
+     "end_err": 0.228,
+     "word_start_diffs": [
+      -0.052,
+      -0.042,
+      -0.022,
+      -0.002,
+      -0.037,
+      0.088,
+      0.108,
+      0.018
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 16,
+     "kind": "abandoned",
+     "ref": "if you don't you press",
+     "hyp": "if you don't you press",
+     "errors": 0,
+     "ref_words": 5,
+     "start_err": -0.132,
+     "end_err": 0.378,
+     "word_start_diffs": [
+      -0.132,
+      0.038,
+      0.148,
+      -0.027,
+      0.058
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 17,
+     "kind": "normal",
+     "ref": "if you don't agree you just press escape and it goes away",
+     "hyp": "if you don't agree you just press escape and it goes away",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.278,
+     "end_err": 0.412,
+     "word_start_diffs": [
+      -0.278,
+      -0.023,
+      0.002,
+      0.067,
+      0.017,
+      0.017,
+      -0.103,
+      -0.018,
+      0.067,
+      0.072,
+      0.097,
+      0.122
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 18,
+     "kind": "filler",
+     "ref": "uh so the third step is export",
+     "hyp": "so the third step is export",
+     "errors": 1,
+     "ref_words": 7,
+     "start_err": 0.628,
+     "end_err": 0.888,
+     "word_start_diffs": [
+      0.038,
+      -0.132,
+      0.003,
+      0.098,
+      0.003,
+      0.073
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 19,
+     "kind": "retake_first",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.112,
+     "end_err": 0.098,
+     "word_start_diffs": [
+      -0.112,
+      0.068,
+      -0.067,
+      -0.007,
+      0.048,
+      -0.047,
+      -0.037,
+      0.048,
+      -0.357,
+      0.063,
+      0.088,
+      -0.002,
+      0.088,
+      0.103
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 20,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.126,
+     "end_err": 0.084,
+     "word_start_diffs": [
+      -0.126,
+      0.054,
+      -0.001,
+      0.059,
+      0.114,
+      0.019,
+      -0.051,
+      0.034,
+      -0.371,
+      0.049,
+      0.074,
+      -0.016,
+      0.074,
+      0.089
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 21,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.124,
+     "end_err": 0.086,
+     "word_start_diffs": [
+      -0.124,
+      0.056,
+      0.001,
+      0.061,
+      0.116,
+      0.021,
+      -0.049,
+      0.036,
+      -0.369,
+      0.051,
+      0.076,
+      -0.014,
+      0.076,
+      0.091
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 22,
+     "kind": "filler",
+     "ref": "i think that's you know pretty much it",
+     "hyp": "i think that's you know pretty much it",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.13,
+     "end_err": 0.4,
+     "word_start_diffs": [
+      -0.13,
+      0.075,
+      0.045,
+      0.025,
+      0.12,
+      0.005,
+      0.045,
+      0.045
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 23,
+     "kind": "aside",
+     "ref": "let me check the chat real quick",
+     "hyp": "let me check the chat real quick",
+     "errors": 0,
+     "ref_words": 7,
+     "start_err": -0.12,
+     "end_err": 0.39,
+     "word_start_diffs": [
+      -0.12,
+      -0.01,
+      0.005,
+      0.05,
+      0.015,
+      0.11,
+      0.105
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 24,
+     "kind": "normal",
+     "ref": "thanks for watching and i'll see you in the next one",
+     "hyp": "thanks for watching and i'll see you in the next one",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.258,
+     "end_err": 0.332,
+     "word_start_diffs": [
+      -0.258,
+      0.022,
+      0.057,
+      -0.063,
+      -0.063,
+      0.072,
+      0.027,
+      0.017,
+      0.052,
+      0.207,
+      0.142
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    }
+   ]
+  },
+  {
+   "file": "monologue_noisy__v3-int8__cpu_b1.jsonl",
+   "device": "cpu",
+   "stats": {
+    "audio_seconds": 139.76,
+    "decode_seconds": 6.8591516,
+    "model_load_seconds": 5.9289398,
+    "segments": 24,
+    "speed_x_realtime_excluding_load": 17.346309322599936,
+    "speed_x_realtime_wall": 9.992860638754719,
+    "vad_seconds": 1.0099895,
+    "wall_seconds": 13.9859851
+   },
+   "wer": 0.0119,
+   "ref_words": 252,
+   "fillers_kept": "5/7",
+   "retake_lines_transcribed": "7/7",
+   "abandoned_lines_transcribed": "2/2",
+   "words_in_silence": [],
+   "speech_without_words": 0,
+   "line_start_err": {
+    "n": 25,
+    "mean": -0.206,
+    "mean_abs": 0.243,
+    "median": -0.258,
+    "max_abs": 0.468
+   },
+   "line_end_err": {
+    "n": 25,
+    "mean": 0.381,
+    "mean_abs": 0.381,
+    "median": 0.41,
+    "max_abs": 0.808
+   },
+   "last_word_end_minus_true_end_before_pause": {
+    "n": 25,
+    "mean": 0.381,
+    "mean_abs": 0.381,
+    "median": 0.41,
+    "max_abs": 0.808
+   },
+   "word_start_vs_sapi": {
+    "n": 249,
+    "mean": -0.027,
+    "mean_abs": 0.082,
+    "median": -0.016,
+    "max_abs": 0.292
+   },
+   "vad_start_minus_true": {
+    "n": 25,
+    "mean": -0.125,
+    "mean_abs": 0.17,
+    "median": -0.028,
+    "max_abs": 3.142
+   },
+   "vad_end_minus_true": {
+    "n": 25,
+    "mean": 0.497,
+    "mean_abs": 0.497,
+    "median": 0.35,
+    "max_abs": 5.864
+   },
+   "lines": [
+    {
+     "index": 0,
+     "kind": "normal",
+     "ref": "hi everyone and welcome back to the channel",
+     "hyp": "hi everyone and welcome back to the channel",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.26,
+     "end_err": 0.2,
+     "word_start_diffs": [
+      -0.26,
+      0.09,
+      -0.115,
+      -0.045,
+      0.03,
+      -0.08,
+      -0.045,
+      0.01
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 1,
+     "kind": "retake_first",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.256,
+     "end_err": 0.194,
+     "word_start_diffs": [
+      -0.256,
+      -0.021,
+      -0.011,
+      0.014,
+      -0.056,
+      -0.016,
+      -0.081,
+      -0.086,
+      -0.056,
+      -0.031,
+      0.024,
+      0.124,
+      0.084,
+      -0.011,
+      0.104,
+      0.039,
+      0.039
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 2,
+     "kind": "retake_repeat",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.254,
+     "end_err": 0.196,
+     "word_start_diffs": [
+      -0.254,
+      -0.019,
+      -0.009,
+      0.016,
+      -0.054,
+      -0.014,
+      -0.079,
+      -0.084,
+      -0.054,
+      -0.029,
+      0.026,
+      0.126,
+      0.086,
+      -0.009,
+      0.106,
+      0.041,
+      0.041
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 3,
+     "kind": "filler",
+     "ref": "so the first thing you want to do is uh open the project folder",
+     "hyp": "so the first thing you want to do is uh open the project folder",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.252,
+     "end_err": 0.438,
+     "word_start_diffs": [
+      -0.252,
+      -0.062,
+      0.073,
+      -0.042,
+      -0.017,
+      0.083,
+      -0.007,
+      0.053,
+      0.108,
+      -0.132,
+      -0.172,
+      -0.057,
+      0.098,
+      0.068
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [
+      "uh"
+     ],
+     "hyp_fillers": [
+      "uh"
+     ]
+    },
+    {
+     "index": 4,
+     "kind": "abandoned",
+     "ref": "and then we",
+     "hyp": "and then we",
+     "errors": 0,
+     "ref_words": 3,
+     "start_err": -0.198,
+     "end_err": 0.062,
+     "word_start_diffs": [
+      -0.198,
+      -0.033,
+      0.007
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 5,
+     "kind": "aside",
+     "ref": "sorry let me start that again",
+     "hyp": "sorry let me start that again",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": -0.09,
+     "end_err": 0.41,
+     "word_start_diffs": [
+      -0.09,
+      -0.155,
+      -0.055,
+      0.045,
+      0.005,
+      0.07
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 6,
+     "kind": "normal",
+     "ref": "and then we drag the recording onto the window",
+     "hyp": "and then we drag the recording onto the window",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.286,
+     "end_err": 0.494,
+     "word_start_diffs": [
+      -0.286,
+      -0.121,
+      -0.081,
+      -0.066,
+      0.019,
+      0.054,
+      0.039,
+      0.054,
+      0.114
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 7,
+     "kind": "filler",
+     "ref": "um the transcript shows up while the video is still loading",
+     "hyp": "um the transcript shows up while the video is still loading",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.274,
+     "end_err": 0.526,
+     "word_start_diffs": [
+      -0.274,
+      -0.199,
+      -0.059,
+      -0.024,
+      0.061,
+      0.036,
+      0.046,
+      0.101,
+      -0.039,
+      -0.029,
+      0.021
+     ],
+     "fillers_ref": [
+      "um"
+     ],
+     "fillers_kept": [
+      "um"
+     ],
+     "hyp_fillers": [
+      "um"
+     ]
+    },
+    {
+     "index": 8,
+     "kind": "filler",
+     "ref": "you can you know read it like a document",
+     "hyp": "you can you know read it like a document",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.282,
+     "end_err": 0.298,
+     "word_start_diffs": [
+      -0.282,
+      0.063,
+      -0.107,
+      -0.012,
+      -0.207,
+      -0.022,
+      0.008,
+      0.028,
+      0.118
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 9,
+     "kind": "normal",
+     "ref": "every word has a time so cutting a sentence cuts the video too",
+     "hyp": "every word has a time so cutting a sentence cuts the video too",
+     "errors": 0,
+     "ref_words": 13,
+     "start_err": -0.138,
+     "end_err": 0.172,
+     "word_start_diffs": [
+      -0.138,
+      -0.033,
+      0.027,
+      -0.028,
+      0.147,
+      -0.138,
+      -0.068,
+      -0.018,
+      0.007,
+      0.037,
+      0.047,
+      0.027,
+      -0.028
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 10,
+     "kind": "aside",
+     "ref": "hang on my phone is ringing",
+     "hyp": "hang on my phone is ring",
+     "errors": 1,
+     "ref_words": 6,
+     "start_err": -0.26,
+     "end_err": 0.4,
+     "word_start_diffs": [
+      -0.26,
+      0.1,
+      -0.16,
+      -0.08,
+      -0.06
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 11,
+     "kind": "aside",
+     "ref": "okay where was i",
+     "hyp": "okay where was i",
+     "errors": 0,
+     "ref_words": 4,
+     "start_err": -0.128,
+     "end_err": 0.432,
+     "word_start_diffs": [
+      -0.128,
+      -0.153,
+      -0.048,
+      0.057
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 12,
+     "kind": "retake_first",
+     "ref": "the second step is to look at the suggestions on the right",
+     "hyp": "the second step is to look at the suggestions on the right",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.264,
+     "end_err": 0.376,
+     "word_start_diffs": [
+      -0.264,
+      -0.034,
+      -0.049,
+      -0.064,
+      -0.084,
+      -0.044,
+      -0.024,
+      -0.044,
+      0.036,
+      -0.024,
+      0.061,
+      0.196
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 13,
+     "kind": "retake_repeat",
+     "ref": "the second step is to look at the suggestions in the margin",
+     "hyp": "the second step is to look at the suggestions in the margin",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.244,
+     "end_err": 0.416,
+     "word_start_diffs": [
+      -0.244,
+      -0.014,
+      -0.029,
+      -0.044,
+      -0.064,
+      -0.024,
+      -0.084,
+      -0.024,
+      0.056,
+      -0.084,
+      -0.069,
+      0.096
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 14,
+     "kind": "filler",
+     "ref": "each one is uh um a retake or a false start",
+     "hyp": "each one is a um a retake or a false start",
+     "errors": 1,
+     "ref_words": 11,
+     "start_err": -0.288,
+     "end_err": 0.652,
+     "word_start_diffs": [
+      -0.288,
+      0.007,
+      0.112,
+      -0.108,
+      -0.203,
+      -0.138,
+      -0.003,
+      -0.033,
+      -0.003,
+      0.192
+     ],
+     "fillers_ref": [
+      "uh",
+      "um"
+     ],
+     "fillers_kept": [
+      "uh"
+     ],
+     "hyp_fillers": [
+      "um"
+     ]
+    },
+    {
+     "index": 15,
+     "kind": "normal",
+     "ref": "if you agree with it you press enter",
+     "hyp": "if you agree with it you press enter",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.292,
+     "end_err": 0.068,
+     "word_start_diffs": [
+      -0.292,
+      -0.122,
+      -0.102,
+      -0.082,
+      -0.117,
+      0.008,
+      0.028,
+      0.018
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 16,
+     "kind": "abandoned",
+     "ref": "if you don't you press",
+     "hyp": "if you don't you press",
+     "errors": 0,
+     "ref_words": 5,
+     "start_err": -0.292,
+     "end_err": 0.538,
+     "word_start_diffs": [
+      -0.292,
+      -0.042,
+      -0.012,
+      -0.107,
+      0.058
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 17,
+     "kind": "normal",
+     "ref": "if you don't agree you just press escape and it goes away",
+     "hyp": "if you don't agree you just press escape and it goes away",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.278,
+     "end_err": 0.492,
+     "word_start_diffs": [
+      -0.278,
+      -0.023,
+      0.002,
+      0.067,
+      -0.143,
+      -0.063,
+      -0.103,
+      -0.018,
+      0.067,
+      0.072,
+      0.097,
+      0.202
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 18,
+     "kind": "filler",
+     "ref": "uh so the third step is export",
+     "hyp": "so the third step is export",
+     "errors": 1,
+     "ref_words": 7,
+     "start_err": 0.468,
+     "end_err": 0.808,
+     "word_start_diffs": [
+      -0.122,
+      -0.212,
+      -0.157,
+      0.018,
+      -0.077,
+      0.073
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 19,
+     "kind": "retake_first",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.192,
+     "end_err": 0.258,
+     "word_start_diffs": [
+      -0.192,
+      0.068,
+      -0.067,
+      -0.007,
+      0.128,
+      -0.127,
+      -0.117,
+      -0.032,
+      0.043,
+      0.063,
+      0.008,
+      0.078,
+      0.088,
+      0.103
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 20,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.126,
+     "end_err": 0.244,
+     "word_start_diffs": [
+      -0.126,
+      0.054,
+      -0.001,
+      0.059,
+      0.114,
+      -0.141,
+      -0.051,
+      0.034,
+      0.029,
+      0.049,
+      -0.006,
+      0.064,
+      0.074,
+      0.089
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 21,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.124,
+     "end_err": 0.246,
+     "word_start_diffs": [
+      -0.124,
+      0.056,
+      0.001,
+      0.061,
+      0.116,
+      -0.139,
+      -0.129,
+      0.036,
+      0.031,
+      0.051,
+      -0.004,
+      0.066,
+      0.076,
+      0.091
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 22,
+     "kind": "filler",
+     "ref": "i think that's you know pretty much it",
+     "hyp": "i think that's you know pretty much it",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.29,
+     "end_err": 0.56,
+     "word_start_diffs": [
+      -0.29,
+      -0.085,
+      -0.035,
+      -0.135,
+      -0.04,
+      -0.155,
+      0.045,
+      0.125
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 23,
+     "kind": "aside",
+     "ref": "let me check the chat real quick",
+     "hyp": "let me check the chat real quick",
+     "errors": 0,
+     "ref_words": 7,
+     "start_err": -0.28,
+     "end_err": 0.55,
+     "word_start_diffs": [
+      -0.28,
+      -0.09,
+      -0.075,
+      -0.03,
+      0.015,
+      0.11,
+      0.105
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 24,
+     "kind": "normal",
+     "ref": "thanks for watching and i'll see you in the next one",
+     "hyp": "thanks for watching and i'll see you in the next one",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.258,
+     "end_err": 0.492,
+     "word_start_diffs": [
+      -0.258,
+      0.022,
+      0.057,
+      -0.143,
+      -0.143,
+      -0.008,
+      0.027,
+      0.017,
+      0.052,
+      0.047,
+      0.222
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    }
+   ]
+  },
+  {
+   "file": "monologue_noisy__v3__gpu_b1.jsonl",
+   "device": "gpu",
+   "stats": {
+    "audio_seconds": 139.76,
+    "decode_seconds": 3.1549100999999995,
+    "model_load_seconds": 4.3306797,
+    "segments": 24,
+    "speed_x_realtime_excluding_load": 34.528099625129485,
+    "speed_x_realtime_wall": 16.68099438682629,
+    "vad_seconds": 0.7086163999999997,
+    "wall_seconds": 8.3783974
+   },
+   "wer": 0.004,
+   "ref_words": 252,
+   "fillers_kept": "6/7",
+   "retake_lines_transcribed": "7/7",
+   "abandoned_lines_transcribed": "2/2",
+   "words_in_silence": [],
+   "speech_without_words": 0,
+   "line_start_err": {
+    "n": 25,
+    "mean": -0.174,
+    "mean_abs": 0.217,
+    "median": -0.254,
+    "max_abs": 0.548
+   },
+   "line_end_err": {
+    "n": 25,
+    "mean": 0.39,
+    "mean_abs": 0.39,
+    "median": 0.412,
+    "max_abs": 0.808
+   },
+   "last_word_end_minus_true_end_before_pause": {
+    "n": 25,
+    "mean": 0.39,
+    "mean_abs": 0.39,
+    "median": 0.412,
+    "max_abs": 0.808
+   },
+   "word_start_vs_sapi": {
+    "n": 251,
+    "mean": 0.002,
+    "mean_abs": 0.089,
+    "median": 0.007,
+    "max_abs": 0.371
+   },
+   "vad_start_minus_true": {
+    "n": 25,
+    "mean": -0.125,
+    "mean_abs": 0.17,
+    "median": -0.028,
+    "max_abs": 3.142
+   },
+   "vad_end_minus_true": {
+    "n": 25,
+    "mean": 0.497,
+    "mean_abs": 0.497,
+    "median": 0.35,
+    "max_abs": 5.864
+   },
+   "lines": [
+    {
+     "index": 0,
+     "kind": "normal",
+     "ref": "hi everyone and welcome back to the channel",
+     "hyp": "hi everyone and welcome back to the channel",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.26,
+     "end_err": 0.2,
+     "word_start_diffs": [
+      -0.26,
+      0.09,
+      -0.115,
+      -0.045,
+      0.03,
+      -0.08,
+      -0.045,
+      0.09
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 1,
+     "kind": "retake_first",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.256,
+     "end_err": 0.194,
+     "word_start_diffs": [
+      -0.256,
+      -0.021,
+      -0.011,
+      0.094,
+      -0.056,
+      -0.016,
+      -0.081,
+      -0.006,
+      -0.056,
+      -0.031,
+      0.024,
+      0.204,
+      0.084,
+      -0.011,
+      0.104,
+      0.039,
+      0.039
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 2,
+     "kind": "retake_repeat",
+     "ref": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "hyp": "today we are going to look at how i edit a long recording in about twenty minutes",
+     "errors": 0,
+     "ref_words": 17,
+     "start_err": -0.254,
+     "end_err": 0.196,
+     "word_start_diffs": [
+      -0.254,
+      -0.019,
+      -0.009,
+      0.096,
+      -0.054,
+      -0.014,
+      -0.079,
+      -0.004,
+      -0.054,
+      -0.029,
+      0.026,
+      0.206,
+      0.086,
+      -0.009,
+      0.106,
+      0.041,
+      0.041
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 3,
+     "kind": "filler",
+     "ref": "so the first thing you want to do is uh open the project folder",
+     "hyp": "so the first thing you want to do is uh open the project folder",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.252,
+     "end_err": 0.518,
+     "word_start_diffs": [
+      -0.252,
+      0.018,
+      0.153,
+      -0.042,
+      0.063,
+      0.083,
+      -0.007,
+      0.133,
+      0.188,
+      -0.132,
+      -0.092,
+      0.023,
+      0.178,
+      0.148
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [
+      "uh"
+     ],
+     "hyp_fillers": [
+      "uh"
+     ]
+    },
+    {
+     "index": 4,
+     "kind": "abandoned",
+     "ref": "and then we",
+     "hyp": "and then we",
+     "errors": 0,
+     "ref_words": 3,
+     "start_err": -0.278,
+     "end_err": 0.062,
+     "word_start_diffs": [
+      -0.278,
+      -0.113,
+      0.007
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 5,
+     "kind": "aside",
+     "ref": "sorry let me start that again",
+     "hyp": "sorry let me start that again",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": -0.09,
+     "end_err": 0.49,
+     "word_start_diffs": [
+      -0.09,
+      -0.075,
+      0.025,
+      0.125,
+      0.085,
+      0.15
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 6,
+     "kind": "normal",
+     "ref": "and then we drag the recording onto the window",
+     "hyp": "and then we drag the recording onto the window",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.286,
+     "end_err": 0.494,
+     "word_start_diffs": [
+      -0.286,
+      -0.121,
+      -0.081,
+      0.014,
+      0.019,
+      0.054,
+      0.119,
+      0.054,
+      0.194
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 7,
+     "kind": "filler",
+     "ref": "um the transcript shows up while the video is still loading",
+     "hyp": "um the transcript shows up while the video is still loading",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.114,
+     "end_err": 0.526,
+     "word_start_diffs": [
+      -0.114,
+      -0.119,
+      0.021,
+      0.056,
+      0.061,
+      0.036,
+      0.046,
+      0.101,
+      -0.039,
+      -0.029,
+      0.101
+     ],
+     "fillers_ref": [
+      "um"
+     ],
+     "fillers_kept": [
+      "um"
+     ],
+     "hyp_fillers": [
+      "um"
+     ]
+    },
+    {
+     "index": 8,
+     "kind": "filler",
+     "ref": "you can you know read it like a document",
+     "hyp": "you can you know read it like a document",
+     "errors": 0,
+     "ref_words": 9,
+     "start_err": -0.042,
+     "end_err": 0.298,
+     "word_start_diffs": [
+      -0.042,
+      0.143,
+      -0.107,
+      0.068,
+      -0.127,
+      -0.022,
+      0.088,
+      0.028,
+      0.198
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 9,
+     "kind": "normal",
+     "ref": "every word has a time so cutting a sentence cuts the video too",
+     "hyp": "every word has a time so cutting a sentence cuts the video too",
+     "errors": 0,
+     "ref_words": 13,
+     "start_err": -0.138,
+     "end_err": 0.172,
+     "word_start_diffs": [
+      -0.138,
+      0.047,
+      0.027,
+      -0.028,
+      0.227,
+      -0.058,
+      -0.068,
+      -0.018,
+      0.007,
+      -0.043,
+      0.047,
+      0.107,
+      0.052
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 10,
+     "kind": "aside",
+     "ref": "hang on my phone is ringing",
+     "hyp": "hang on my phone is ringing",
+     "errors": 0,
+     "ref_words": 6,
+     "start_err": -0.26,
+     "end_err": 0.4,
+     "word_start_diffs": [
+      -0.26,
+      0.1,
+      -0.08,
+      -0.08,
+      0.02,
+      0.02
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 11,
+     "kind": "aside",
+     "ref": "okay where was i",
+     "hyp": "okay where was i",
+     "errors": 0,
+     "ref_words": 4,
+     "start_err": -0.048,
+     "end_err": 0.432,
+     "word_start_diffs": [
+      -0.048,
+      -0.073,
+      0.032,
+      0.137
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 12,
+     "kind": "retake_first",
+     "ref": "the second step is to look at the suggestions on the right",
+     "hyp": "the second step is to look at the suggestions on the right",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.264,
+     "end_err": 0.376,
+     "word_start_diffs": [
+      -0.264,
+      -0.034,
+      -0.049,
+      -0.064,
+      -0.084,
+      0.036,
+      -0.024,
+      -0.044,
+      0.036,
+      0.056,
+      0.061,
+      0.276
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 13,
+     "kind": "retake_repeat",
+     "ref": "the second step is to look at the suggestions in the margin",
+     "hyp": "the second step is to look at the suggestions in the margin",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.244,
+     "end_err": 0.496,
+     "word_start_diffs": [
+      -0.244,
+      -0.014,
+      -0.029,
+      -0.044,
+      -0.064,
+      -0.024,
+      -0.004,
+      -0.024,
+      0.056,
+      -0.004,
+      -0.069,
+      0.176
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 14,
+     "kind": "filler",
+     "ref": "each one is uh um a retake or a false start",
+     "hyp": "each one is uh um a retake or a false start",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.288,
+     "end_err": 0.652,
+     "word_start_diffs": [
+      -0.288,
+      0.087,
+      0.192,
+      -0.148,
+      -0.028,
+      -0.203,
+      -0.058,
+      -0.003,
+      -0.033,
+      0.077,
+      0.272
+     ],
+     "fillers_ref": [
+      "uh",
+      "um"
+     ],
+     "fillers_kept": [
+      "uh",
+      "um"
+     ],
+     "hyp_fillers": [
+      "uh",
+      "um"
+     ]
+    },
+    {
+     "index": 15,
+     "kind": "normal",
+     "ref": "if you agree with it you press enter",
+     "hyp": "if you agree with it you press enter",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.292,
+     "end_err": 0.148,
+     "word_start_diffs": [
+      -0.292,
+      -0.122,
+      -0.102,
+      -0.082,
+      -0.037,
+      0.008,
+      0.028,
+      0.018
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 16,
+     "kind": "abandoned",
+     "ref": "if you don't you press",
+     "hyp": "if you don't you press",
+     "errors": 0,
+     "ref_words": 5,
+     "start_err": -0.292,
+     "end_err": 0.538,
+     "word_start_diffs": [
+      -0.292,
+      -0.042,
+      0.068,
+      -0.027,
+      0.138
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 17,
+     "kind": "normal",
+     "ref": "if you don't agree you just press escape and it goes away",
+     "hyp": "if you don't agree you just press escape and it goes away",
+     "errors": 0,
+     "ref_words": 12,
+     "start_err": -0.278,
+     "end_err": 0.492,
+     "word_start_diffs": [
+      -0.278,
+      -0.023,
+      0.002,
+      0.067,
+      -0.063,
+      0.017,
+      -0.103,
+      -0.018,
+      0.067,
+      0.072,
+      0.177,
+      0.202
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 18,
+     "kind": "filler",
+     "ref": "uh so the third step is export",
+     "hyp": "so the third step is export",
+     "errors": 1,
+     "ref_words": 7,
+     "start_err": 0.548,
+     "end_err": 0.808,
+     "word_start_diffs": [
+      -0.042,
+      -0.212,
+      -0.077,
+      0.018,
+      0.003,
+      0.153
+     ],
+     "fillers_ref": [
+      "uh"
+     ],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 19,
+     "kind": "retake_first",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.192,
+     "end_err": 0.258,
+     "word_start_diffs": [
+      -0.192,
+      0.068,
+      -0.067,
+      0.073,
+      0.208,
+      -0.127,
+      -0.037,
+      0.048,
+      0.043,
+      0.143,
+      0.008,
+      0.078,
+      0.088,
+      0.183
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 20,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.046,
+     "end_err": 0.244,
+     "word_start_diffs": [
+      -0.046,
+      0.054,
+      -0.001,
+      0.059,
+      0.194,
+      -0.061,
+      -0.051,
+      0.034,
+      -0.371,
+      0.129,
+      -0.006,
+      0.064,
+      0.074,
+      0.169
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 21,
+     "kind": "retake_repeat",
+     "ref": "export uses the graphics card so a forty minute video takes a few minutes",
+     "hyp": "export uses the graphics card so a forty minute video takes a few minutes",
+     "errors": 0,
+     "ref_words": 14,
+     "start_err": -0.044,
+     "end_err": 0.246,
+     "word_start_diffs": [
+      -0.044,
+      0.056,
+      0.001,
+      0.061,
+      0.196,
+      -0.059,
+      -0.049,
+      0.036,
+      -0.369,
+      0.131,
+      -0.004,
+      0.066,
+      0.076,
+      0.171
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 22,
+     "kind": "filler",
+     "ref": "i think that's you know pretty much it",
+     "hyp": "i think that's you know pretty much it",
+     "errors": 0,
+     "ref_words": 8,
+     "start_err": -0.13,
+     "end_err": 0.48,
+     "word_start_diffs": [
+      -0.13,
+      0.075,
+      0.045,
+      -0.055,
+      0.04,
+      -0.075,
+      0.045,
+      0.125
+     ],
+     "fillers_ref": [
+      "you know"
+     ],
+     "fillers_kept": [
+      "you know"
+     ],
+     "hyp_fillers": []
+    },
+    {
+     "index": 23,
+     "kind": "aside",
+     "ref": "let me check the chat real quick",
+     "hyp": "let me check the chat real quick",
+     "errors": 0,
+     "ref_words": 7,
+     "start_err": -0.28,
+     "end_err": 0.63,
+     "word_start_diffs": [
+      -0.28,
+      -0.09,
+      0.005,
+      -0.03,
+      0.095,
+      0.19,
+      0.185
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    },
+    {
+     "index": 24,
+     "kind": "normal",
+     "ref": "thanks for watching and i'll see you in the next one",
+     "hyp": "thanks for watching and i'll see you in the next one",
+     "errors": 0,
+     "ref_words": 11,
+     "start_err": -0.258,
+     "end_err": 0.412,
+     "word_start_diffs": [
+      -0.258,
+      0.102,
+      0.057,
+      -0.143,
+      -0.143,
+      0.072,
+      0.027,
+      0.017,
+      0.052,
+      0.127,
+      0.302
+     ],
+     "fillers_ref": [],
+     "fillers_kept": [],
+     "hyp_fillers": []
+    }
+   ]
+  }
+ ],
+ "ami": [
+  {
+   "file": "ami_B_300_600__qwen3-1.7b-aligner__gpu.jsonl",
+   "device": "cuda:0",
+   "stats": {
+    "audio_seconds": 300.0,
+    "model_load_seconds": 5.0214409828186035,
+    "decode_seconds": 13.567875385284424,
+    "speed_x_realtime_excluding_load": 22.11105213461622
+   },
+   "wer": 0.1351,
+   "ref_words": 422,
+   "sub": 24,
+   "del": 27,
+   "ins": 6,
+   "fillers_kept": "12/33",
+   "hyp_fillers_total": 12,
+   "word_start_err": {
+    "n": 371,
+    "mean": 0.007,
+    "mean_abs": 0.049,
+    "median": 0.01,
+    "max_abs": 1.42
+   },
+   "word_end_err": {
+    "n": 371,
+    "mean": -0.092,
+    "mean_abs": 0.128,
+    "median": -0.006,
+    "max_abs": 2.702
+   },
+   "speech_without_words": 0
+  },
+  {
+   "file": "ami_B_300_600__v2-int8__cpu_b1.jsonl",
+   "device": "cpu",
+   "stats": {
+    "audio_seconds": 300.0,
+    "decode_seconds": 9.674217700000002,
+    "model_load_seconds": 4.6132962,
+    "segments": 39,
+    "speed_x_realtime_excluding_load": 24.510583894806135,
+    "speed_x_realtime_wall": 17.801083536527265,
+    "vad_seconds": 2.0008349999999995,
+    "wall_seconds": 16.8529067
+   },
+   "wer": 0.1019,
+   "ref_words": 422,
+   "sub": 21,
+   "del": 11,
+   "ins": 11,
+   "fillers_kept": "25/33",
+   "hyp_fillers_total": 25,
+   "word_start_err": {
+    "n": 390,
+    "mean": 0.018,
+    "mean_abs": 0.1,
+    "median": 0.03,
+    "max_abs": 7.326
+   },
+   "word_end_err": {
+    "n": 390,
+    "mean": -0.051,
+    "mean_abs": 0.164,
+    "median": 0.016,
+    "max_abs": 7.186
+   },
+   "speech_without_words": 0
+  },
+  {
+   "file": "ami_B_300_600__v2__gpu_b1.jsonl",
+   "device": "gpu",
+   "stats": {
+    "audio_seconds": 300.0,
+    "decode_seconds": 4.384962000000001,
+    "model_load_seconds": 3.1559572,
+    "segments": 39,
+    "speed_x_realtime_excluding_load": 50.27212131695127,
+    "speed_x_realtime_wall": 32.88219185325283,
+    "vad_seconds": 1.3234986000000002,
+    "wall_seconds": 9.1234794
+   },
+   "wer": 0.1019,
+   "ref_words": 422,
+   "sub": 21,
+   "del": 10,
+   "ins": 12,
+   "fillers_kept": "27/33",
+   "hyp_fillers_total": 27,
+   "word_start_err": {
+    "n": 391,
+    "mean": 0.027,
+    "mean_abs": 0.106,
+    "median": 0.03,
+    "max_abs": 7.326
+   },
+   "word_end_err": {
+    "n": 391,
+    "mean": -0.038,
+    "mean_abs": 0.161,
+    "median": 0.016,
+    "max_abs": 7.186
+   },
+   "speech_without_words": 0
+  },
+  {
+   "file": "ami_B_300_600__v3-int8__cpu_b1.jsonl",
+   "device": "cpu",
+   "stats": {
+    "audio_seconds": 300.0,
+    "decode_seconds": 18.024965199999997,
+    "model_load_seconds": 5.5642579,
+    "segments": 39,
+    "speed_x_realtime_excluding_load": 14.290058463487187,
+    "speed_x_realtime_wall": 11.296084962584297,
+    "vad_seconds": 2.6615073999999987,
+    "wall_seconds": 26.5578739
+   },
+   "wer": 0.0711,
+   "ref_words": 422,
+   "sub": 13,
+   "del": 14,
+   "ins": 3,
+   "fillers_kept": "28/33",
+   "hyp_fillers_total": 28,
+   "word_start_err": {
+    "n": 395,
+    "mean": 0.013,
+    "mean_abs": 0.091,
+    "median": 0.018,
+    "max_abs": 1.34
+   },
+   "word_end_err": {
+    "n": 395,
+    "mean": -0.062,
+    "mean_abs": 0.162,
+    "median": 0.0,
+    "max_abs": 2.222
+   },
+   "speech_without_words": 0
+  },
+  {
+   "file": "ami_B_300_600__v3__gpu_b1.jsonl",
+   "device": "gpu",
+   "stats": {
+    "audio_seconds": 300.0,
+    "decode_seconds": 4.3215102000000005,
+    "model_load_seconds": 2.9308064,
+    "segments": 39,
+    "speed_x_realtime_excluding_load": 50.68786045510366,
+    "speed_x_realtime_wall": 33.90066740582929,
+    "vad_seconds": 1.3334686999999992,
+    "wall_seconds": 8.8493833
+   },
+   "wer": 0.0687,
+   "ref_words": 422,
+   "sub": 14,
+   "del": 8,
+   "ins": 7,
+   "fillers_kept": "28/33",
+   "hyp_fillers_total": 28,
+   "word_start_err": {
+    "n": 400,
+    "mean": 0.032,
+    "mean_abs": 0.102,
+    "median": 0.026,
+    "max_abs": 1.34
+   },
+   "word_end_err": {
+    "n": 400,
+    "mean": -0.037,
+    "mean_abs": 0.164,
+    "median": 0.009,
+    "max_abs": 1.982
+   },
+   "speech_without_words": 0
+  }
+ ]
+}

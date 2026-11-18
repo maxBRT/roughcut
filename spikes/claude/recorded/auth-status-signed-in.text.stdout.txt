@@ -1,0 +1,4 @@
+Login method: Claude Ultra account
+Organization: <redacted>
+Email: <redacted>
+Sign-in ends: between 2026-11-25 and 2026-11-28 (2026-11-28T05:45:05.708Z)

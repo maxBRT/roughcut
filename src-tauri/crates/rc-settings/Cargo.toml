@@ -1,0 +1,25 @@
+[package]
+name = "rc-settings"
+description = "Roughcut core module `settings`: settings file"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+rc-types = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+[target.'cfg(windows)'.dependencies]
+# Windows Credential Manager (API key) and the known Videos folder.
+windows-sys = { version = "0.61.2", features = [
+    "Win32_Foundation",
+    "Win32_Security_Credentials",
+    "Win32_UI_Shell",
+    "Win32_System_Com",
+] }
+
+[lints]
+workspace = true

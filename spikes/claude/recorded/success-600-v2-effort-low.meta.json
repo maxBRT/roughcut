@@ -1,0 +1,46 @@
+{
+  "name": "success-600-v2-effort-low",
+  "mode": "normal",
+  "argv": [
+    "claude",
+    "-p",
+    "--output-format",
+    "json",
+    "--json-schema",
+    "<schema json>",
+    "--tools",
+    "",
+    "--system-prompt-file",
+    "<path>/recorded/system-prompt.txt",
+    "--no-session-persistence",
+    "--setting-sources",
+    "",
+    "--strict-mcp-config",
+    "--disable-slash-commands",
+    "--model",
+    "opus",
+    "--effort",
+    "low"
+  ],
+  "removed_env_names": [
+    "CLAUDECODE",
+    "CLAUDE_AGENT_SDK_VERSION",
+    "CLAUDE_CODE_CHILD_SESSION",
+    "CLAUDE_CODE_ENTRYPOINT",
+    "CLAUDE_CODE_EXECPATH",
+    "CLAUDE_CODE_MESSAGING_SOCKET",
+    "CLAUDE_CODE_MESSAGING_TOKEN",
+    "CLAUDE_CODE_SESSION_ATTENDED",
+    "CLAUDE_CODE_SESSION_ID",
+    "CLAUDE_EFFORT",
+    "CLAUDE_PID"
+  ],
+  "added_env": [
+    "ENABLE_CLAUDEAI_MCP_SERVERS=false",
+    "CLAUDE_CODE_MAX_RETRIES=2"
+  ],
+  "stdin_bytes": 50671,
+  "exit_code": 0,
+  "wall_seconds": 50.92,
+  "files_left_in_cwd": []
+}

@@ -1,0 +1,4 @@
+# No MSVC linker on this machine (no admin rights for Visual Studio Build Tools):
+# build with the GNU target, linking through the portable WinLibs MinGW-w64 on PATH (tools/env.*).
+[toolchain]
+channel = "stable-x86_64-pc-windows-gnu"

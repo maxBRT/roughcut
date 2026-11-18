@@ -1,0 +1,27 @@
+[package]
+name = "rc-suggest"
+description = "Roughcut core module `suggest`: Claude runner and dead-air detection"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+rc-types = { workspace = true }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0"
+
+[target.'cfg(windows)'.dependencies]
+# A job object so a transcriber/claude child dies with the app, even after a crash.
+windows-sys = { version = "0.61.2", features = ["Win32_Foundation", "Win32_System_JobObjects", "Win32_System_Threading", "Win32_Security"] }
+
+[[bin]]
+# Test helper only: a stand-in `claude` program that replays the recorded envelopes of
+# spikes/claude (see src/bin/standin_claude.rs). Never shipped or called by the app.
+name = "rc-suggest-standin-claude"
+path = "src/bin/standin_claude.rs"
+test = false
+
+[lints]
+workspace = true

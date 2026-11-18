@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "suggestions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": { "type": "string", "enum": ["retake", "false_start", "aside"] },
+          "first_utterance": { "type": "integer", "minimum": 1 },
+          "last_utterance": { "type": "integer", "minimum": 1 },
+          "quote": { "type": "string", "minLength": 1 },
+          "reason": { "type": "string", "minLength": 1, "maxLength": 200 },
+          "keep_utterance": { "type": "integer", "minimum": 1 }
+        },
+        "required": ["kind", "first_utterance", "last_utterance", "quote", "reason"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["suggestions"],
+  "additionalProperties": false
+}

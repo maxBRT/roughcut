@@ -1,0 +1,2155 @@
+{
+ "frameGrid": {
+  "frameToMicros": [
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "frame": 0,
+    "micros": 0
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "frame": 1,
+    "micros": 33367
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "frame": 2,
+    "micros": 66733
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "frame": 3,
+    "micros": 100100
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "frame": -1,
+    "micros": -33367
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "frame": -2,
+    "micros": -66733
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "frame": 1000,
+    "micros": 33366667
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "frame": 107892,
+    "micros": 3599996400
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "frame": 107893,
+    "micros": 3600029767
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "frame": 3600000,
+    "micros": 120120000000
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "frame": 5184000,
+    "micros": 172972800000
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "frame": 0,
+    "micros": 0
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "frame": 1,
+    "micros": 41708
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "frame": 2,
+    "micros": 83417
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "frame": 3,
+    "micros": 125125
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "frame": -1,
+    "micros": -41708
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "frame": -2,
+    "micros": -83417
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "frame": 1000,
+    "micros": 41708333
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "frame": 107892,
+    "micros": 4499995500
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "frame": 107893,
+    "micros": 4500037208
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "frame": 3600000,
+    "micros": 150150000000
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "frame": 5184000,
+    "micros": 216216000000
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "frame": 0,
+    "micros": 0
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "frame": 1,
+    "micros": 16683
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "frame": 2,
+    "micros": 33367
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "frame": 3,
+    "micros": 50050
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "frame": -1,
+    "micros": -16683
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "frame": -2,
+    "micros": -33367
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "frame": 1000,
+    "micros": 16683333
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "frame": 107892,
+    "micros": 1799998200
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "frame": 107893,
+    "micros": 1800014883
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "frame": 3600000,
+    "micros": 60060000000
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "frame": 5184000,
+    "micros": 86486400000
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "frame": 0,
+    "micros": 0
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "frame": 1,
+    "micros": 40000
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "frame": 2,
+    "micros": 80000
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "frame": 3,
+    "micros": 120000
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "frame": -1,
+    "micros": -40000
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "frame": -2,
+    "micros": -80000
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "frame": 1000,
+    "micros": 40000000
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "frame": 107892,
+    "micros": 4315680000
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "frame": 107893,
+    "micros": 4315720000
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "frame": 3600000,
+    "micros": 144000000000
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "frame": 5184000,
+    "micros": 207360000000
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "frame": 0,
+    "micros": 0
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "frame": 1,
+    "micros": 33333
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "frame": 2,
+    "micros": 66667
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "frame": 3,
+    "micros": 100000
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "frame": -1,
+    "micros": -33333
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "frame": -2,
+    "micros": -66667
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "frame": 1000,
+    "micros": 33333333
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "frame": 107892,
+    "micros": 3596400000
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "frame": 107893,
+    "micros": 3596433333
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "frame": 3600000,
+    "micros": 120000000000
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "frame": 5184000,
+    "micros": 172800000000
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "frame": 0,
+    "micros": 0
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "frame": 1,
+    "micros": 20000
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "frame": 2,
+    "micros": 40000
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "frame": 3,
+    "micros": 60000
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "frame": -1,
+    "micros": -20000
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "frame": -2,
+    "micros": -40000
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "frame": 1000,
+    "micros": 20000000
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "frame": 107892,
+    "micros": 2157840000
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "frame": 107893,
+    "micros": 2157860000
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "frame": 3600000,
+    "micros": 72000000000
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "frame": 5184000,
+    "micros": 103680000000
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "frame": 0,
+    "micros": 0
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "frame": 1,
+    "micros": 41667
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "frame": 2,
+    "micros": 83333
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "frame": 3,
+    "micros": 125000
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "frame": -1,
+    "micros": -41667
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "frame": -2,
+    "micros": -83333
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "frame": 1000,
+    "micros": 41666667
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "frame": 107892,
+    "micros": 4495500000
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "frame": 107893,
+    "micros": 4495541667
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "frame": 3600000,
+    "micros": 150000000000
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "frame": 5184000,
+    "micros": 216000000000
+   }
+  ],
+  "times": [
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "t": 0,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 0,
+    "snap": 0,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "t": 1,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 33367,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "t": 16683,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 33367,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "t": 16684,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 33367,
+    "snap": 33367,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "t": 33366,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 33367,
+    "snap": 33367,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "t": 33367,
+    "frameFloor": 1,
+    "floor": 33367,
+    "ceil": 33367,
+    "snap": 33367,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "t": 33368,
+    "frameFloor": 1,
+    "floor": 33367,
+    "ceil": 66733,
+    "snap": 33367,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "t": 50050,
+    "frameFloor": 1,
+    "floor": 33367,
+    "ceil": 66733,
+    "snap": 66733,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "t": 66733,
+    "frameFloor": 2,
+    "floor": 66733,
+    "ceil": 66733,
+    "snap": 66733,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "t": 66734,
+    "frameFloor": 2,
+    "floor": 66733,
+    "ceil": 100100,
+    "snap": 66733,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "t": 100100,
+    "frameFloor": 3,
+    "floor": 100100,
+    "ceil": 100100,
+    "snap": 100100,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "t": 1000000,
+    "frameFloor": 29,
+    "floor": 967633,
+    "ceil": 1001000,
+    "snap": 1001000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "t": 3600000000,
+    "frameFloor": 107892,
+    "floor": 3599996400,
+    "ceil": 3600029767,
+    "snap": 3599996400,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "t": 3600033366,
+    "frameFloor": 107893,
+    "floor": 3600029767,
+    "ceil": 3600063133,
+    "snap": 3600029767,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "t": 7200000001,
+    "frameFloor": 215784,
+    "floor": 7199992800,
+    "ceil": 7200026167,
+    "snap": 7199992800,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "t": -1,
+    "frameFloor": -1,
+    "floor": -33367,
+    "ceil": 0,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30000,
+     "den": 1001
+    },
+    "t": -33367,
+    "frameFloor": -1,
+    "floor": -33367,
+    "ceil": -33367,
+    "snap": -33367,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "t": 0,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 0,
+    "snap": 0,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "t": 1,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 41708,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "t": 16683,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 41708,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "t": 16684,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 41708,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "t": 33366,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 41708,
+    "snap": 41708,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "t": 33367,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 41708,
+    "snap": 41708,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "t": 33368,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 41708,
+    "snap": 41708,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "t": 50050,
+    "frameFloor": 1,
+    "floor": 41708,
+    "ceil": 83417,
+    "snap": 41708,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "t": 66733,
+    "frameFloor": 1,
+    "floor": 41708,
+    "ceil": 83417,
+    "snap": 83417,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "t": 66734,
+    "frameFloor": 1,
+    "floor": 41708,
+    "ceil": 83417,
+    "snap": 83417,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "t": 100100,
+    "frameFloor": 2,
+    "floor": 83417,
+    "ceil": 125125,
+    "snap": 83417,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "t": 1000000,
+    "frameFloor": 23,
+    "floor": 959292,
+    "ceil": 1001000,
+    "snap": 1001000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "t": 3600000000,
+    "frameFloor": 86313,
+    "floor": 3599971375,
+    "ceil": 3600013083,
+    "snap": 3600013083,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "t": 3600033366,
+    "frameFloor": 86314,
+    "floor": 3600013083,
+    "ceil": 3600054792,
+    "snap": 3600013083,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "t": 7200000001,
+    "frameFloor": 172627,
+    "floor": 7199984458,
+    "ceil": 7200026167,
+    "snap": 7199984458,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "t": -1,
+    "frameFloor": -1,
+    "floor": -41708,
+    "ceil": 0,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24000,
+     "den": 1001
+    },
+    "t": -33367,
+    "frameFloor": -1,
+    "floor": -41708,
+    "ceil": 0,
+    "snap": -41708,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "t": 0,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 0,
+    "snap": 0,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "t": 1,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 16683,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "t": 16683,
+    "frameFloor": 1,
+    "floor": 16683,
+    "ceil": 16683,
+    "snap": 16683,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "t": 16684,
+    "frameFloor": 1,
+    "floor": 16683,
+    "ceil": 33367,
+    "snap": 16683,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "t": 33366,
+    "frameFloor": 1,
+    "floor": 16683,
+    "ceil": 33367,
+    "snap": 33367,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "t": 33367,
+    "frameFloor": 2,
+    "floor": 33367,
+    "ceil": 33367,
+    "snap": 33367,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "t": 33368,
+    "frameFloor": 2,
+    "floor": 33367,
+    "ceil": 50050,
+    "snap": 33367,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "t": 50050,
+    "frameFloor": 3,
+    "floor": 50050,
+    "ceil": 50050,
+    "snap": 50050,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "t": 66733,
+    "frameFloor": 4,
+    "floor": 66733,
+    "ceil": 66733,
+    "snap": 66733,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "t": 66734,
+    "frameFloor": 4,
+    "floor": 66733,
+    "ceil": 83417,
+    "snap": 66733,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "t": 100100,
+    "frameFloor": 6,
+    "floor": 100100,
+    "ceil": 100100,
+    "snap": 100100,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "t": 1000000,
+    "frameFloor": 59,
+    "floor": 984317,
+    "ceil": 1001000,
+    "snap": 1001000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "t": 3600000000,
+    "frameFloor": 215784,
+    "floor": 3599996400,
+    "ceil": 3600013083,
+    "snap": 3599996400,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "t": 3600033366,
+    "frameFloor": 215786,
+    "floor": 3600029767,
+    "ceil": 3600046450,
+    "snap": 3600029767,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "t": 7200000001,
+    "frameFloor": 431568,
+    "floor": 7199992800,
+    "ceil": 7200009483,
+    "snap": 7199992800,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "t": -1,
+    "frameFloor": -1,
+    "floor": -16683,
+    "ceil": 0,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 60000,
+     "den": 1001
+    },
+    "t": -33367,
+    "frameFloor": -2,
+    "floor": -33367,
+    "ceil": -33367,
+    "snap": -33367,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "t": 0,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 0,
+    "snap": 0,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "t": 1,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 40000,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "t": 16683,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 40000,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "t": 16684,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 40000,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "t": 33366,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 40000,
+    "snap": 40000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "t": 33367,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 40000,
+    "snap": 40000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "t": 33368,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 40000,
+    "snap": 40000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "t": 50050,
+    "frameFloor": 1,
+    "floor": 40000,
+    "ceil": 80000,
+    "snap": 40000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "t": 66733,
+    "frameFloor": 1,
+    "floor": 40000,
+    "ceil": 80000,
+    "snap": 80000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "t": 66734,
+    "frameFloor": 1,
+    "floor": 40000,
+    "ceil": 80000,
+    "snap": 80000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "t": 100100,
+    "frameFloor": 2,
+    "floor": 80000,
+    "ceil": 120000,
+    "snap": 120000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "t": 1000000,
+    "frameFloor": 25,
+    "floor": 1000000,
+    "ceil": 1000000,
+    "snap": 1000000,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "t": 3600000000,
+    "frameFloor": 90000,
+    "floor": 3600000000,
+    "ceil": 3600000000,
+    "snap": 3600000000,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "t": 3600033366,
+    "frameFloor": 90000,
+    "floor": 3600000000,
+    "ceil": 3600040000,
+    "snap": 3600040000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "t": 7200000001,
+    "frameFloor": 180000,
+    "floor": 7200000000,
+    "ceil": 7200040000,
+    "snap": 7200000000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "t": -1,
+    "frameFloor": -1,
+    "floor": -40000,
+    "ceil": 0,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "t": -33367,
+    "frameFloor": -1,
+    "floor": -40000,
+    "ceil": 0,
+    "snap": -40000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "t": 0,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 0,
+    "snap": 0,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "t": 1,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 33333,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "t": 16683,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 33333,
+    "snap": 33333,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "t": 16684,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 33333,
+    "snap": 33333,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "t": 33366,
+    "frameFloor": 1,
+    "floor": 33333,
+    "ceil": 66667,
+    "snap": 33333,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "t": 33367,
+    "frameFloor": 1,
+    "floor": 33333,
+    "ceil": 66667,
+    "snap": 33333,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "t": 33368,
+    "frameFloor": 1,
+    "floor": 33333,
+    "ceil": 66667,
+    "snap": 33333,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "t": 50050,
+    "frameFloor": 1,
+    "floor": 33333,
+    "ceil": 66667,
+    "snap": 66667,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "t": 66733,
+    "frameFloor": 2,
+    "floor": 66667,
+    "ceil": 100000,
+    "snap": 66667,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "t": 66734,
+    "frameFloor": 2,
+    "floor": 66667,
+    "ceil": 100000,
+    "snap": 66667,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "t": 100100,
+    "frameFloor": 3,
+    "floor": 100000,
+    "ceil": 133333,
+    "snap": 100000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "t": 1000000,
+    "frameFloor": 30,
+    "floor": 1000000,
+    "ceil": 1000000,
+    "snap": 1000000,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "t": 3600000000,
+    "frameFloor": 108000,
+    "floor": 3600000000,
+    "ceil": 3600000000,
+    "snap": 3600000000,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "t": 3600033366,
+    "frameFloor": 108001,
+    "floor": 3600033333,
+    "ceil": 3600066667,
+    "snap": 3600033333,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "t": 7200000001,
+    "frameFloor": 216000,
+    "floor": 7200000000,
+    "ceil": 7200033333,
+    "snap": 7200000000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "t": -1,
+    "frameFloor": -1,
+    "floor": -33333,
+    "ceil": 0,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 30,
+     "den": 1
+    },
+    "t": -33367,
+    "frameFloor": -2,
+    "floor": -66667,
+    "ceil": -33333,
+    "snap": -33333,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "t": 0,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 0,
+    "snap": 0,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "t": 1,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 20000,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "t": 16683,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 20000,
+    "snap": 20000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "t": 16684,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 20000,
+    "snap": 20000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "t": 33366,
+    "frameFloor": 1,
+    "floor": 20000,
+    "ceil": 40000,
+    "snap": 40000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "t": 33367,
+    "frameFloor": 1,
+    "floor": 20000,
+    "ceil": 40000,
+    "snap": 40000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "t": 33368,
+    "frameFloor": 1,
+    "floor": 20000,
+    "ceil": 40000,
+    "snap": 40000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "t": 50050,
+    "frameFloor": 2,
+    "floor": 40000,
+    "ceil": 60000,
+    "snap": 60000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "t": 66733,
+    "frameFloor": 3,
+    "floor": 60000,
+    "ceil": 80000,
+    "snap": 60000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "t": 66734,
+    "frameFloor": 3,
+    "floor": 60000,
+    "ceil": 80000,
+    "snap": 60000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "t": 100100,
+    "frameFloor": 5,
+    "floor": 100000,
+    "ceil": 120000,
+    "snap": 100000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "t": 1000000,
+    "frameFloor": 50,
+    "floor": 1000000,
+    "ceil": 1000000,
+    "snap": 1000000,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "t": 3600000000,
+    "frameFloor": 180000,
+    "floor": 3600000000,
+    "ceil": 3600000000,
+    "snap": 3600000000,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "t": 3600033366,
+    "frameFloor": 180001,
+    "floor": 3600020000,
+    "ceil": 3600040000,
+    "snap": 3600040000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "t": 7200000001,
+    "frameFloor": 360000,
+    "floor": 7200000000,
+    "ceil": 7200020000,
+    "snap": 7200000000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "t": -1,
+    "frameFloor": -1,
+    "floor": -20000,
+    "ceil": 0,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 50,
+     "den": 1
+    },
+    "t": -33367,
+    "frameFloor": -2,
+    "floor": -40000,
+    "ceil": -20000,
+    "snap": -40000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "t": 0,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 0,
+    "snap": 0,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "t": 1,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 41667,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "t": 16683,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 41667,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "t": 16684,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 41667,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "t": 33366,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 41667,
+    "snap": 41667,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "t": 33367,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 41667,
+    "snap": 41667,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "t": 33368,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 41667,
+    "snap": 41667,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "t": 50050,
+    "frameFloor": 1,
+    "floor": 41667,
+    "ceil": 83333,
+    "snap": 41667,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "t": 66733,
+    "frameFloor": 1,
+    "floor": 41667,
+    "ceil": 83333,
+    "snap": 83333,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "t": 66734,
+    "frameFloor": 1,
+    "floor": 41667,
+    "ceil": 83333,
+    "snap": 83333,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "t": 100100,
+    "frameFloor": 2,
+    "floor": 83333,
+    "ceil": 125000,
+    "snap": 83333,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "t": 1000000,
+    "frameFloor": 24,
+    "floor": 1000000,
+    "ceil": 1000000,
+    "snap": 1000000,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "t": 3600000000,
+    "frameFloor": 86400,
+    "floor": 3600000000,
+    "ceil": 3600000000,
+    "snap": 3600000000,
+    "onGrid": true
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "t": 3600033366,
+    "frameFloor": 86400,
+    "floor": 3600000000,
+    "ceil": 3600041667,
+    "snap": 3600041667,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "t": 7200000001,
+    "frameFloor": 172800,
+    "floor": 7200000000,
+    "ceil": 7200041667,
+    "snap": 7200000000,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "t": -1,
+    "frameFloor": -1,
+    "floor": -41667,
+    "ceil": 0,
+    "snap": 0,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 24,
+     "den": 1
+    },
+    "t": -33367,
+    "frameFloor": -1,
+    "floor": -41667,
+    "ceil": 0,
+    "snap": -41667,
+    "onGrid": false
+   },
+   {
+    "rate": {
+     "num": 25,
+     "den": 1
+    },
+    "t": 20000,
+    "frameFloor": 0,
+    "floor": 0,
+    "ceil": 40000,
+    "snap": 40000,
+    "onGrid": false
+   }
+  ]
+ },
+ "firstClipEnd": [
+  {
+   "duration": 3600000000,
+   "rate": {
+    "num": 30000,
+    "den": 1001
+   },
+   "end": 3599996400
+  },
+  {
+   "duration": 66732,
+   "rate": {
+    "num": 30000,
+    "den": 1001
+   },
+   "end": 33367
+  },
+  {
+   "duration": 33366,
+   "rate": {
+    "num": 30000,
+    "den": 1001
+   },
+   "end": null
+  },
+  {
+   "duration": 0,
+   "rate": {
+    "num": 25,
+    "den": 1
+   },
+   "end": null
+  }
+ ],
+ "mediaUrl": [
+  {
+   "base": "http://127.0.0.1:51234",
+   "token": "k3Y-9_x",
+   "sourceId": "a1b2c3d4",
+   "item": "proxy",
+   "url": "http://127.0.0.1:51234/media/a1b2c3d4/proxy?token=k3Y-9_x"
+  },
+  {
+   "base": "http://127.0.0.1:51234/",
+   "token": "abc",
+   "sourceId": "a1b2c3d4",
+   "item": "original",
+   "url": "http://127.0.0.1:51234/media/a1b2c3d4/original?token=abc"
+  },
+  {
+   "base": "http://127.0.0.1:8",
+   "token": "t+/=!*'()",
+   "sourceId": "s 1/é",
+   "item": "waveform",
+   "url": "http://127.0.0.1:8/media/s%201%2F%C3%A9/waveform?token=t%2B%2F%3D%21%2A%27%28%29"
+  }
+ ],
+ "waveform": {
+  "header": {
+   "sourceId": "src-1",
+   "valuesPerSecond": 100,
+   "count": 5
+  },
+  "values": [
+   0,
+   1,
+   127,
+   128,
+   255
+  ],
+  "hex": "7b22736f757263654964223a227372632d31222c2276616c7565735065725365636f6e64223a3130302c22636f756e74223a357d0a00017f80ff",
+  "bad": [
+   {
+    "why": "no header line",
+    "hex": "7b22736f757263654964223a227372632d31222c2276616c7565735065725365636f6e64223a3130302c22636f756e74223a357d"
+   },
+   {
+    "why": "too few values",
+    "hex": "7b22736f757263654964223a227372632d31222c2276616c7565735065725365636f6e64223a3130302c22636f756e74223a357d0a00017f80"
+   },
+   {
+    "why": "too many values",
+    "hex": "7b22736f757263654964223a227372632d31222c2276616c7565735065725365636f6e64223a3130302c22636f756e74223a357d0a00017f80ff00"
+   },
+   {
+    "why": "header not JSON",
+    "hex": "6e6f70650a"
+   }
+  ]
+ },
+ "_about": "Shared contract vectors for rc-types (cargo test) and src/types (vitest). frameGrid and firstClipEnd were computed with exact rationals (Python fractions), independent of either implementation."
+}

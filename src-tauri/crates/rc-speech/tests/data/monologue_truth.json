@@ -1,0 +1,206 @@
+{
+ "note": "Converted from spikes/speech/recorded/monologue_truth.json; times in microseconds. Line start/end measured from the audio at -50 dBFS.",
+ "duration": 139760000,
+ "lines": [
+  {
+   "index": 0,
+   "text": "Hi everyone, and welcome back to the channel.",
+   "kind": "normal",
+   "start": 2000000,
+   "end": 4740000,
+   "pauseAfter": 1
+  },
+  {
+   "index": 1,
+   "text": "Today we are going to look at how I edit a long recording in about twenty minutes.",
+   "kind": "retake_first",
+   "start": 5740000,
+   "end": 9850000,
+   "pauseAfter": 2
+  },
+  {
+   "index": 2,
+   "text": "Today we are going to look at how I edit a long recording in about twenty minutes.",
+   "kind": "retake_repeat",
+   "start": 11850000,
+   "end": 15960000,
+   "pauseAfter": 1.2
+  },
+  {
+   "index": 3,
+   "text": "So the first thing you want to do is, uh, open the project folder.",
+   "kind": "filler",
+   "start": 17160000,
+   "end": 21350000,
+   "pauseAfter": 1.5
+  },
+  {
+   "index": 4,
+   "text": "And then we",
+   "kind": "abandoned",
+   "start": 22850000,
+   "end": 23470000,
+   "pauseAfter": 3
+  },
+  {
+   "index": 5,
+   "text": "Sorry, let me start that again.",
+   "kind": "aside",
+   "start": 26470000,
+   "end": 28610000,
+   "pauseAfter": 1
+  },
+  {
+   "index": 6,
+   "text": "And then we drag the recording onto the window.",
+   "kind": "normal",
+   "start": 29610000,
+   "end": 31870000,
+   "pauseAfter": 4
+  },
+  {
+   "index": 7,
+   "text": "Um, the transcript shows up while the video is still loading.",
+   "kind": "filler",
+   "start": 35870000,
+   "end": 39390000,
+   "pauseAfter": 1
+  },
+  {
+   "index": 8,
+   "text": "You can, you know, read it like a document.",
+   "kind": "filler",
+   "start": 40390000,
+   "end": 43410000,
+   "pauseAfter": 2.5
+  },
+  {
+   "index": 9,
+   "text": "Every word has a time, so cutting a sentence cuts the video too.",
+   "kind": "normal",
+   "start": 45910000,
+   "end": 49760000,
+   "pauseAfter": 6
+  },
+  {
+   "index": 10,
+   "text": "Hang on, my phone is ringing.",
+   "kind": "aside",
+   "start": 55760000,
+   "end": 57740000,
+   "pauseAfter": 8
+  },
+  {
+   "index": 11,
+   "text": "Okay, where was I.",
+   "kind": "aside",
+   "start": 65740000,
+   "end": 67180000,
+   "pauseAfter": 1
+  },
+  {
+   "index": 12,
+   "text": "The second step is to look at the suggestions on the right.",
+   "kind": "retake_first",
+   "start": 68180000,
+   "end": 70980000,
+   "pauseAfter": 1.5
+  },
+  {
+   "index": 13,
+   "text": "The second step is to look at the suggestions in the margin.",
+   "kind": "retake_repeat",
+   "start": 72480000,
+   "end": 75420000,
+   "pauseAfter": 1.2
+  },
+  {
+   "index": 14,
+   "text": "Each one is, uh, um, a retake or a false start.",
+   "kind": "filler",
+   "start": 76620000,
+   "end": 80640000,
+   "pauseAfter": 2
+  },
+  {
+   "index": 15,
+   "text": "If you agree with it you press enter.",
+   "kind": "normal",
+   "start": 82640000,
+   "end": 84360000,
+   "pauseAfter": 1
+  },
+  {
+   "index": 16,
+   "text": "If you don't, you press",
+   "kind": "abandoned",
+   "start": 85360000,
+   "end": 87090000,
+   "pauseAfter": 2
+  },
+  {
+   "index": 17,
+   "text": "If you don't agree, you just press escape and it goes away.",
+   "kind": "normal",
+   "start": 89090000,
+   "end": 92560000,
+   "pauseAfter": 5
+  },
+  {
+   "index": 18,
+   "text": "Uh, so, the third step is export.",
+   "kind": "filler",
+   "start": 97560000,
+   "end": 100260000,
+   "pauseAfter": 1
+  },
+  {
+   "index": 19,
+   "text": "Export uses the graphics card, so a forty minute video takes a few minutes.",
+   "kind": "retake_first",
+   "start": 101260000,
+   "end": 106010000,
+   "pauseAfter": 2
+  },
+  {
+   "index": 20,
+   "text": "Export uses the graphics card, so a forty minute video takes a few minutes.",
+   "kind": "retake_repeat",
+   "start": 108010000,
+   "end": 112760000,
+   "pauseAfter": 2
+  },
+  {
+   "index": 21,
+   "text": "Export uses the graphics card, so a forty minute video takes a few minutes.",
+   "kind": "retake_repeat",
+   "start": 114760000,
+   "end": 119510000,
+   "pauseAfter": 3
+  },
+  {
+   "index": 22,
+   "text": "I think that's, you know, pretty much it.",
+   "kind": "filler",
+   "start": 122510000,
+   "end": 125180000,
+   "pauseAfter": 1
+  },
+  {
+   "index": 23,
+   "text": "Let me check the chat real quick.",
+   "kind": "aside",
+   "start": 126180000,
+   "end": 127830000,
+   "pauseAfter": 7
+  },
+  {
+   "index": 24,
+   "text": "Thanks for watching, and I'll see you in the next one.",
+   "kind": "normal",
+   "start": 134830000,
+   "end": 137760000,
+   "pauseAfter": 2
+  }
+ ]
+}

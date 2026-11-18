@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "createUpdaterArtifacts": true,
+    "resources": {
+      "../dist-app/Roughcut/ffmpeg.exe": "ffmpeg.exe",
+      "../dist-app/Roughcut/ffprobe.exe": "ffprobe.exe",
+      "../dist-app/Roughcut/ffmpeg-LICENSE.txt": "ffmpeg-LICENSE.txt",
+      "../dist-app/Roughcut/README.txt": "README.txt",
+      "../dist-app/Roughcut/speech-runtime/transcriber.exe": "speech-runtime/transcriber.exe",
+      "../dist-app/Roughcut/speech-runtime/sherpa-onnx-c-api.dll": "speech-runtime/sherpa-onnx-c-api.dll",
+      "../dist-app/Roughcut/speech-runtime/onnxruntime.dll": "speech-runtime/onnxruntime.dll",
+      "../dist-app/Roughcut/speech-runtime/onnxruntime_providers_shared.dll": "speech-runtime/onnxruntime_providers_shared.dll"
+    },
+    "windows": {
+      "nsis": {
+        "installMode": "currentUser"
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "description": "Scripted monologue for the speech spike. Each line is synthesized separately with Windows System.Speech (voice Microsoft David Desktop) and joined with the given silence after it, so every line's start and end time is known. 'kind' labels what the line is meant to test.",
+  "voice": "Microsoft David Desktop",
+  "rate": 0,
+  "lines": [
+    {"text": "Hi everyone, and welcome back to the channel.", "kind": "normal", "pause_after": 1.0},
+    {"text": "Today we are going to look at how I edit a long recording in about twenty minutes.", "kind": "retake_first", "pause_after": 2.0},
+    {"text": "Today we are going to look at how I edit a long recording in about twenty minutes.", "kind": "retake_repeat", "pause_after": 1.2},
+    {"text": "So the first thing you want to do is, uh, open the project folder.", "kind": "filler", "pause_after": 1.5},
+    {"text": "And then we", "kind": "abandoned", "pause_after": 3.0},
+    {"text": "Sorry, let me start that again.", "kind": "aside", "pause_after": 1.0},
+    {"text": "And then we drag the recording onto the window.", "kind": "normal", "pause_after": 4.0},
+    {"text": "Um, the transcript shows up while the video is still loading.", "kind": "filler", "pause_after": 1.0},
+    {"text": "You can, you know, read it like a document.", "kind": "filler", "pause_after": 2.5},
+    {"text": "Every word has a time, so cutting a sentence cuts the video too.", "kind": "normal", "pause_after": 6.0},
+    {"text": "Hang on, my phone is ringing.", "kind": "aside", "pause_after": 8.0},
+    {"text": "Okay, where was I.", "kind": "aside", "pause_after": 1.0},
+    {"text": "The second step is to look at the suggestions on the right.", "kind": "retake_first", "pause_after": 1.5},
+    {"text": "The second step is to look at the suggestions in the margin.", "kind": "retake_repeat", "pause_after": 1.2},
+    {"text": "Each one is, uh, um, a retake or a false start.", "kind": "filler", "pause_after": 2.0},
+    {"text": "If you agree with it you press enter.", "kind": "normal", "pause_after": 1.0},
+    {"text": "If you don't, you press", "kind": "abandoned", "pause_after": 2.0},
+    {"text": "If you don't agree, you just press escape and it goes away.", "kind": "normal", "pause_after": 5.0},
+    {"text": "Uh, so, the third step is export.", "kind": "filler", "pause_after": 1.0},
+    {"text": "Export uses the graphics card, so a forty minute video takes a few minutes.", "kind": "retake_first", "pause_after": 2.0},
+    {"text": "Export uses the graphics card, so a forty minute video takes a few minutes.", "kind": "retake_repeat", "pause_after": 2.0},
+    {"text": "Export uses the graphics card, so a forty minute video takes a few minutes.", "kind": "retake_repeat", "pause_after": 3.0},
+    {"text": "I think that's, you know, pretty much it.", "kind": "filler", "pause_after": 1.0},
+    {"text": "Let me check the chat real quick.", "kind": "aside", "pause_after": 7.0},
+    {"text": "Thanks for watching, and I'll see you in the next one.", "kind": "normal", "pause_after": 2.0}
+  ]
+}

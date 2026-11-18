@@ -1,0 +1,17 @@
+[package]
+name = "transcriber-spike"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# Milestone 0 spike: proves the route for the real `transcriber/` program (spec 3.5.7).
+# Built with the x86_64-pc-windows-gnu toolchain against the official sherpa-onnx
+# prebuilt Windows DLLs (shared mode). See ../RESULT.md for the exact build command.
+
+[dependencies]
+sherpa-onnx = { version = "=2.0.1", default-features = false, features = ["shared"] }
+serde_json = "1"
+
+[profile.release]
+opt-level = 3
+debug = false

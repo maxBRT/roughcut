@@ -1,0 +1,26 @@
+/* App-wide stylesheet, imported once by src/main.tsx. Tokens and component styles from the mockups. */
+@import "./tokens.css";
+@import "./components.css";
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  background: var(--body);
+}
+
+/* Placeholder screen used by App.tsx until the views exist. */
+.placeholder {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: var(--ink);
+  font-family: var(--sans);
+}
+
+.placeholder h1 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}

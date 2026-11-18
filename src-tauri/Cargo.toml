@@ -1,0 +1,77 @@
+[package]
+name = "roughcut"
+description = "Roughcut: a transcript-first rough-cut video editor (Tauri 2 app; the `api` module lives in src/api)"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+default-run = "roughcut"
+
+[lib]
+name = "roughcut_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "roughcut"
+path = "src/main.rs"
+
+# Test helpers only: rc-suggest's stand-in claude and rc-speech's stand-in transcriber, their
+# sources unchanged, built as binaries of this crate too so its integration tests can start them
+# (CARGO_BIN_EXE_<name>). Never shipped: they need the feature test-helpers (below).
+[[bin]]
+name = "rc-test-standin-claude"
+path = "crates/rc-suggest/src/bin/standin_claude.rs"
+test = false
+doc = false
+required-features = ["test-helpers"]
+
+[[bin]]
+name = "rc-test-standin-transcriber"
+path = "crates/rc-speech/src/bin/standin.rs"
+test = false
+doc = false
+required-features = ["test-helpers"]
+
+[features]
+default = ["test-helpers"]
+# Builds the two test stand-ins above. On by default, so cargo build, cargo test and the e2e
+# harness have them as before; the installer build (npm run package -- --installer) turns it
+# off with --no-default-features, because Tauri's bundler ships every binary of this crate.
+test-helpers = []
+
+[build-dependencies]
+tauri-build = { workspace = true }
+
+[dependencies]
+tauri = { workspace = true }
+# System file and folder pickers for the interface (spec 3.5.4, last line).
+tauri-plugin-dialog = "2.8"
+ts-rs = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+tokio = { workspace = true }
+rc-types = { workspace = true }
+rc-project = { workspace = true }
+rc-source = { workspace = true }
+rc-cache = { workspace = true }
+rc-jobs = { workspace = true }
+rc-media = { workspace = true }
+rc-server = { workspace = true }
+rc-speech = { workspace = true }
+rc-suggest = { workspace = true }
+rc-settings = { workspace = true }
+tauri-plugin-updater = "2"
+
+[dev-dependencies]
+# SHA-256 of the files the model-download test serves.
+sha2 = "0.10.9"
+
+[target.'cfg(windows)'.dev-dependencies]
+# Listing this process's child processes (no FFmpeg, transcriber or claude may be left running).
+windows-sys = { version = "0.61.2", features = ["Win32_Foundation", "Win32_System_Diagnostics_ToolHelp"] }
+
+[lints]
+workspace = true

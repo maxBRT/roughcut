@@ -1,0 +1,255 @@
+/* Overlays: the "?" shortcut list, the Locate file prompt, the one-line notices. */
+
+/* ---- shortcut list ---- */
+/* Wider than the default wide dialog, so two columns of actions fit without cutting labels. */
+.rcs-root .rc-dialog--wide {
+  width: min(1120px, 100%);
+}
+.rcs-panel {
+  display: grid;
+  align-content: start;
+  gap: var(--sp-5);
+  min-height: 0;
+  max-height: max(200px, calc(100vh - 220px));
+  overflow: auto;
+  outline: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--key-hi) transparent;
+  /* Rows that scroll under the footer fade out instead of being cut through. */
+  padding-bottom: var(--sp-7);
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - var(--sp-7)), transparent);
+  mask-image: linear-gradient(to bottom, #000 calc(100% - var(--sp-7)), transparent);
+}
+/* The list takes the arrows itself; the highlighted row shows where they are, not a ring. */
+.rcs-panel:focus,
+.rcs-panel:focus-visible {
+  outline: none;
+}
+.rcs-panel:focus .rcs-row[data-active] {
+  box-shadow: inset 2px 0 0 var(--accent);
+}
+.rcs-status {
+  margin: 0;
+  font: 400 var(--fs-label) / 1.4 var(--mono);
+  color: var(--ink-2);
+  /* Stays in view while the list is scrolled: the answer to a key pressed on a row far down
+     (refused: "W is already used by ...") must be seen where the key was pressed. */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--body);
+  padding: var(--sp-2) 0;
+}
+.rcs-status[data-error] {
+  color: var(--ink);
+}
+.rcs-status[data-error]::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-right: var(--sp-3);
+  vertical-align: 1px;
+}
+.rcs-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: var(--sp-6) var(--sp-8);
+  align-items: start;
+}
+.rcs-group__title {
+  margin: 0 0 var(--sp-2);
+  padding: 0 var(--sp-3);
+  font: 400 var(--fs-label) / 1 var(--mono);
+  color: var(--ink-2);
+  text-transform: lowercase;
+}
+.rcs-rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.rcs-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: var(--sp-4);
+  min-height: var(--key-h);
+  padding: var(--sp-1) var(--sp-3);
+  border-radius: var(--r-key);
+  border-bottom: 1px solid var(--line);
+  font: 400 var(--fs-ui) / var(--lh-ui) var(--sans);
+  cursor: pointer;
+  transition: background var(--dur-hover) var(--ease);
+}
+.rcs-row:hover {
+  background: var(--panel);
+}
+.rcs-row[data-active] {
+  background: var(--panel);
+}
+.rcs-row[data-waiting] {
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+/* Labels wrap rather than being cut; lower case like every other label in the app. */
+.rcs-row__label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  text-transform: lowercase;
+}
+.rcs-row__keys {
+  display: flex;
+  gap: var(--sp-1);
+  align-items: center;
+  white-space: nowrap;
+}
+.rcs-or {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-1);
+}
+.rcs-or__word,
+.rcs-wait {
+  font: 400 var(--fs-label) / 1 var(--mono);
+  color: var(--ink-2);
+}
+.rcs-row[data-waiting] .rcs-wait {
+  color: var(--accent);
+}
+.rcs-row__acts {
+  display: flex;
+  gap: var(--sp-1);
+  min-width: 52px;
+  justify-content: flex-end;
+}
+.rcs-link {
+  font: 400 var(--fs-label) / 1 var(--mono);
+  color: var(--ink-2);
+  background: none;
+  border: 0;
+  padding: var(--sp-1) var(--sp-1);
+  border-radius: var(--r-chip);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity var(--dur-hover) var(--ease), color var(--dur-hover) var(--ease);
+}
+.rcs-row:hover .rcs-link,
+.rcs-row[data-active] .rcs-link,
+.rcs-row[data-waiting] .rcs-link,
+.rcs-link:focus-visible {
+  opacity: 1;
+}
+.rcs-link:hover {
+  color: var(--ink);
+}
+.rcs-link:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-offset);
+}
+
+/* ---- locate file ---- */
+.rcl-body {
+  display: grid;
+  gap: var(--sp-3);
+  min-width: 0;
+}
+.rcl-lead {
+  margin: 0;
+  font: 400 var(--fs-read) / 1.4 var(--sans);
+}
+.rcl-lead b {
+  font-weight: 600;
+}
+.rcl-note {
+  margin: 0;
+  font: 400 var(--fs-label) / 1.4 var(--mono);
+  color: var(--ink-2);
+}
+.rcl-path {
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+.rcl-error {
+  margin: var(--sp-2) 0 0;
+  padding: var(--sp-4);
+  border: 1px solid var(--line-2);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--r-key);
+  font: 400 var(--fs-label) / 1.4 var(--mono);
+  color: var(--ink);
+}
+
+/* ---- notices ---- */
+.rcn-list {
+  position: fixed;
+  left: 50%;
+  bottom: 52px;
+  transform: translateX(-50%);
+  /* As wide as its text, up to a readable line; it floats over the screen, above the hint bar. */
+  width: max-content;
+  max-width: min(960px, calc(100% - 40px));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--sp-2);
+  z-index: 110;
+  pointer-events: none;
+}
+.rcn-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-1) var(--sp-2) var(--sp-1) var(--sp-4);
+  background: var(--body);
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-key);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .45);
+  pointer-events: auto;
+  min-width: 0;
+}
+.rcn-item .rc-notice {
+  flex: 1 1 auto;
+}
+/* A notice longer than the line wraps instead of losing its end (it often says what to do). */
+.rcn-item .rc-notice__text {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  padding: var(--sp-1) 0;
+}
+.rcn-close {
+  flex: none;
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  font: 400 16px / 1 var(--mono);
+  color: var(--ink-2);
+  background: none;
+  border: 0;
+  border-radius: var(--r-chip);
+  cursor: pointer;
+}
+.rcn-close:hover {
+  color: var(--ink);
+  background: var(--key);
+}
+.rcn-close:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-offset);
+}
+@media (prefers-reduced-motion: reduce) {
+  .rcs-link,
+  .rcs-row,
+  .rcn-item {
+    transition: none;
+    animation: none;
+  }
+}
+
+/* The overlay's key guard wraps the dialog without taking part in layout. */
+.rcs-root {
+  display: contents;
+}

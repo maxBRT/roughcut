@@ -1,0 +1,21 @@
+[package]
+name = "rc-media"
+description = "Roughcut core module `media`: every FFmpeg task"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+rc-types = { workspace = true }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+
+[target.'cfg(windows)'.dependencies]
+# A job object so FFmpeg children die with the app (no orphaned encoders after a crash);
+# free disk space for the export plan (Win32_Storage_FileSystem).
+windows-sys = { version = "0.61.2", features = ["Win32_Foundation", "Win32_System_JobObjects", "Win32_System_Threading", "Win32_Security", "Win32_Storage_FileSystem"] }
+
+[lints]
+workspace = true

@@ -1,0 +1,30 @@
+[package]
+name = "transcriber"
+description = "Roughcut transcriber program: 16 kHz mono audio on stdin, one JSON message per line on stdout (spec 3.5.7)"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+# Build note: set SHERPA_ONNX_LIB_DIR to a folder holding sherpa-onnx-c-api.dll + .lib and the
+# runtime DLLs (see README.md and scripts/setup-sdk.sh). The sherpa-onnx-sys build script then
+# links against it and copies every DLL in it next to the built executable. Without the variable
+# it downloads the CPU-only package from GitHub instead.
+
+[lib]
+name = "transcriber"
+path = "src/lib.rs"
+
+[[bin]]
+name = "transcriber"
+path = "src/main.rs"
+
+[dependencies]
+# Official k2-fsa bindings. "shared" links the prebuilt DLLs; the default "static" feature needs MSVC libraries.
+sherpa-onnx = { version = "=2.0.1", default-features = false, features = ["shared"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0"
+
+[lints]
+workspace = true

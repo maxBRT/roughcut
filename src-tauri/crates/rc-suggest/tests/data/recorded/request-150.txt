@@ -1,0 +1,154 @@
+Transcript to review: 151 utterances.
+Each line is tab-separated: utterance number, start time (h:mm:ss.s), pause after the utterance in seconds, text.
+
+1	0:00:02.4	0.5	Hey everyone, welcome back to the weekly Tally update.
+2	0:00:06.3	1.1	If you're new here, Tally is the little habit tracker I've been building on my own for about a year and a half now.
+3	0:00:15.7	0.5	This week was a big one, so I'm going to go through what shipped, what broke, and what's coming next.
+4	0:00:23.9	2.4	So the headline this week is that sync is finally out of beta.
+5	0:00:31.0	2.5	So the headline this week is that sync is, um, finally
+6	0:00:37.8	0.9	So the headline this week is that sync is finally out of beta and it's on for everyone.
+7	0:00:45.5	1.2	That's been about four months of work, and honestly most of it was stuff nobody will ever see.
+8	0:00:53.5	1.2	Conflict handling, retries, what happens when your phone is offline for three days and then comes back.
+9	0:01:00.6	1.3	And the reason that took so long is that the the reason it took so long is that every edge case turned out to have another edge case inside it.
+10	0:01:13.4	0.4	Like, you'd fix one thing and two more would pop up.
+11	0:01:17.7	0.5	At one point I had a whiteboard with forty sticky notes on it, each one a different way two phones could disagree.
+12	0:01:26.2	0.6	My partner started calling it the conspiracy wall.
+13	0:01:30.0	0.6	But it's done, it's stable, and the crash rate on sync is now basically zero.
+14	0:01:35.8	1.2	I've had it running on six of my own devices for a month and it hasn't lost a single check-in.
+15	0:01:45.3	0.6	Okay, let's look at the numbers.
+16	0:01:48.3	1.1	Last week we had about eleven thousand four hundred active users.
+17	0:01:53.4	2.0	This week it's just over twelve thousand, so that's a nice bump.
+18	0:01:59.7	1.2	And paid subscribers went from eight hundred and ten to, uh, nine hundred and, no, wait.
+19	0:02:06.6	2.0	Hang on, let me check that number, I think I have it wrong. Okay. Let me redo that.
+20	0:02:15.5	0.8	Paid subscribers went from eight hundred and ten to eight hundred and ninety-four.
+21	0:02:20.9	0.7	Which is the biggest jump we've had since launch.
+22	0:02:24.8	1.2	And I think a lot of that is sync, because sync was the number one request in every survey we've run.
+23	0:02:34.4	1.0	People want their streaks on their phone and their tablet, and that's fair.
+24	0:02:40.6	0.4	Retention is also up a little.
+25	0:02:43.6	1.9	Thirty day retention is at forty one percent, which.
+26	0:02:48.8	1.1	Thirty-day retention went from thirty-eight to forty-one percent, which for a habit app is actually really good.
+27	0:02:56.1	0.9	Most habit apps lose almost everyone in the first two weeks.
+28	0:03:01.5	0.7	I don't have exact numbers for the whole industry, but the studies I've read put it well under twenty percent.
+29	0:03:09.6	0.9	That's kind of the dirty secret of this category.
+30	0:03:14.3	6.5	Everyone downloads one in January and then forgets about it by Valentine's day.
+31	0:03:25.5	0.4	Alright, next thing.
+32	0:03:27.0	0.7	What broke.
+33	0:03:28.6	1.0	So on Tuesday we pushed version three point two, and about an hour later the support inbox just lit up.
+34	0:03:36.8	0.7	The widget, the home screen widget was the home screen widget was showing yesterday's streak instead of today's.
+35	0:03:43.7	1.2	It turned out to be a time zone bug, which, of course it was.
+36	0:03:49.9	0.9	It's always time zones.
+37	0:03:52.5	0.6	Every developer watching this is nodding right now.
+38	0:03:56.6	0.6	If you were east of UTC, the widget thought it was still the previous day for a few hours after midnight.
+39	0:04:05.6	0.8	We had a fix out the same evening, so if you still see it, just update the app.
+40	0:04:13.8	0.9	And I'm sorry about that, I know a broken streak counter is about the most annoying thing a habit app can do.
+41	0:04:23.7	1.7	Is the light still okay? It looks like the sun's moving. Yeah, it's fine, keep going.
+42	0:04:31.1	0.6	So, lessons learned.
+43	0:04:33.1	1.0	We now have tests that run the widget in about twenty different time zones before every release.
+44	0:04:40.4	0.5	Which we should have had from the start, but here we are.
+45	0:04:45.9	0.5	Okay, let's talk about the redesign.
+46	0:04:48.7	1.0	A lot of you have seen the screenshots I posted on Thursday.
+47	0:04:54.7	1.4	The new home screen puts your habits for today right at the top, and then
+48	0:05:01.2	2.3	The new home screen puts today's habits right at the top.
+49	0:05:07.6	0.4	The new home screen puts today's habits right at the top, and everything else moves into a separate tab.
+50	0:05:15.7	0.8	The idea is that when you open the app, the first thing you see is what you still need to do.
+51	0:05:24.5	1.2	Not a chart, not a calendar, just today.
+52	0:05:28.6	0.5	Charts are great, but they're for Sunday evening, not for Tuesday morning.
+53	0:05:33.4	1.0	The feedback has been mostly positive.
+54	0:05:36.5	0.6	A few people really miss the calendar view, so that's not going away, it's just one tap further.
+55	0:05:43.7	1.0	And I want to be, I want to be I want to be clear that nothing is being removed, it's just being moved.
+56	0:05:54.0	0.5	I know how people get when an app they use every day suddenly changes.
+57	0:06:00.2	0.4	I'm the same way.
+58	0:06:02.1	0.7	So the redesign will ship behind a setting first, and you can switch back for at least a couple of months.
+59	0:06:10.7	0.8	Then we'll look at the numbers and decide.
+60	0:06:14.6	1.3	Speaking of numbers, the beta has about four hundred people in it and the, the
+61	0:06:21.8	2.6	Ugh, sorry. Okay, starting over from the beta part.
+62	0:06:27.8	0.4	Speaking of numbers, the redesign beta has about four hundred people in it right now.
+63	0:06:33.7	1.2	And if you want in, there's a link in the description.
+64	0:06:39.4	0.4	Just know that it's a beta, so things will be a bit rough.
+65	0:06:44.6	0.8	Some screens still have placeholder text, and dark mode is, let's say, a work in progress.
+66	0:06:51.3	0.5	Alright.
+67	0:06:52.3	0.6	Next up is the thing I've been most nervous about, which is pricing.
+68	0:06:57.6	0.5	Right now Tally is three dollars a month or twenty-four dollars a year.
+69	0:07:03.1	0.9	That price hasn't changed since launch.
+70	0:07:06.4	0.5	And in that time pretty much everything I pay for to run it has gone up.
+71	0:07:13.6	2.5	And starting next month, the yearly price is going up to thirty dollars for new subscribers.
+72	0:07:21.7	0.8	Starting next month, the yearly price goes up to thirty dollars, but only for new subscribers.
+73	0:07:29.0	0.9	If you're already subscribed, your price stays exactly where it is, for as long as you stay subscribed.
+74	0:07:36.7	0.5	I really want to be clear about that.
+75	0:07:40.1	1.2	The monthly price stays at three dollars for everyone.
+76	0:07:44.7	0.5	The reason we're doing it is, um, it's mostly the reason is mostly server costs, which have more than doubled since sync launched.
+77	0:07:53.5	0.5	Sync means every change you make is stored and sent to all your devices.
+78	0:07:59.0	1.1	That's a lot more traffic than the old app, which just kept everything on your phone.
+79	0:08:06.7	0.6	And I'd rather charge a little more than put ads in the app, which I am never going to do.
+80	0:08:15.2	0.7	Never.
+81	0:08:16.4	5.2	Not even a little banner.
+82	0:08:23.4	2.2	What's next on my list? Oh, the Android stuff. Okay.
+83	0:08:29.5	0.6	Android.
+84	0:08:30.6	0.8	A lot of you have asked when the Android version gets sync.
+85	0:08:35.8	2.3	The answer is, it should be about three weeks behind iOS.
+86	0:08:42.5	1.1	The honest answer is, it's about three weeks behind iOS, maybe four.
+87	0:08:48.2	0.7	The sync engine itself is shared, so that part's done.
+88	0:08:52.9	1.0	What's left is mostly the background work, because Android is a lot stricter about what apps can do when they're closed.
+89	0:09:02.4	0.5	And I want to get that right, because a sync that only works when the app is open isn't really sync.
+90	0:09:11.1	1.2	Then there's the Wear OS app.
+91	0:09:14.6	0.8	That one I'm less sure about.
+92	0:09:17.7	1.0	It's maybe two percent of users, but they're very, very loud.
+93	0:09:22.8	1.1	In a good way.
+94	0:09:25.5	0.9	Their emails are the most detailed bug reports I get, honestly.
+95	0:09:30.8	1.3	I love you, watch people.
+96	0:09:34.1	0.6	It'll happen, I just can't promise a date.
+97	0:09:38.2	0.9	Okay, community stuff.
+98	0:09:40.3	0.4	The thirty day challenge we started in October finished last week.
+99	0:09:45.2	0.9	Almost three thousand people signed up, which completely blew me away.
+100	0:09:50.3	0.6	And of those, um, of the people who of the people who finished, more than half said they're keeping the habit going.
+101	0:09:59.4	1.1	Which is the whole point.
+102	0:10:02.3	0.4	The app is only a tool, the habit is the thing that matters.
+103	0:10:07.2	0.7	The most popular habits were reading, walking, and drinking more water.
+104	0:10:12.0	0.9	And somebody tracked not checking their phone before nine in the morning, which I think I need to try.
+105	0:10:19.8	0.5	I'll probably fail, but I'll try.
+106	0:10:22.6	1.4	We're going to run another one in January, and this time there will be, uh, teams.
+107	0:10:29.9	1.3	We're running another one in January, and this time you can join as a team.
+108	0:10:37.0	0.8	So you can do it with friends or coworkers and see each other's streaks.
+109	0:10:43.1	0.9	Only if everyone opts in, obviously.
+110	0:10:46.3	0.8	Privacy-wise, nothing is shared unless you choose to share it.
+111	0:10:50.9	1.8	Now, a quick word about the support side, because the inbox has been, it's been
+112	0:10:57.9	1.7	No, that sounds too negative. Let me say that again.
+113	0:11:03.6	1.3	Now, a quick word about support, because the inbox has been really busy since sync launched.
+114	0:11:11.4	0.8	I read every email myself.
+115	0:11:14.4	0.5	There's no support team, it's just me and a very large mug of coffee.
+116	0:11:20.5	0.7	That's still true, but replies are taking a day or two longer than usual.
+117	0:11:26.3	0.7	So if you wrote in and haven't heard back yet, you will.
+118	0:11:31.5	1.2	I'm also adding a help page that answers the ten most common questions.
+119	0:11:37.8	0.7	About half the emails are the same three questions, so that should help a lot.
+120	0:11:44.4	1.2	Okay, let's do a couple of questions from the comments.
+121	0:11:49.3	0.7	First one is from Priya.
+122	0:11:52.1	0.5	She asks whether Tally will ever have a web version.
+123	0:11:56.4	0.8	Short answer, I don't, I'm not short answer, not this year.
+124	0:12:01.4	0.4	The longer answer is that with sync done, a web version is a lot more realistic than it used to be.
+125	0:12:10.4	1.0	It's on the list, it's just not near the top.
+126	0:12:15.2	1.0	If you really want it, tell me, because the list is basically ordered by how many of you ask.
+127	0:12:23.9	1.1	Second question is from Marco.
+128	0:12:27.0	2.4	He asks if there's a way to export his data.
+129	0:12:33.4	0.8	He asks if there's a way to export all his data, like to a spreadsheet.
+130	0:12:39.9	0.9	And yes, there is.
+131	0:12:42.5	0.7	It's in settings, under your account, and it gives you a CSV file with every check-in you've ever made.
+132	0:12:50.9	1.2	It's your data, you should be able to take it with you.
+133	0:12:56.6	2.2	Sorry, my neighbor's doing construction, give me a second. Okay, it stopped.
+134	0:13:03.3	0.8	Last question is from someone called night owl twenty-two.
+135	0:13:07.7	1.2	They ask whether I ever take a break from working on the app.
+136	0:13:13.8	0.4	And, honestly, not as much as I should.
+137	0:13:17.0	0.8	But I took last weekend completely off, no laptop, and it was great.
+138	0:13:23.2	1.0	I went hiking, I read a whole book, and I didn't open the analytics dashboard once.
+139	0:13:30.0	1.2	Okay, I opened it once. On Sunday night.
+140	0:13:34.2	0.6	I'm going to try to do that more.
+141	0:13:37.8	2.5	So, wrapping up.
+142	0:13:41.6	1.2	Okay, so, to wrap up.
+143	0:13:44.7	0.5	Sync is out for everyone on iOS, Android follows in about three weeks.
+144	0:13:50.0	0.5	The redesign is in beta, with a link below.
+145	0:13:54.1	1.2	Please do send feedback, even if it's just that you hate it.
+146	0:13:59.6	0.8	Prices go up a little for new yearly subscribers next month, existing subscribers aren't affected.
+147	0:14:06.0	1.1	And the next community challenge starts in January, with teams.
+148	0:14:10.6	0.9	Thank you all for being here.
+149	0:14:13.8	0.5	Seriously, twelve thousand people using something I built in my spare room is still kind of unbelievable to me.
+150	0:14:21.4	2.2	See you next week, bye.
+151	0:14:25.7	0.0	I'll see you next week. Bye!

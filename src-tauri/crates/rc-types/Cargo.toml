@@ -1,0 +1,23 @@
+[package]
+name = "rc-types"
+description = "Roughcut shared data types (spec 3.4) and core-to-interface event names (spec 3.5.5); the TypeScript in src/types is generated from here"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+ts-rs = { workspace = true }
+
+[[bin]]
+# `npm run gen:types` runs this; it writes src/types/generated.ts
+name = "gen-ts"
+path = "src/bin/gen_ts.rs"
+test = false
+
+[lints]
+workspace = true
