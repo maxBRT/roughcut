@@ -156,9 +156,15 @@ const setup = path.join(NSIS_DIR, setupName);
 const sig = `${setup}.sig`;
 fs.rmSync(setup, { force: true });
 fs.rmSync(sig, { force: true });
-run("node", ["scripts/package.mjs", "--build", "--installer"], {
-  env: { ...process.env, TAURI_SIGNING_PRIVATE_KEY: fs.readFileSync(keyFile, "utf8").trim(), TAURI_SIGNING_PRIVATE_KEY_PASSWORD: process.env.TAURI_SIGNING_PRIVATE_KEY_PASSWORD ?? "" },
-});
+// Up to three tries: on this PC the compiler itself sometimes crashes (access violation) and
+// simply running the build again carries on from where it stopped.
+const buildEnv = { ...process.env, TAURI_SIGNING_PRIVATE_KEY: fs.readFileSync(keyFile, "utf8").trim(), TAURI_SIGNING_PRIVATE_KEY_PASSWORD: process.env.TAURI_SIGNING_PRIVATE_KEY_PASSWORD ?? "" };
+for (let attempt = 1; ; attempt++) {
+  const r = spawnSync("node", ["scripts/package.mjs", "--build", "--installer"], { cwd: ROOT, stdio: "inherit", env: buildEnv });
+  if (r.status === 0) break;
+  if (attempt === 3) die(`the build failed three times (exit ${r.status ?? r.signal})`);
+  console.log(`\nrelease: the build failed (attempt ${attempt} of 3); trying again`);
+}
 if (!fs.existsSync(setup)) die(`the installer ${setup} was not written`);
 if (!fs.existsSync(sig)) die(`the installer was not signed (${sig} is missing): is "createUpdaterArtifacts" on in src-tauri/tauri.installer.conf.json?`);
 
