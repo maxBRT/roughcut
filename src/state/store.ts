@@ -58,6 +58,7 @@ import {
   selectedSpan,
   selectionToRanges,
   selectTokens,
+  strandedSilence,
   suggestionAt,
   tokensToRanges,
   type CaretMotion,
@@ -65,6 +66,7 @@ import {
   type LayoutInput,
   type SuggestionView,
   type TextSelection,
+  type TranscriptLayout,
   type VisualLines,
 } from "../transcript";
 import type {
@@ -686,6 +688,19 @@ export function createRoughcutStore(options: StoreOptions): RoughcutStore {
     commit({ edit: doc, playhead, session: { ...s.session, playhead: playhead.position }, ...extra });
     markDirty("edit");
     return true;
+  }
+
+  /**
+   * `cutRanges` for a cut made from the text (Delete, accepting suggestions): any short piece
+   * of silence the cut would leave on its own (for example the margin a dead-air cut left
+   * next to speech that is now cut too) is cut with it, in the same undo step, so no blip
+   * stays on the timeline that the text gives no way to reach.
+   */
+  function cutFromText(doc: EditDocument, ctx: EditContext, ranges: readonly SourceRange[], layout: TranscriptLayout | null): EditDocument {
+    const next = cutRanges(doc, ctx, ranges);
+    if (next === doc || !layout) return next;
+    const stranded = strandedSilence(layout, doc.current, next.current);
+    return stranded.length === 0 ? next : cutRanges(doc, ctx, [...ranges, ...stranded]);
   }
 
   /** After a timeline edit: the caret follows the playhead, and the player shows it. */
@@ -1477,7 +1492,7 @@ export function createRoughcutStore(options: StoreOptions): RoughcutStore {
     const extra: Partial<RoughcutState> = { currentSuggestion: null };
     if (caret !== null) extra.selection = caretAt(s.layout, caret);
     if (usedMarks) extra.marks = { in: null, out: null };
-    const changed = applyEdit((d, c) => (kind === "cut" ? cutRanges(d, c, ranges) : restoreRanges(d, c, ranges)), extra);
+    const changed = applyEdit((d, c) => (kind === "cut" ? cutFromText(d, c, ranges, s.layout) : restoreRanges(d, c, ranges)), extra);
     if (!changed) {
       if (usedMarks) set({ marks: { in: null, out: null } });
       return;
@@ -1529,7 +1544,7 @@ export function createRoughcutStore(options: StoreOptions): RoughcutStore {
     const range = view.suggestion.range;
     const caret = view.lastPosition >= 0 ? view.lastPosition + 1 : s.selection.focus;
     const changed = applyEdit(
-      (d, c) => (kind === "accept" ? cutRanges(d, c, [range]) : dismissSuggestion(d, c, range)),
+      (d, c) => (kind === "accept" ? cutFromText(d, c, [range], s.layout) : dismissSuggestion(d, c, range)),
       { selection: caretAt(s.layout, caret), currentSuggestion: null },
     );
     if (changed) moveCaretTo(get().selection);
@@ -1540,7 +1555,7 @@ export function createRoughcutStore(options: StoreOptions): RoughcutStore {
     if (!s.layout) return;
     const ranges = s.layout.suggestions.filter((v) => v.state === "pending").map((v) => ({ ...v.suggestion.range }));
     if (ranges.length === 0) return;
-    if (applyEdit((d, c) => cutRanges(d, c, ranges), { currentSuggestion: null })) caretToPlayhead();
+    if (applyEdit((d, c) => cutFromText(d, c, ranges, s.layout), { currentSuggestion: null })) caretToPlayhead();
   }
 
   // ---- find ----

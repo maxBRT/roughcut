@@ -60,3 +60,4 @@ export {
 export type { FindMatch } from "./find";
 export { findInTranscript, nextMatch, previousMatch } from "./find";
 export { normaliseForSearch } from "./text";
+export { STRANDED_SILENCE_MAX, strandedSilence } from "./stranded";
